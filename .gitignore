@@ -19,3 +19,7 @@ mono_crash.*.json
 *.DS_Store
 
 *.exe
+
+*.pck
+*.zip
+*.mp4
