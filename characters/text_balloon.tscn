@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dn7a0880p2e22"]
+
+[ext_resource type="FontFile" uid="uid://djs7ysml6bg1t" path="res://ark-pixel-10px-proportional-latin.ttf" id="1_jy3vv"]
+
+[sub_resource type="Theme" id="Theme_xn74m"]
+default_font = ExtResource("1_jy3vv")
+
+[node name="Text balloon" type="Label" unique_id=890205473]
+offset_left = 17.0
+offset_top = -105.0
+offset_right = 101.0
+offset_bottom = -78.0
+theme = SubResource("Theme_xn74m")
+text = "Bla bla bla"

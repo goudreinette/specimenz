@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b8pd4r7fygio0"]
+
+[ext_resource type="Texture2D" uid="uid://bqer781noubrl" path="res://characters/maeve.png" id="1_ttl1a"]
+[ext_resource type="Script" uid="uid://csqciumpa2k0d" path="res://characters/Character.gd" id="1_xppl7"]
+[ext_resource type="PackedScene" uid="uid://dn7a0880p2e22" path="res://characters/text_balloon.tscn" id="3_4l28x"]
+
+[node name="Maeve" type="Node2D" unique_id=297373198]
+script = ExtResource("1_xppl7")
+
+[node name="Maeve" type="Sprite2D" parent="." unique_id=1999894689]
+texture_filter = 1
+texture = ExtResource("1_ttl1a")
+
+[node name="Timer" type="Timer" parent="." unique_id=1205644669]
+autostart = true
+
+[node name="Text balloon" parent="." unique_id=890205473 instance=ExtResource("3_4l28x")]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

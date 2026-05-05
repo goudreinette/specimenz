@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://ct8m7y07dore7"]
+
+[ext_resource type="Texture2D" uid="uid://cynjn7p403lsj" path="res://rooms/bliss/400.png" id="1_g4yq2"]
+
+[sub_resource type="Animation" id="Animation_dco7n"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_g4yq2"]
+resource_name = "fadein"
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dco7n"]
+_data = {
+&"RESET": SubResource("Animation_dco7n"),
+&"fadein": SubResource("Animation_g4yq2")
+}
+
+[node name="Bliss" type="Node2D" unique_id=448899184]
+
+[node name="400" type="Sprite2D" parent="." unique_id=1044940086]
+position = Vector2(337, 240)
+texture = ExtResource("1_g4yq2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=5471760]
+libraries/ = SubResource("AnimationLibrary_dco7n")
+autoplay = &"fadein"

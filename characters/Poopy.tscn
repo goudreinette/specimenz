@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b4iokt7qej0oc"]
+
+[ext_resource type="Texture2D" uid="uid://m3lgv8ywsmy4" path="res://characters/poopy.png" id="1_xep3p"]
+[ext_resource type="Script" uid="uid://csqciumpa2k0d" path="res://characters/Character.gd" id="1_yirer"]
+
+[node name="Poopy" type="Node2D" unique_id=2000619831]
+visible = false
+script = ExtResource("1_yirer")
+
+[node name="Poopy" type="Sprite2D" parent="." unique_id=263870829]
+texture_filter = 1
+texture = ExtResource("1_xep3p")
+
+[node name="Timer" type="Timer" parent="." unique_id=1934291810]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

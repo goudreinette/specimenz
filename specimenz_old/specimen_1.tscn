@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://rbry4p50vet8"]
+
+[ext_resource type="Script" uid="uid://dc0jgrpgctaly" path="res://specimenz_old/specimen_1.gd" id="1_pca16"]
+[ext_resource type="Texture2D" uid="uid://dfhd0aylcftx0" path="res://specimenz_old/idoawdwa.png" id="2_pca16"]
+
+[node name="Node2D" type="Node2D" unique_id=2011602276]
+script = ExtResource("1_pca16")
+
+[node name="Specimen1" type="Sprite2D" parent="." unique_id=538800893]
+position = Vector2(153, 323)
+scale = Vector2(0.366667, 0.366667)
+texture = ExtResource("2_pca16")
+
+[node name="Control" type="Control" parent="." unique_id=555958498]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 300.0
+offset_bottom = 647.0
+
+[connection signal="gui_input" from="Control" to="." method="_on_control_gui_input"]

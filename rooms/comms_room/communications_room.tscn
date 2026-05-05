@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://d32jm3llxwgnb"]
+
+[ext_resource type="PackedScene" uid="uid://b8pd4r7fygio0" path="res://characters/Maeve.tscn" id="1_u7dpo"]
+[ext_resource type="Script" uid="uid://b4l0i7oshylsa" path="res://rooms/comms_room/commsroom.gd" id="1_xk0tj"]
+[ext_resource type="PackedScene" uid="uid://b4iokt7qej0oc" path="res://characters/Poopy.tscn" id="2_xk0tj"]
+[ext_resource type="Texture2D" uid="uid://c5qrbovm8uv0d" path="res://rooms/comms_room/commsroom2.png" id="3_5qiwb"]
+[ext_resource type="Texture2D" uid="uid://dg1smunejb1e1" path="res://rooms/comms_room/door.png" id="5_hid37"]
+[ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="6_xdqlv"]
+[ext_resource type="Texture2D" uid="uid://c4jaxy4u8jcto" path="res://rooms/comms_room/door_hover.png" id="6_y15cf"]
+[ext_resource type="PackedScene" uid="uid://ct8m7y07dore7" path="res://rooms/bliss/bliss.tscn" id="7_4ninm"]
+
+[sub_resource type="Animation" id="Animation_y5fn7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_chss5"]
+resource_name = "fadein"
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_y15cf"]
+resource_name = "fadeout"
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_y5fn7"]
+_data = {
+&"RESET": SubResource("Animation_y5fn7"),
+&"fadein": SubResource("Animation_chss5"),
+&"fadeout": SubResource("Animation_y15cf")
+}
+
+[node name="CommunicationsRoom" type="Node2D" unique_id=1389742196]
+script = ExtResource("1_xk0tj")
+
+[node name="Commsroom2" type="Sprite2D" parent="." unique_id=2138710503]
+position = Vector2(320, 241)
+texture = ExtResource("3_5qiwb")
+
+[node name="Maeve" parent="." unique_id=297373198 instance=ExtResource("1_u7dpo")]
+position = Vector2(214, 267)
+
+[node name="Poopy" parent="." unique_id=2000619831 instance=ExtResource("2_xk0tj")]
+visible = true
+position = Vector2(436, 266)
+
+[node name="Node2D" type="Node2D" parent="." unique_id=629876863]
+position = Vector2(333, 354)
+
+[node name="Door" type="TextureButton" parent="." unique_id=866645050]
+offset_left = 50.0
+offset_top = 145.0
+offset_right = 233.0
+offset_bottom = 335.0
+texture_normal = ExtResource("5_hid37")
+texture_hover = ExtResource("6_y15cf")
+script = ExtResource("6_xdqlv")
+next_scene = ExtResource("7_4ninm")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Door" unique_id=1985002262]
+libraries/ = SubResource("AnimationLibrary_y5fn7")
+autoplay = &"fadein"
+
+[connection signal="pressed" from="Door" to="Door" method="_on_pressed"]
+[connection signal="animation_finished" from="Door/AnimationPlayer" to="Door" method="_on_animation_player_animation_finished"]

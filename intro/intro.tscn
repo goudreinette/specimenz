@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bpcfg7llhhdk1"]
+
+[ext_resource type="VideoStream" uid="uid://dbvhmj3skynfo" path="res://intro/intro.ogv" id="1_fpmxm"]
+[ext_resource type="Script" uid="uid://dvrro3uygb607" path="res://intro/intro.gd" id="1_jkt4n"]
+[ext_resource type="PackedScene" uid="uid://d32jm3llxwgnb" path="res://rooms/comms_room/communications_room.tscn" id="2_vjsr4"]
+
+[node name="Intro" type="Node2D" unique_id=2106327012]
+script = ExtResource("1_jkt4n")
+next_scene = ExtResource("2_vjsr4")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=2002353583]
+offset_right = 640.0
+offset_bottom = 480.0
+stream = ExtResource("1_fpmxm")
+autoplay = true
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]
