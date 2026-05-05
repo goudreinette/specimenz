@@ -25,13 +25,12 @@ next_scene = ""
 
 [node name="ToLiving2" parent="." unique_id=1067789877 instance=ExtResource("2_wweqg")]
 offset_left = 556.0
-offset_top = 166.0
-offset_bottom = 323.0
+offset_top = 1.0
 next_scene = "res://rooms/living/living2.tscn"
 
 [node name="ToLiving8" parent="." unique_id=1318264538 instance=ExtResource("2_wweqg")]
 offset_left = 1.0
-offset_top = 166.0
+offset_top = 1.0
 offset_right = 85.0
-offset_bottom = 323.0
+offset_bottom = 479.0
 next_scene = "res://rooms/living/living8.tscn"
