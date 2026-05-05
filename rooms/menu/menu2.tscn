@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cfhkuc7fo4b4g"]
+
+[ext_resource type="Texture2D" uid="uid://j6sfl0j1txsy" path="res://rooms/menu/menu2.png" id="1_48573"]
+[ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_0beir"]
+
+[node name="Menu2" type="Node2D" unique_id=524769669]
+
+[node name="Menu2" type="Sprite2D" parent="." unique_id=1822933669]
+position = Vector2(320, 240)
+texture = ExtResource("1_48573")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=681823623]
+offset_left = 229.0
+offset_top = 33.0
+offset_right = 508.0
+offset_bottom = 455.0
+script = ExtResource("2_0beir")
+next_scene = "res://rooms/hall/hall1.tscn"
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]

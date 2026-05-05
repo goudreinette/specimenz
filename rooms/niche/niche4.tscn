@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://3mylnlvtjpjp"]
+
+[ext_resource type="Texture2D" uid="uid://b4o156lhjmr8j" path="res://rooms/niche/niche4.png" id="1_n4im1"]
+
+[node name="Niche1" type="Node2D" unique_id=466601352]
+
+[node name="Niche4" type="Sprite2D" parent="." unique_id=1091102143]
+position = Vector2(320, 240)
+texture = ExtResource("1_n4im1")

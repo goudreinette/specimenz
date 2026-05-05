@@ -2,7 +2,7 @@
 
 [ext_resource type="VideoStream" uid="uid://dbvhmj3skynfo" path="res://intro/intro.ogv" id="1_fpmxm"]
 [ext_resource type="Script" uid="uid://dvrro3uygb607" path="res://intro/intro.gd" id="1_jkt4n"]
-[ext_resource type="PackedScene" uid="uid://d32jm3llxwgnb" path="res://rooms/comms_room/communications_room.tscn" id="2_vjsr4"]
+[ext_resource type="PackedScene" uid="uid://ipe6fyfscdhr" path="res://rooms/menu/menu1.tscn" id="2_vjsr4"]
 
 [node name="Intro" type="Node2D" unique_id=2106327012]
 script = ExtResource("1_jkt4n")

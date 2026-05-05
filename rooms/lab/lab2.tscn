@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://d3dcw84fli6kt"]
+
+[ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="1_aqo0u"]
+[ext_resource type="Texture2D" uid="uid://pne85yo8o36m" path="res://rooms/lab/lab2.png" id="1_qo452"]
+
+[node name="Lab2" type="Node2D" unique_id=698517045]
+
+[node name="Bg" type="Sprite2D" parent="." unique_id=1671814796]
+position = Vector2(320, 240)
+texture = ExtResource("1_qo452")
+
+[node name="ToLab3" parent="." unique_id=2125296165 instance=ExtResource("1_aqo0u")]
+offset_left = 263.0
+offset_top = 142.0
+offset_right = 396.0
+offset_bottom = 341.0
+next_scene = "res://rooms/lab/lab3.tscn"

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://btav2a56rfmcg"]
+
+[ext_resource type="Texture2D" uid="uid://dmmqq0dbv18ph" path="res://rooms/hall/hall2.png" id="1_rcbqf"]
+[ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_42rmo"]
+
+[node name="Hall1" type="Node2D" unique_id=1006463638]
+
+[node name="Hall2" type="Sprite2D" parent="." unique_id=372628114]
+position = Vector2(320, 240)
+texture = ExtResource("1_rcbqf")
+
+[node name="TextureButton" parent="." unique_id=2125296165 instance=ExtResource("2_42rmo")]
+offset_left = 239.0
+offset_top = 88.0
+offset_right = 448.0
+offset_bottom = 402.0
+next_scene = "res://rooms/hall/hall3.tscn"
