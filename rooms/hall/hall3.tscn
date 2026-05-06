@@ -9,9 +9,16 @@
 position = Vector2(320, 240)
 texture = ExtResource("1_td50e")
 
-[node name="TextureButton" parent="." unique_id=2125296165 instance=ExtResource("2_8c0rq")]
+[node name="ToHall4" parent="." unique_id=2125296165 instance=ExtResource("2_8c0rq")]
 offset_left = 283.0
 offset_top = 136.0
 offset_right = 417.0
 offset_bottom = 316.0
 next_scene = "res://rooms/hall/hall4.tscn"
+
+[node name="ToHall2" parent="." unique_id=852856478 instance=ExtResource("2_8c0rq")]
+offset_left = 90.0
+offset_top = 392.0
+offset_right = 411.0
+offset_bottom = 485.0
+next_scene = "res://rooms/hall/hall2.tscn"

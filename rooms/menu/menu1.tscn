@@ -9,5 +9,5 @@
 position = Vector2(320, 240)
 texture = ExtResource("1_y3iec")
 
-[node name="TextureButton" parent="." unique_id=2125296165 instance=ExtResource("2_y0jp1")]
+[node name="ToMenu2" parent="." unique_id=2125296165 instance=ExtResource("2_y0jp1")]
 next_scene = "res://rooms/menu/menu2.tscn"

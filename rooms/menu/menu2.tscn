@@ -9,7 +9,7 @@
 position = Vector2(320, 240)
 texture = ExtResource("1_48573")
 
-[node name="TextureButton" type="TextureButton" parent="." unique_id=681823623]
+[node name="ToHall1" type="TextureButton" parent="." unique_id=681823623]
 offset_left = 229.0
 offset_top = 33.0
 offset_right = 508.0
@@ -17,4 +17,13 @@ offset_bottom = 455.0
 script = ExtResource("2_0beir")
 next_scene = "res://rooms/hall/hall1.tscn"
 
-[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
+[node name="ToMenu1" type="TextureButton" parent="." unique_id=179035236]
+offset_left = 167.0
+offset_top = 425.0
+offset_right = 553.0
+offset_bottom = 487.0
+script = ExtResource("2_0beir")
+next_scene = "res://rooms/menu/menu1.tscn"
+
+[connection signal="pressed" from="ToHall1" to="ToHall1" method="_on_pressed"]
+[connection signal="pressed" from="ToMenu1" to="ToMenu1" method="_on_pressed"]
