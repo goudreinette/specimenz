@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dg1smunejb1e1" path="res://rooms/comms_room/door.png" id="5_hid37"]
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="6_xdqlv"]
 [ext_resource type="Texture2D" uid="uid://c4jaxy4u8jcto" path="res://rooms/comms_room/door_hover.png" id="6_y15cf"]
-[ext_resource type="PackedScene" uid="uid://ct8m7y07dore7" path="res://rooms/bliss/bliss.tscn" id="7_4ninm"]
+[ext_resource type="PackedScene" uid="uid://hmneimhrqtdi" path="res://characters/Pipette.tscn" id="8_y15cf"]
 
 [sub_resource type="Animation" id="Animation_y5fn7"]
 length = 0.001
@@ -71,10 +71,10 @@ position = Vector2(320, 241)
 texture = ExtResource("3_5qiwb")
 
 [node name="Maeve" parent="." unique_id=297373198 instance=ExtResource("1_u7dpo")]
+visible = false
 position = Vector2(214, 267)
 
 [node name="Poopy" parent="." unique_id=2000619831 instance=ExtResource("2_xk0tj")]
-visible = true
 position = Vector2(436, 266)
 
 [node name="Node2D" type="Node2D" parent="." unique_id=629876863]
@@ -88,11 +88,13 @@ offset_bottom = 335.0
 texture_normal = ExtResource("5_hid37")
 texture_hover = ExtResource("6_y15cf")
 script = ExtResource("6_xdqlv")
-next_scene = ExtResource("7_4ninm")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Door" unique_id=1985002262]
 libraries/ = SubResource("AnimationLibrary_y5fn7")
 autoplay = &"fadein"
+
+[node name="Pipette" parent="." unique_id=1721991310 instance=ExtResource("8_y15cf")]
+position = Vector2(180, 269)
 
 [connection signal="pressed" from="Door" to="Door" method="_on_pressed"]
 [connection signal="animation_finished" from="Door/AnimationPlayer" to="Door" method="_on_animation_player_animation_finished"]

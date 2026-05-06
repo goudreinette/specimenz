@@ -21,3 +21,4 @@ offset_left = 46.0
 offset_top = 349.0
 offset_right = 431.0
 next_scene = "res://rooms/menu/menu2.tscn"
+cursor_style = 1

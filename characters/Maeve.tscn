@@ -4,6 +4,34 @@
 [ext_resource type="Script" uid="uid://csqciumpa2k0d" path="res://characters/Character.gd" id="1_xppl7"]
 [ext_resource type="PackedScene" uid="uid://dn7a0880p2e22" path="res://characters/text_balloon.tscn" id="3_4l28x"]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_4l28x"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"left_backward",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"left_forward",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"right_backward",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"right_forward",
+"speed": 5.0
+}]
+
 [node name="Maeve" type="Node2D" unique_id=297373198]
 script = ExtResource("1_xppl7")
 
@@ -15,5 +43,9 @@ texture = ExtResource("1_ttl1a")
 autostart = true
 
 [node name="Text balloon" parent="." unique_id=890205473 instance=ExtResource("3_4l28x")]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=845595546]
+sprite_frames = SubResource("SpriteFrames_4l28x")
+animation = &"right_forward"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

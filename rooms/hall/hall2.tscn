@@ -22,3 +22,4 @@ offset_top = 372.0
 offset_right = 440.0
 offset_bottom = 483.0
 next_scene = "res://rooms/hall/hall1.tscn"
+cursor_style = 1
