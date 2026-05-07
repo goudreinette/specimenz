@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://du003q50yj4mq"]
 
-[ext_resource type="Texture2D" uid="uid://cldexitasque" path="res://rooms/living/living5.png" id="1_frlnx"]
+[ext_resource type="Texture2D" uid="uid://twtvnnq2iypn" path="res://rooms/living/living5.png" id="1_frlnx"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_ap38n"]
 
 [node name="Living1" type="Node2D" unique_id=698517045]
@@ -11,20 +11,14 @@ texture = ExtResource("1_frlnx")
 
 [node name="ToLab" parent="." unique_id=2125296165 instance=ExtResource("2_ap38n")]
 offset_left = 147.0
-offset_top = 105.0
+offset_top = 142.0
 offset_right = 363.0
-offset_bottom = 457.0
+offset_bottom = 404.0
 next_scene = "res://rooms/lab/lab1.tscn"
 
-[node name="ToLiving4" parent="." unique_id=1808048086 instance=ExtResource("2_ap38n")]
-offset_left = 556.0
-offset_top = 166.0
-offset_bottom = 323.0
-next_scene = "res://rooms/living/living6.tscn"
-
 [node name="ToLiving6" parent="." unique_id=6989880 instance=ExtResource("2_ap38n")]
-offset_left = -4.0
-offset_top = 166.0
-offset_right = 80.0
-offset_bottom = 323.0
-next_scene = "res://rooms/living/living4.tscn"
+offset_left = -2.0
+offset_top = 418.0
+offset_right = 644.0
+offset_bottom = 483.0
+next_scene = "res://rooms/living/living1.tscn"

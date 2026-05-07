@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cp7b68ewigl2s"]
 
-[ext_resource type="Texture2D" uid="uid://bxwhcqsynxeng" path="res://rooms/living/living2.png" id="1_ahuvh"]
+[ext_resource type="Texture2D" uid="uid://7wth82rwchp0" path="res://rooms/living/Living2.png" id="1_ahuvh"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_ca0wf"]
 
 [node name="Living1" type="Node2D" unique_id=698517045]
@@ -9,29 +9,29 @@
 position = Vector2(320, 240)
 texture = ExtResource("1_ahuvh")
 
-[node name="ToStairs" parent="." unique_id=2125296165 instance=ExtResource("2_ca0wf")]
-offset_left = -11.0
-offset_top = 156.0
-offset_right = 122.0
-offset_bottom = 355.0
-next_scene = ""
+[node name="ToLiving6" parent="." unique_id=2125296165 instance=ExtResource("2_ca0wf")]
+offset_left = 16.0
+offset_top = 192.0
+offset_right = 149.0
+offset_bottom = 354.0
+next_scene = "res://rooms/living/living6.tscn"
 
-[node name="ToKitchen" parent="." unique_id=709883293 instance=ExtResource("2_ca0wf")]
-offset_left = 444.0
-offset_top = 147.0
-offset_right = 577.0
-offset_bottom = 346.0
-next_scene = ""
+[node name="ToLiving7" parent="." unique_id=709883293 instance=ExtResource("2_ca0wf")]
+offset_left = 425.0
+offset_top = 203.0
+offset_right = 537.0
+offset_bottom = 333.0
+next_scene = "res://rooms/living/living7.tscn"
 
 [node name="ToLiving1" parent="." unique_id=387180303 instance=ExtResource("2_ca0wf")]
 offset_left = -1.0
-offset_top = 166.0
+offset_top = 158.0
 offset_right = 83.0
-offset_bottom = 323.0
+offset_bottom = 482.0
 next_scene = "res://rooms/living/living1.tscn"
 
 [node name="ToLiving3" parent="." unique_id=578374236 instance=ExtResource("2_ca0wf")]
-offset_left = 556.0
-offset_top = 166.0
-offset_bottom = 323.0
+offset_left = 557.0
+offset_top = 162.0
+offset_right = 641.0
 next_scene = "res://rooms/living/living3.tscn"

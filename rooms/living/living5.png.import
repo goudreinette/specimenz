@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cldexitasque"
-path="res://.godot/imported/living5.png-8571731003c30f659ead34139257b0ee.ctex"
+uid="uid://twtvnnq2iypn"
+path="res://.godot/imported/Living5.png-0b691f1eeaf5b705afe90eced137cfac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rooms/living/living5.png"
-dest_files=["res://.godot/imported/living5.png-8571731003c30f659ead34139257b0ee.ctex"]
+source_file="res://rooms/living/Living5.png"
+dest_files=["res://.godot/imported/Living5.png-0b691f1eeaf5b705afe90eced137cfac.ctex"]
 
 [params]
 

@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://dbnc383pt2uhp"]
+
+[ext_resource type="Texture2D" uid="uid://c4m7y7y00riue" path="res://rooms/kitchen/Kitchen1.png" id="1_hqoh8"]
+[ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_g02rm"]
+
+[node name="Kitchen1" type="Node2D" unique_id=1141314609]
+
+[node name="Kitchen1" type="Sprite2D" parent="." unique_id=1844446649]
+position = Vector2(320, 240)
+texture = ExtResource("1_hqoh8")
+
+[node name="ToKitchen5" type="TextureButton" parent="." unique_id=720586491]
+offset_left = 365.0
+offset_top = 221.0
+offset_right = 423.0
+offset_bottom = 321.0
+script = ExtResource("2_g02rm")
+next_scene = "res://rooms/kitchen/Kitchen5.tscn"
+metadata/_custom_type_script = "uid://dlod6gqa71kk6"
+
+[node name="ToKitchen2" type="TextureButton" parent="." unique_id=1943029114]
+offset_left = 533.0
+offset_top = 258.0
+offset_right = 642.0
+offset_bottom = 436.0
+script = ExtResource("2_g02rm")
+next_scene = "res://rooms/kitchen/Kitchen2.tscn"
+metadata/_custom_type_script = "uid://dlod6gqa71kk6"
+
+[node name="ToKitchen3" type="TextureButton" parent="." unique_id=346688443]
+offset_left = 17.0
+offset_top = 174.0
+offset_right = 223.0
+offset_bottom = 262.0
+script = ExtResource("2_g02rm")
+next_scene = "res://rooms/kitchen/Kitchen3.tscn"
+metadata/_custom_type_script = "uid://dlod6gqa71kk6"
+
+[node name="ToKitchen4" type="TextureButton" parent="." unique_id=1078963367]
+offset_left = 13.0
+offset_top = 258.0
+offset_right = 317.0
+offset_bottom = 318.0
+script = ExtResource("2_g02rm")
+next_scene = "res://rooms/kitchen/Kitchen4.tscn"
+metadata/_custom_type_script = "uid://dlod6gqa71kk6"

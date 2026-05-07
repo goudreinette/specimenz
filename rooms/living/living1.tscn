@@ -1,36 +1,36 @@
 [gd_scene format=3 uid="uid://dgh1viwbuvfn5"]
 
-[ext_resource type="Texture2D" uid="uid://dinlhnnu2lann" path="res://rooms/living/living1.png" id="1_son30"]
+[ext_resource type="Texture2D" uid="uid://djqpkxi54ewk" path="res://rooms/living/Living1.png" id="1_wweqg"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_wweqg"]
 
 [node name="Living1" type="Node2D" unique_id=698517045]
 
 [node name="Living1" type="Sprite2D" parent="." unique_id=1671814796]
 position = Vector2(320, 240)
-texture = ExtResource("1_son30")
+texture = ExtResource("1_wweqg")
 
-[node name="ToLab" parent="." unique_id=2125296165 instance=ExtResource("2_wweqg")]
-offset_left = 64.0
-offset_top = 153.0
-offset_right = 197.0
-offset_bottom = 352.0
-next_scene = "res://rooms/lab/lab1.tscn"
+[node name="ToLiving5" parent="." unique_id=2125296165 instance=ExtResource("2_wweqg")]
+offset_left = 25.0
+offset_top = 176.0
+offset_right = 161.0
+offset_bottom = 331.0
+next_scene = "res://rooms/living/living5.tscn"
 
-[node name="ToStairs" parent="." unique_id=709883293 instance=ExtResource("2_wweqg")]
+[node name="ToLiving6" parent="." unique_id=709883293 instance=ExtResource("2_wweqg")]
 offset_left = 297.0
-offset_top = 137.0
-offset_right = 430.0
-offset_bottom = 336.0
-next_scene = ""
+offset_top = 192.0
+offset_right = 376.0
+offset_bottom = 305.0
+next_scene = "res://rooms/living/living6.tscn"
 
 [node name="ToLiving2" parent="." unique_id=1067789877 instance=ExtResource("2_wweqg")]
 offset_left = 556.0
-offset_top = 1.0
+offset_top = 136.0
 next_scene = "res://rooms/living/living2.tscn"
 
-[node name="ToLiving8" parent="." unique_id=1318264538 instance=ExtResource("2_wweqg")]
+[node name="ToLiving4" parent="." unique_id=1318264538 instance=ExtResource("2_wweqg")]
 offset_left = 1.0
-offset_top = 1.0
+offset_top = 146.0
 offset_right = 85.0
 offset_bottom = 479.0
-next_scene = "res://rooms/living/living8.tscn"
+next_scene = "res://rooms/living/living4.tscn"

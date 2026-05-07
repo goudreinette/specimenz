@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://b0g7cci7lelio"]
+
+[ext_resource type="Texture2D" uid="uid://ctrlgisjtxqq8" path="res://rooms/garden/Garden3.png" id="1_kduq3"]
+[ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_djqlj"]
+
+[node name="Garden3" type="Node2D" unique_id=908659994]
+
+[node name="Garden3" type="Sprite2D" parent="." unique_id=2020670923]
+position = Vector2(319, 240)
+texture = ExtResource("1_kduq3")
+
+[node name="ToGarden2" type="TextureButton" parent="." unique_id=963364664]
+offset_left = 382.0
+offset_top = 382.0
+offset_right = 644.0
+offset_bottom = 483.0
+script = ExtResource("2_djqlj")
+next_scene = "res://rooms/garden/garden2.tscn"
+metadata/_custom_type_script = "uid://dlod6gqa71kk6"
+
+[node name="ToGarden4" type="TextureButton" parent="." unique_id=2041275531]
+offset_left = 375.0
+offset_top = 183.0
+offset_right = 641.0
+offset_bottom = 375.0
+script = ExtResource("2_djqlj")
+next_scene = "res://rooms/garden/garden4.tscn"
+metadata/_custom_type_script = "uid://dlod6gqa71kk6"

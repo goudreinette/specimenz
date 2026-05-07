@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c40eat0fcatcy"
-path="res://.godot/imported/living3.png-bfa99c9eaee656cbc775d242a5c5afa7.ctex"
+uid="uid://c4lfgj1tw3cy7"
+path="res://.godot/imported/Living3.png-e97e12d2955928d16a015ba526b81cf4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rooms/living/living3.png"
-dest_files=["res://.godot/imported/living3.png-bfa99c9eaee656cbc775d242a5c5afa7.ctex"]
+source_file="res://rooms/living/Living3.png"
+dest_files=["res://.godot/imported/Living3.png-e97e12d2955928d16a015ba526b81cf4.ctex"]
 
 [params]
 

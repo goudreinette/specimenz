@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cp53pi1fpoip6"]
+
+[ext_resource type="Texture2D" uid="uid://cu2cceht17rhb" path="res://rooms/kitchen/Kitchen5.png" id="1_naej6"]
+[ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_0pqd0"]
+
+[node name="Kitchen5" type="Node2D" unique_id=92419258]
+
+[node name="Kitchen5" type="Sprite2D" parent="." unique_id=1082990911]
+position = Vector2(320, 239)
+texture = ExtResource("1_naej6")
+
+[node name="ToGarden1" type="TextureButton" parent="." unique_id=833255316]
+offset_left = 214.0
+offset_top = 47.0
+offset_right = 418.0
+offset_bottom = 442.0
+script = ExtResource("2_0pqd0")
+next_scene = "res://rooms/garden/garden1.tscn"
+metadata/_custom_type_script = "uid://dlod6gqa71kk6"
