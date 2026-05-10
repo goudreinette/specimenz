@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8bvd3rbaystd"
-path="res://.godot/imported/niche1.png-5dc2ca33095d3ef5d572bacb086ca5b5.ctex"
+uid="uid://c8me8t2pjamw"
+path="res://.godot/imported/Niche1.png-0b70152bcf1898272208d10b08f80214.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rooms/niche/niche1.png"
-dest_files=["res://.godot/imported/niche1.png-5dc2ca33095d3ef5d572bacb086ca5b5.ctex"]
+source_file="res://rooms/niche/Niche1.png"
+dest_files=["res://.godot/imported/Niche1.png-0b70152bcf1898272208d10b08f80214.ctex"]
 
 [params]
 
