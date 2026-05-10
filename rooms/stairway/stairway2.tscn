@@ -10,8 +10,8 @@ position = Vector2(320, 240)
 texture = ExtResource("1_epufo")
 
 [node name="ToStairway3" parent="." unique_id=2125296165 instance=ExtResource("2_hbbjt")]
-offset_left = 127.0
-offset_top = 349.0
-offset_right = 512.0
+offset_left = 286.0
+offset_top = 2.0
+offset_right = 528.0
+offset_bottom = 189.0
 next_scene = "res://rooms/stairway/stairway3.tscn"
-cursor_style = 1

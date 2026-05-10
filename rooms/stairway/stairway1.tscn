@@ -10,8 +10,16 @@ position = Vector2(320, 240)
 texture = ExtResource("1_fgqbb")
 
 [node name="ToStairway2" parent="." unique_id=2125296165 instance=ExtResource("2_i1hfv")]
-offset_left = 127.0
-offset_top = 349.0
-offset_right = 512.0
-next_scene = "res://rooms/stairway/stairway1.tscn"
+offset_left = 297.0
+offset_top = -2.0
+offset_right = 535.0
+offset_bottom = 176.0
+next_scene = "res://rooms/stairway/stairway2.tscn"
+
+[node name="ToLiving6" parent="." unique_id=378458297 instance=ExtResource("2_i1hfv")]
+offset_left = 73.0
+offset_top = 370.0
+offset_right = 607.0
+offset_bottom = 487.0
+next_scene = "res://rooms/living/living6.tscn"
 cursor_style = 1
