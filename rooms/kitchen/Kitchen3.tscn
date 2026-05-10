@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dobrfqw30v8gi"]
 
-[ext_resource type="Texture2D" uid="uid://bkftvltskiptr" path="res://rooms/kitchen/Kitchen3.png" id="1_8yhap"]
-[ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_qgqp0"]
+[ext_resource type="Texture2D" uid="uid://bkftvltskiptr" path="res://rooms/kitchen/kitchen3.png" id="1_8yhap"]
+[ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="3_qgqp0"]
 
 [node name="Kitchen3" type="Node2D" unique_id=90627951]
 
@@ -9,10 +9,31 @@
 position = Vector2(320, 240)
 texture = ExtResource("1_8yhap")
 
-[node name="ToKitchen1" type="TextureButton" parent="." unique_id=521303688]
-offset_top = 353.0
+[node name="ToKitchen1" parent="." unique_id=2125296165 instance=ExtResource("3_qgqp0")]
+offset_left = -2.0
+offset_top = 375.0
 offset_right = 642.0
-offset_bottom = 479.0
-script = ExtResource("2_qgqp0")
+offset_bottom = 484.0
 next_scene = "res://rooms/kitchen/kitchen1.tscn"
-metadata/_custom_type_script = "uid://dlod6gqa71kk6"
+cursor_style = 1
+
+[node name="ToCabinet1" parent="." unique_id=1242408739 instance=ExtResource("3_qgqp0")]
+offset_left = 30.0
+offset_top = 97.0
+offset_right = 258.0
+offset_bottom = 350.0
+next_scene = "res://rooms/cabinet/cabinet1.tscn"
+
+[node name="ToCabinet2" parent="." unique_id=2111000448 instance=ExtResource("3_qgqp0")]
+offset_left = 290.0
+offset_top = 147.0
+offset_right = 443.0
+offset_bottom = 312.0
+next_scene = "res://rooms/cabinet/cabinet2.tscn"
+
+[node name="ToCabinet3" parent="." unique_id=1652719987 instance=ExtResource("3_qgqp0")]
+offset_left = 458.0
+offset_top = 134.0
+offset_right = 611.0
+offset_bottom = 322.0
+next_scene = "res://rooms/cabinet/cabinet3.tscn"
