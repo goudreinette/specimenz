@@ -23,3 +23,10 @@ offset_right = 424.0
 offset_bottom = 486.0
 next_scene = "res://rooms/hall/hall4.tscn"
 cursor_style = 1
+
+[node name="ToNiche4" parent="." unique_id=176952966 instance=ExtResource("2_0k1fn")]
+offset_left = 170.0
+offset_top = 101.0
+offset_right = 263.0
+offset_bottom = 342.0
+next_scene = "res://rooms/niche/niche4.tscn"

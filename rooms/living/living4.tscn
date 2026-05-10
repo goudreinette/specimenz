@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c4b6c0qw51itv"]
 
-[ext_resource type="Texture2D" uid="uid://bbc604s5g3ufb" path="res://rooms/living/Living4.png" id="1_gfnv1"]
+[ext_resource type="Texture2D" uid="uid://bbc604s5g3ufb" path="res://rooms/living/living4.png" id="1_gfnv1"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_7bo7r"]
 
 [node name="Living1" type="Node2D" unique_id=698517045]
@@ -21,9 +21,11 @@ offset_left = 1.0
 offset_top = 152.0
 offset_right = 85.0
 next_scene = "res://rooms/living/living3.tscn"
+cursor_style = 2
 
 [node name="ToLiving1" parent="." unique_id=1975435595 instance=ExtResource("2_7bo7r")]
 offset_left = 556.0
 offset_top = 166.0
 offset_bottom = 481.0
 next_scene = "res://rooms/living/living1.tscn"
+cursor_style = 3

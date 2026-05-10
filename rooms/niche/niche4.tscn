@@ -1,9 +1,17 @@
 [gd_scene format=3 uid="uid://3mylnlvtjpjp"]
 
 [ext_resource type="Texture2D" uid="uid://b4o156lhjmr8j" path="res://rooms/niche/niche4.png" id="1_n4im1"]
+[ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_pm2qd"]
 
 [node name="Niche1" type="Node2D" unique_id=466601352]
 
 [node name="Niche4" type="Sprite2D" parent="." unique_id=1091102143]
 position = Vector2(320, 240)
 texture = ExtResource("1_n4im1")
+
+[node name="ToHall5" parent="." unique_id=2125296165 instance=ExtResource("2_pm2qd")]
+offset_left = 127.0
+offset_top = 349.0
+offset_right = 512.0
+next_scene = "res://rooms/hall/hall5.tscn"
+cursor_style = 1

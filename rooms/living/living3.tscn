@@ -21,9 +21,11 @@ offset_left = -4.0
 offset_top = 166.0
 offset_right = 80.0
 next_scene = "res://rooms/living/living2.tscn"
+cursor_style = 2
 
 [node name="ToLiving4" parent="." unique_id=107720047 instance=ExtResource("2_jcc10")]
 offset_left = 556.0
 offset_top = 159.0
 offset_bottom = 482.0
 next_scene = "res://rooms/living/living4.tscn"
+cursor_style = 3

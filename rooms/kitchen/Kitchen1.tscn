@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dbnc383pt2uhp"]
 
-[ext_resource type="Texture2D" uid="uid://c4m7y7y00riue" path="res://rooms/kitchen/Kitchen1.png" id="1_hqoh8"]
+[ext_resource type="Texture2D" uid="uid://c4m7y7y00riue" path="res://rooms/kitchen/kitchen1.png" id="1_hqoh8"]
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_g02rm"]
 
 [node name="Kitchen1" type="Node2D" unique_id=1141314609]
@@ -44,3 +44,8 @@ offset_bottom = 318.0
 script = ExtResource("2_g02rm")
 next_scene = "res://rooms/kitchen/Kitchen4.tscn"
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
+
+[connection signal="pressed" from="ToKitchen5" to="ToKitchen5" method="_on_pressed"]
+[connection signal="pressed" from="ToKitchen2" to="ToKitchen2" method="_on_pressed"]
+[connection signal="pressed" from="ToKitchen3" to="ToKitchen3" method="_on_pressed"]
+[connection signal="pressed" from="ToKitchen4" to="ToKitchen4" method="_on_pressed"]
