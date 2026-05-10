@@ -47,6 +47,6 @@ func _on_timer_timeout():
 	var new_pos = Vector2(randf_range(-30, 30), randf_range(-20, 100))
 	tween.tween_property(self, "position", start_pos + new_pos, 2.0)
 	#tween.tween_property($Sprite, "scale", Vector2(), 1.0)
-	print(self.name,  "'s TIMER WENT OFF, moving to ")
+	print(self.name,  "'s TIMER WENT OFF, moving to ", new_pos)
 	$Timer.wait_time = randf_range(1, 7)
 	$Timer.start()

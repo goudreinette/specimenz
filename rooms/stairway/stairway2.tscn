@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dxeyon7i1ok50"]
+
+[ext_resource type="Texture2D" uid="uid://cteen0chv80wg" path="res://rooms/stairway/stairway2.png" id="1_epufo"]
+[ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_hbbjt"]
+
+[node name="Stairway2" type="Node2D" unique_id=466601352]
+
+[node name="Stairway2" type="Sprite2D" parent="." unique_id=1796686655]
+position = Vector2(320, 240)
+texture = ExtResource("1_epufo")
+
+[node name="ToStairway3" parent="." unique_id=2125296165 instance=ExtResource("2_hbbjt")]
+offset_left = 127.0
+offset_top = 349.0
+offset_right = 512.0
+next_scene = "res://rooms/stairway/stairway3.tscn"
+cursor_style = 1

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dvnvi0532cegd"]
+
+[ext_resource type="Texture2D" uid="uid://b8bvd3rbaystd" path="res://rooms/niche/niche1.png" id="1_6jbys"]
+[ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_70i3h"]
+
+[node name="Niche1" type="Node2D" unique_id=466601352]
+
+[node name="Niche1" type="Sprite2D" parent="." unique_id=1796686655]
+position = Vector2(320, 240)
+texture = ExtResource("1_6jbys")
+
+[node name="ToHall1" parent="." unique_id=2125296165 instance=ExtResource("2_70i3h")]
+offset_left = 127.0
+offset_top = 349.0
+offset_right = 512.0
+next_scene = "res://rooms/hall/hall2.tscn"
+cursor_style = 1
