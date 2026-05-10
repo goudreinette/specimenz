@@ -15,7 +15,6 @@ offset_top = 91.0
 offset_right = 278.0
 offset_bottom = 350.0
 next_scene = "res://rooms/upstairs/upstairs2.tscn"
-cursor_style = 1
 
 [node name="ToUpstairs3" parent="." unique_id=2105995656 instance=ExtResource("2_63btt")]
 offset_left = 318.0
@@ -23,7 +22,6 @@ offset_top = 277.0
 offset_right = 472.0
 offset_bottom = 393.0
 next_scene = "res://rooms/upstairs/upstairs3.tscn"
-cursor_style = 1
 
 [node name="ToUpstairs4" parent="." unique_id=461348363 instance=ExtResource("2_63btt")]
 offset_left = 503.0
@@ -31,4 +29,3 @@ offset_top = 179.0
 offset_right = 599.0
 offset_bottom = 436.0
 next_scene = "res://rooms/upstairs/upstairs4.tscn"
-cursor_style = 1
