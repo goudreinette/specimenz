@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b60jye6oq4hex"]
+
+[ext_resource type="Texture2D" uid="uid://ctqu17lfy7rl2" path="res://rooms/plates/plate2.png" id="1_exoec"]
+[ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_oqwk5"]
+
+[node name="Plate2" type="Node2D" unique_id=466601352]
+
+[node name="Plate2" type="Sprite2D" parent="." unique_id=1796686655]
+position = Vector2(320, 240)
+texture = ExtResource("1_exoec")
+
+[node name="ToKitchen2" parent="." unique_id=2125296165 instance=ExtResource("2_oqwk5")]
+offset_left = 127.0
+offset_top = 349.0
+offset_right = 512.0
+next_scene = "res://rooms/kitchen/kitchen2.tscn"
+cursor_style = 1
