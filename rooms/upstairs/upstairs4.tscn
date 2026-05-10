@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bw24y4q6him05"]
+
+[ext_resource type="Texture2D" uid="uid://d1un5qp3h54q" path="res://rooms/upstairs/upstairs4.png" id="1_6xjgv"]
+[ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_gfahm"]
+
+[node name="Upstairs3" type="Node2D" unique_id=466601352]
+
+[node name="Upstairs3" type="Sprite2D" parent="." unique_id=1796686655]
+position = Vector2(320, 240)
+texture = ExtResource("1_6xjgv")
+
+[node name="ToUpstairs1" parent="." unique_id=203450173 instance=ExtResource("2_gfahm")]
+offset_left = 68.0
+offset_top = 404.0
+offset_right = 572.0
+offset_bottom = 484.0
+next_scene = "res://rooms/upstairs/upstairs1.tscn"
+cursor_style = 1
