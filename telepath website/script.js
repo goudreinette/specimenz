@@ -62,10 +62,10 @@ setInterval(() => {
             line.currentY = line.currentY + randomRange(-stepSize, stepSize)
             line.currentX = line.currentX + randomRange(-stepSize, stepSize)
             
-            // line.points += `${line.currentX},${line.currentY} `
+            line.points += `${line.currentX},${line.currentY} `
 
-            const color = colorMixer([0,255,0], [255,0,255], Math.abs(Math.sin(line.i / 1000)))
-            line.svgLines += `<line x1="${line.prevX}" y1="${line.prevY}" x2="${line.currentX}" y2="${line.currentY}" stroke="${color}" />`
+            // const color = colorMixer([0,255,0], [255,0,255], Math.abs(Math.sin(line.i / 1000)))
+            // line.svgLines += `<line x1="${line.prevX}" y1="${line.prevY}" x2="${line.currentX}" y2="${line.currentY}" stroke="${color}" />`
 
             const divideChance = line.stepsSinceTouchedLetter < 100 ? .99 : .9997
        
@@ -88,11 +88,11 @@ setInterval(() => {
 
         }
 
-        // newSvgContents += `
-        //     <polyline points="${line.points}" fill="none" stroke="olive" />
-        // `
+        newSvgContents += `
+            <polyline points="${line.points}" fill="none" stroke="olive" />
+        `
 
-        newSvgContents += line.svgLines
+        // newSvgContents += line.svgLines
         
         // Chance of dying
         if (Math.random() > .999 || line.stepsSinceTouchedLetter > 1000) {
@@ -122,9 +122,18 @@ console.log(firstCharRect.x, firstCharRect.y)
 addPolyline(firstCharRect.x,firstCharRect.y)
 
 
+
+
+
+// Math utils
 function randomRange(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
+
+
+
 
 
 //colorChannelA and colorChannelB are ints ranging from 0 to 255
