@@ -1,7 +1,7 @@
 // Split into spans
-let chars = null
+let chars = []
 Splitting().forEach(s => {
-    chars = s.chars
+    chars = [...chars, ...s.chars]
 
     s.chars.forEach(char => {
         // setTimeout(() => {
@@ -13,16 +13,19 @@ Splitting().forEach(s => {
 
 function startDecaying(char) {
     console.log("Start decaying ", char)
-    const duration = (Math.random() * 10)
-    char.classList.add('fading')
-    char.style.setProperty("--duration", `${duration}s`);
+    const duration = 5 + (Math.random() * 30)
+
+    if (!char.classList.contains('fading')) {
+        char.classList.add('fading')
+        char.style.setProperty("--duration", `${duration}s`);
+    }
 } 
 
 
 // Physarum SVG
 const physarumSvg = document.querySelector('svg#physarum')
 let polylines = []
-const stepSize = 20
+const stepSize = 8
 
 function addPolyline(startX, startY) {
     polylines.push({
@@ -31,7 +34,8 @@ function addPolyline(startX, startY) {
         currentX: startX,
         currentY: startY,
         points: "",
-        active: true
+        active: true,
+        stepsSinceTouchedLetter: 0
     })
 }
 
@@ -39,8 +43,17 @@ function addPolyline(startX, startY) {
 // Animate line
 setInterval(() => {
     let newSvgContents = ""
+    let activeLinesCount = 0
+    for (const l of polylines) {
+        if (l.active) {
+            activeLinesCount++
+        }
+    }
+
     for (const line of polylines) {
         if (line.active) {
+            line.stepsSinceTouchedLetter += 1 
+
             line.prevX = line.currentX
             line.prevX = line.currentX
             line.currentY = line.currentY + randomRange(-stepSize, stepSize)
@@ -48,7 +61,10 @@ setInterval(() => {
             
             line.points += `${line.currentX},${line.currentY} `
 
-            if (Math.random() > .995 && polylines.length < 10) {
+            const divideChance = line.stepsSinceTouchedLetter < 100 ? .99 : .9997
+       
+
+            if (Math.random() > divideChance && activeLinesCount < 10) {
                 addPolyline(line.currentX, line.currentY)
             }
 
@@ -57,11 +73,13 @@ setInterval(() => {
                 var distFromPoint = Math.abs(line.currentX - rect.x) + Math.abs(line.currentY - (rect.y));
                 // var b = line.currentY - rect.top;
                 // const distFromPoint = Math.sqrt( a*a + b*b );
-                if (distFromPoint < 500) {
-                    console.log(char, ' close')
+                if (distFromPoint < 10) {
+                    // console.log(char, ' close')
                     startDecaying(char)
+                    line.stepsSinceTouchedLetter = 0
                 }
             }
+
         }
 
         newSvgContents += `
@@ -69,7 +87,7 @@ setInterval(() => {
         `
         
         // Chance of dying
-        if (Math.random() > .999) {
+        if (Math.random() > .999 || line.stepsSinceTouchedLetter > 1000) {
             let activeLinesCount = 0
             for (const l of polylines) {
                 if (l.active) {
@@ -85,12 +103,15 @@ setInterval(() => {
     }
 
     physarumSvg.innerHTML = newSvgContents
-}, 50)
+}, 10)
 
 
 
 // Initial point
-addPolyline(300,200)
+const firstchar = chars[0]
+const firstCharRect = firstchar.getBoundingClientRect()
+console.log(firstCharRect.x, firstCharRect.y)
+addPolyline(firstCharRect.x,firstCharRect.y)
 
 
 function randomRange(min, max) {

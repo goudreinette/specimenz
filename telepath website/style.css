@@ -13,9 +13,28 @@ body {
 
 /* Fading */
 .char.fading {
-    transition: opacity var(--duration);
-    opacity: 0;
+    animation: eat-letter var(--duration) forwards;
 }
+
+
+@keyframes eat-letter {
+    0% {
+        color: black;
+        opacity: 100%;
+    }   
+
+    5% {
+        color: olive;
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+        color: olive;
+    }
+}
+
+
 
 /* Physarum */
 svg#physarum {
