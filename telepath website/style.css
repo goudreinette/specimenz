@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+#maintext {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 100px;
+    width: 800px;
+    border: 1px solid red;
+}
+
+/* Fading */
+.char.fading {
+    animation: eat-letter var(--duration) forwards;
+}
+
+
+@keyframes eat-letter {
+    0% {
+        color: black;
+        opacity: 100%;
+    }   
+
+    5% {
+        color: olive;
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+        color: olive;
+    }
+}
+
+
+
+/* Physarum */
+svg#physarum {
+    width: 100vw;
+    height: 100vh;
+}
