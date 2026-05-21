@@ -2,16 +2,17 @@ class_name RoomDoor extends TextureButton
 
 
 enum CursorStyle {
-	Up, Down, Left, Right
+	Up, Down, Left, Right, Default
 }
 
 @export var next_scene: String
 @export var cursor_style: CursorStyle
 
-var cursor_left = load("res://cursors/left.png")
-var cursor_down = load("res://cursors/down.png")
-var cursor_right = load("res://cursors/right.png")
-var cursor_up = load("res://cursors/up.png")
+var cursor_left = load("res://cursors/move.left.png")
+var cursor_down = load("res://cursors/move.backward.png")
+var cursor_right = load("res://cursors/move.right.png")
+var cursor_up = load("res://cursors/move.forward.png")
+var cursor_default = load("res://cursors/default.png")
 
 
 
@@ -41,7 +42,7 @@ func _on_mouse_entered():
 
 
 func _on_mouse_exited():
-	Input.set_custom_mouse_cursor(null)
+	Input.set_custom_mouse_cursor(cursor_default)
 
 
 func _on_to_garden_2_pressed():
