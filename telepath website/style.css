@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 #maintext {
     position: absolute;
     transform: translateX(-50%);
@@ -7,7 +11,14 @@
     border: 1px solid red;
 }
 
+/* Fading */
 .char.fading {
     transition: opacity var(--duration);
     opacity: 0;
+}
+
+/* Physarum */
+svg#physarum {
+    width: 100vw;
+    height: 100vh;
 }
