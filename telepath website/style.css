@@ -1,0 +1,13 @@
+#maintext {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 100px;
+    width: 800px;
+    border: 1px solid red;
+}
+
+.char.fading {
+    transition: opacity var(--duration);
+    opacity: 0;
+}
