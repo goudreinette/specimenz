@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ct8m7y07dore7"]
 
 [ext_resource type="Texture2D" uid="uid://cynjn7p403lsj" path="res://rooms/bliss/400.png" id="1_g4yq2"]
+[ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_dco7n"]
 
 [sub_resource type="Animation" id="Animation_dco7n"]
 length = 0.001
@@ -48,3 +49,43 @@ texture = ExtResource("1_g4yq2")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=5471760]
 libraries/ = SubResource("AnimationLibrary_dco7n")
 autoplay = &"fadein"
+
+[node name="Backward" parent="." unique_id=2125296165 instance=ExtResource("2_dco7n")]
+offset_left = 259.0
+offset_top = 351.0
+offset_right = 366.0
+offset_bottom = 465.0
+next_scene = "res://rooms/living/living4.tscn"
+cursor_style = 2
+
+[node name="Forward" parent="." unique_id=1957446470 instance=ExtResource("2_dco7n")]
+offset_left = 264.0
+offset_top = 68.0
+offset_right = 371.0
+offset_bottom = 182.0
+next_scene = "res://rooms/living/living4.tscn"
+cursor_style = 5
+
+[node name="ForwardCurveLeft" parent="." unique_id=1907719005 instance=ExtResource("2_dco7n")]
+offset_left = 103.0
+offset_top = 96.0
+offset_right = 210.0
+offset_bottom = 210.0
+next_scene = "res://rooms/living/living4.tscn"
+cursor_style = 3
+
+[node name="ForwardCurveRight" parent="." unique_id=1551706590 instance=ExtResource("2_dco7n")]
+offset_left = 407.0
+offset_top = 99.0
+offset_right = 514.0
+offset_bottom = 213.0
+next_scene = "res://rooms/living/living4.tscn"
+cursor_style = 4
+
+[node name="LeftCurveBack" parent="." unique_id=1848195060 instance=ExtResource("2_dco7n")]
+offset_left = 55.0
+offset_top = 279.0
+offset_right = 162.0
+offset_bottom = 393.0
+next_scene = "res://rooms/living/living4.tscn"
+cursor_style = 6
