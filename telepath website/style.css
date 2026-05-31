@@ -1,15 +1,81 @@
+@font-face {
+    font-family: "pharmacy";
+    src: url('style/PHARMACY.ttf');
+}
+
+@font-face {
+    font-family: "helveticapixelated";
+    src: url('style/helvetica-pixelated.otf');
+}
+
 body {
     margin: 0;
 }
 
-#maintext {
+p{
+    font-family: helveticapixelated;
+}
+
+h2{
+    font-family: pharmacy;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+
+#container {
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
     top: 100px;
     width: 800px;
-    border: 1px solid red;
 }
+
+#banner{
+    border: 1px solid red;
+    position: relative;
+    width: 800px;
+    height: 120px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+#telepathlogo{
+    margin: 10px;
+    width:200px;
+    height:auto;
+}
+
+.topbutton{
+    background: rgb(104, 68, 154);
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    font-family: pharmacy;
+    font-size: 24px;
+    color: white;
+    letter-spacing:2px;
+    text-align: center;
+}
+
+
+#maintext {
+    border: 1px solid blue;
+    position: relative;
+}
+
+.boxedparagraph{
+    border: 1px solid black;
+    margin: 10px;
+}
+
+
+
+
+
 
 /* Fading */
 .char.fading {
@@ -38,6 +104,8 @@ body {
 
 /* Physarum */
 svg#physarum {
-    width: 100vw;
-    height: 100vh;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: olive solid 1px;
 }
