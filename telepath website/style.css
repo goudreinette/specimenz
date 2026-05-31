@@ -110,3 +110,11 @@ svg#physarum {
     border: var(--color) solid 1px;
     z-index: 3;
 }
+
+canvas {
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+    z-index: 3;
+    position: relative;
+}
