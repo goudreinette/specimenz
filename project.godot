@@ -82,7 +82,9 @@ variables={}
 
 window/size/viewport_width=640
 window/size/viewport_height=480
+window/size/initial_position_type=3
 window/size/resizable=false
+window/size/borderless=true
 window/size/always_on_top=true
 window/size/window_width_override=1280
 window/size/window_height_override=960
@@ -92,7 +94,7 @@ window/per_pixel_transparency/allowed=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+enabled=PackedStringArray()
 
 [input]
 

@@ -5,12 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://b4iokt7qej0oc" path="res://characters/Poopy.tscn" id="2_xk0tj"]
 [ext_resource type="Texture2D" uid="uid://c5qrbovm8uv0d" path="res://rooms/comms_room/commsroom2.png" id="3_5qiwb"]
 [ext_resource type="Texture2D" uid="uid://dg1smunejb1e1" path="res://rooms/comms_room/door.png" id="5_hid37"]
-[ext_resource type="PackedScene" uid="uid://dktk6we34mcqp" path="res://bubbles/pipettebubble.tscn" id="6_chss5"]
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="6_xdqlv"]
 [ext_resource type="Texture2D" uid="uid://c4jaxy4u8jcto" path="res://rooms/comms_room/door_hover.png" id="6_y15cf"]
 [ext_resource type="PackedScene" uid="uid://hmneimhrqtdi" path="res://characters/Pipette.tscn" id="8_y15cf"]
-[ext_resource type="Script" uid="uid://cfym6bf61km8q" path="res://rooms/comms_room/conversation_1.gd" id="9_y5fn7"]
-[ext_resource type="PackedScene" uid="uid://du4e1yyx1hq22" path="res://bubbles/poopybubble.tscn" id="10_chss5"]
+[ext_resource type="Script" uid="uid://d0olqhxnoaxni" path="res://rooms/comms_room/dialogue_mananger.gd" id="9_y5fn7"]
 
 [sub_resource type="Animation" id="Animation_y5fn7"]
 length = 0.001
@@ -69,31 +67,21 @@ _data = {
 [node name="CommunicationsRoom" type="Node2D" unique_id=1389742196]
 script = ExtResource("1_xk0tj")
 
-[node name="Conversation 1" type="Node2D" parent="." unique_id=856582444]
-script = ExtResource("9_y5fn7")
-
 [node name="Commsroom2" type="Sprite2D" parent="." unique_id=2138710503]
 position = Vector2(320, 241)
 texture = ExtResource("3_5qiwb")
 
 [node name="Maeve" parent="." unique_id=297373198 instance=ExtResource("1_u7dpo")]
-process_mode = 4
 visible = false
 position = Vector2(214, 267)
 
-[node name="Pipette" parent="." unique_id=1721991310 instance=ExtResource("8_y15cf")]
-position = Vector2(180, 269)
-text_bubble = ExtResource("6_chss5")
-
 [node name="Poopy" parent="." unique_id=2000619831 instance=ExtResource("2_xk0tj")]
 position = Vector2(436, 266)
-text_bubble = ExtResource("10_chss5")
 
 [node name="Node2D" type="Node2D" parent="." unique_id=629876863]
 position = Vector2(333, 354)
 
 [node name="Door" type="TextureButton" parent="." unique_id=866645050]
-visible = false
 offset_left = 50.0
 offset_top = 145.0
 offset_right = 233.0
@@ -105,6 +93,14 @@ script = ExtResource("6_xdqlv")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Door" unique_id=1985002262]
 libraries/ = SubResource("AnimationLibrary_y5fn7")
 autoplay = &"fadein"
+
+[node name="Pipette" parent="." unique_id=1721991310 instance=ExtResource("8_y15cf")]
+position = Vector2(180, 269)
+
+[node name="DialogueManager" type="Node2D" parent="." unique_id=42532927 node_paths=PackedStringArray("poopy", "pipette")]
+script = ExtResource("9_y5fn7")
+poopy = NodePath("../Poopy")
+pipette = NodePath("../Pipette")
 
 [connection signal="pressed" from="Door" to="Door" method="_on_pressed"]
 [connection signal="animation_finished" from="Door/AnimationPlayer" to="Door" method="_on_animation_player_animation_finished"]
