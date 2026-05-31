@@ -90,13 +90,13 @@ h2{
     }   
 
     5% {
-        color: olive;
+        color: var(--color);
         opacity: 100%;
     }
 
     100% {
         opacity: 0%;
-        color: olive;
+        color: var(--color);
     }
 }
 
@@ -107,5 +107,6 @@ svg#physarum {
     position: absolute;
     width: 100%;
     height: 100%;
-    border: olive solid 1px;
+    border: var(--color) solid 1px;
+    z-index: 3;
 }

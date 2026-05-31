@@ -11,13 +11,14 @@ Splitting().forEach(s => {
 })
 
 
-function startDecaying(char) {
+function startDecaying(char, color) {
     console.log("Start decaying ", char)
     const duration = 5 + (Math.random() * 30)
 
     if (!char.classList.contains('fading')) {
         char.classList.add('fading')
         char.style.setProperty("--duration", `${duration}s`);
+        char.style.setProperty("--color", color);
     }
 } 
 
@@ -25,10 +26,11 @@ function startDecaying(char) {
 // Physarum SVG
 const physarumSvg = document.querySelector('svg#physarum')
 let polylines = []
-const stepSize = 8
+const stepSize = 2
 
-function addPolyline(startX, startY) {
+function addPolyline(startX, startY, hue) {
     polylines.push({
+        hue: hue,
         prevX: startX,
         prevY: startY, 
         currentX: startX,
@@ -67,11 +69,11 @@ setInterval(() => {
             // const color = colorMixer([0,255,0], [255,0,255], Math.abs(Math.sin(line.i / 1000)))
             // line.svgLines += `<line x1="${line.prevX}" y1="${line.prevY}" x2="${line.currentX}" y2="${line.currentY}" stroke="${color}" />`
 
-            const divideChance = line.stepsSinceTouchedLetter < 100 ? .99 : .9997
+            const divideChance = line.stepsSinceTouchedLetter < 100 ? .9 : .9997
        
 
             if (Math.random() > divideChance && activeLinesCount < 10) {
-                addPolyline(line.currentX, line.currentY)
+                addPolyline(line.currentX, line.currentY, line.hue + randomRange(-10, 10))
             }
 
             for (const char of chars) {
@@ -81,7 +83,7 @@ setInterval(() => {
                 // const distFromPoint = Math.sqrt( a*a + b*b );
                 if (distFromPoint < 10) {
                     // console.log(char, ' close')
-                    startDecaying(char)
+                    startDecaying(char, `hsl(${line.hue}, 100%, 21%)`)
                     line.stepsSinceTouchedLetter = 0
                 }
             }
@@ -89,7 +91,7 @@ setInterval(() => {
         }
 
         newSvgContents += `
-            <polyline points="${line.points}" fill="none" stroke="olive" />
+            <polyline points="${line.points}" fill="none" stroke="hsl(${line.hue}, 70%, 41%)" />
         `
 
         // newSvgContents += line.svgLines
@@ -116,10 +118,10 @@ setInterval(() => {
 
 
 // Initial point
-const firstchar = chars[0]
+const firstchar = document.querySelector('.contact') //chars[0]
 const firstCharRect = firstchar.getBoundingClientRect()
 console.log(firstCharRect.x, firstCharRect.y)
-addPolyline(firstCharRect.x,firstCharRect.y)
+addPolyline(firstCharRect.x,firstCharRect.y, 50)
 
 
 
