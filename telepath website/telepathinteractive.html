@@ -14,14 +14,14 @@
 <body>
     <svg id="physarum"></svg>
     <div id="container">
-        
+        <div class="count"></div>
 
         <div id="banner">
             <img id="telepathlogo" src="style/0085.gif">
-            <div class="topbutton">register</div>
-            <div class="topbutton">about</div>
-            <div class="topbutton">news</div>
-            <div class="topbutton">contact</div>
+            <div class="topbutton " data-splitting>register</div>
+            <div class="topbutton" data-splitting>about</div>
+            <div class="topbutton" data-splitting>news</div>
+            <div class="topbutton contact" data-splitting>contact</div>
         </div>
 
         <div id="main">
@@ -59,12 +59,10 @@
             
         </div>  
         </div>
-
-        
-
-        
     </div>
 
-    <script src="./script.js"></script>
+    <canvas class="canvas" width="100vw" height="100vh"></canvas>
+
+    <script src="./script-canvas.js"></script>
 </body>
 </html>

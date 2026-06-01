@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://du4e1yyx1hq22"]
+
+[ext_resource type="Script" uid="uid://yrckqn3ljddj" path="res://bubbles/SpeachBubble.gd" id="1_4s25s"]
+[ext_resource type="Texture2D" uid="uid://b0u5o68a7f1af" path="res://bubbles/poopybubble.png" id="1_8kmmo"]
+
+[sub_resource type="Animation" id="Animation_ae871"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Poopybubble:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.44329897, 0.44444445)]
+}
+
+[sub_resource type="Animation" id="Animation_5gasc"]
+resource_name = "in"
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Poopybubble:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(0.16493848, 0.16493848),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0.5, 0.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4s25s"]
+_data = {
+&"RESET": SubResource("Animation_ae871"),
+&"in": SubResource("Animation_5gasc")
+}
+
+[node name="Node2D" type="Node2D" unique_id=1170994842]
+script = ExtResource("1_4s25s")
+
+[node name="Poopybubble" type="Sprite2D" parent="." unique_id=178669016]
+position = Vector2(-94, -117)
+scale = Vector2(0.44329897, 0.44444445)
+texture = ExtResource("1_8kmmo")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1421670338]
+libraries/ = SubResource("AnimationLibrary_4s25s")
+autoplay = &"in"
+
+[node name="Label" type="Label" parent="." unique_id=860768811]
+offset_left = -200.0
+offset_top = -137.0
+offset_right = -155.0
+offset_bottom = -114.0
+text = "Hello!"
