@@ -73,7 +73,7 @@ script = ExtResource("1_xk0tj")
 script = ExtResource("9_y5fn7")
 
 [node name="Commsroom2" type="Sprite2D" parent="." unique_id=2138710503]
-position = Vector2(320, 241)
+position = Vector2(320, 240)
 texture = ExtResource("3_5qiwb")
 
 [node name="Maeve" parent="." unique_id=297373198 instance=ExtResource("1_u7dpo")]

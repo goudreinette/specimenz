@@ -44,7 +44,7 @@ _data = {
 script = ExtResource("1_4s25s")
 
 [node name="Poopybubble" type="Sprite2D" parent="." unique_id=178669016]
-position = Vector2(-94, -117)
+position = Vector2(-123, -59.888885)
 scale = Vector2(0.44329897, 0.44444445)
 texture = ExtResource("1_8kmmo")
 
@@ -53,8 +53,8 @@ libraries/ = SubResource("AnimationLibrary_4s25s")
 autoplay = &"in"
 
 [node name="Label" type="Label" parent="." unique_id=860768811]
-offset_left = -200.0
-offset_top = -137.0
-offset_right = -155.0
-offset_bottom = -114.0
+offset_left = -229.0
+offset_top = -79.888885
+offset_right = -184.0
+offset_bottom = -56.888885
 text = "Hello!"
