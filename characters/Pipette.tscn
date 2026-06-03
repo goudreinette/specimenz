@@ -256,7 +256,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"back",
-"speed": 24.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -264,7 +264,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"default",
-"speed": 24.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -305,7 +305,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"front",
-"speed": 24.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -382,7 +382,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"huh",
-"speed": 24.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -459,7 +459,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"idling",
-"speed": 24.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -500,7 +500,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"left",
-"speed": 24.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -541,7 +541,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"left_backward",
-"speed": 24.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -582,7 +582,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"left_forward",
-"speed": 24.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -695,7 +695,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"looking around",
-"speed": 24.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -736,7 +736,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"right",
-"speed": 24.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -777,7 +777,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"right_backward",
-"speed": 24.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -818,7 +818,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"right_forward",
-"speed": 24.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -847,7 +847,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"talking",
-"speed": 24.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -924,7 +924,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"waving",
-"speed": 24.0
+"speed": 12.0
 }]
 
 [node name="Pipette" type="Node2D" unique_id=2000619831]
@@ -938,9 +938,7 @@ texture = ExtResource("2_yrbbj")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=750133325]
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_bsyeo")
-animation = &"talking"
-frame = 2
-frame_progress = 0.29056674
+animation = &"back"
 
 [node name="Timer" type="Timer" parent="." unique_id=1934291810]
 one_shot = true
