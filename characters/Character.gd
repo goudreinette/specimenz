@@ -7,6 +7,8 @@ class_name Character extends Node2D
 var start_pos : Vector2 
 @export var last_frame_pos : Vector2 = self.position
 @export var target_pos : Vector2 = self.position
+@export var SPEED = 30
+
 
 var talking: bool
 var current_walking_tween: Tween
@@ -29,7 +31,7 @@ func _process(delta):
 	var distance: float = self.position.distance_to(last_frame_pos)
 	
 	var walking: bool = distance > 0.0
-	var threshold = .25
+	var threshold = .125
 	
 	if talking:
 		$AnimatedSprite2D.play("talking")
@@ -83,7 +85,6 @@ func walk_to_new_location():
 	var new_pos =  start_pos +  Vector2(randf_range(-30, 30), randf_range(20, 80))
 	#var distance = self.position.distance_to(new_pos)
 	#var walk_duration = remap(distance, 0, 200, 0.0, 1.0)
-	const SPEED = 30
 	var distance = (position).distance_to(new_pos)
 	var tween_time = distance / SPEED
 	print(position, new_pos)
