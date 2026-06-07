@@ -2,6 +2,10 @@
 
 [ext_resource type="Script" uid="uid://yrckqn3ljddj" path="res://bubbles/SpeachBubble.gd" id="1_4s25s"]
 [ext_resource type="Texture2D" uid="uid://b0u5o68a7f1af" path="res://bubbles/poopybubble.png" id="1_8kmmo"]
+[ext_resource type="Texture2D" uid="uid://dim5pjp8csxxc" path="res://bubbles/poopybubbletail-crop.png" id="3_0hw5c"]
+[ext_resource type="Texture2D" uid="uid://diank45a1g3dq" path="res://bubbles/poopybubbletex-squish-new.png" id="3_nj2ao"]
+[ext_resource type="FontFile" uid="uid://de6y7ndjmxd6a" path="res://bubbles/Andy Bold.ttf" id="3_vmxin"]
+[ext_resource type="Texture2D" uid="uid://d3sca8db8q302" path="res://bubbles/poopybubbletex-squish.png" id="6_nj2ao"]
 
 [sub_resource type="Animation" id="Animation_ae871"]
 length = 0.001
@@ -33,6 +37,18 @@ tracks/0/keys = {
 "update": 0,
 "values": [Vector2(0, 0), Vector2(0.5, 0.5)]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MarginContainer:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(0.16493848, 0.16493848),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(1, 1)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4s25s"]
 _data = {
@@ -44,7 +60,8 @@ _data = {
 script = ExtResource("1_4s25s")
 
 [node name="Poopybubble" type="Sprite2D" parent="." unique_id=178669016]
-position = Vector2(-123, -59.888885)
+visible = false
+position = Vector2(-72.19914, -50)
 scale = Vector2(0.44329897, 0.44444445)
 texture = ExtResource("1_8kmmo")
 
@@ -52,9 +69,115 @@ texture = ExtResource("1_8kmmo")
 libraries/ = SubResource("AnimationLibrary_4s25s")
 autoplay = &"in"
 
-[node name="Label" type="Label" parent="." unique_id=860768811]
-offset_left = -229.0
-offset_top = -79.888885
-offset_right = -184.0
-offset_bottom = -56.888885
-text = "Hello!"
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1013639242]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -171.0
+offset_top = -144.0
+offset_right = 4.0
+offset_bottom = -39.0
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 9
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 0
+
+[node name="OpacityContainer" type="MarginContainer" parent="MarginContainer" unique_id=29117490]
+layout_mode = 2
+
+[node name="Poopybubbletail" type="TextureRect" parent="MarginContainer/OpacityContainer" unique_id=1508901480]
+modulate = Color(1, 1, 1, 0.5568628)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+offset_transform_enabled = true
+offset_transform_position = Vector2(37, 31)
+texture = ExtResource("3_0hw5c")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer/OpacityContainer" unique_id=1904940913]
+modulate = Color(1, 1, 1, 0.52156866)
+layout_mode = 2
+texture = ExtResource("3_nj2ao")
+region_rect = Rect2(0, 48, 128, 80)
+patch_margin_left = 48
+patch_margin_top = 24
+patch_margin_right = 48
+patch_margin_bottom = 24
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer" unique_id=1047537158]
+layout_mode = 2
+offset_transform_enabled = true
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 21
+theme_override_constants/margin_right = 27
+theme_override_constants/margin_bottom = 19
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer" unique_id=984553103]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 3)
+theme_override_colors/font_outline_color = Color(0.20182875, 0.09940275, 0.17749885, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 3
+theme_override_constants/shadow_outline_size = 4
+theme_override_fonts/font = ExtResource("3_vmxin")
+theme_override_font_sizes/font_size = 40
+text = "hello"
+
+[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=1108182838]
+visible = false
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 235.0
+offset_top = -118.0
+offset_right = 528.0
+offset_bottom = -22.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 9
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 15
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer2" unique_id=577601792]
+layout_mode = 2
+texture = ExtResource("3_nj2ao")
+region_rect = Rect2(0, 48, 128, 80)
+patch_margin_left = 48
+patch_margin_top = 24
+patch_margin_right = 48
+patch_margin_bottom = 24
+
+[node name="Label" type="Label" parent="MarginContainer2" unique_id=916856521]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 3)
+theme_override_colors/font_outline_color = Color(0.20182875, 0.09940275, 0.17749885, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/outline_size = 3
+theme_override_constants/shadow_outline_size = 4
+theme_override_fonts/font = ExtResource("3_vmxin")
+theme_override_font_sizes/font_size = 40
+text = "dwdwdwtetete
+jjgjgjg
+hhffhfhhf
+ouououou
+yiyyiyiyiy"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=255850087]
+visible = false
+modulate = Color(1, 1, 1, 0.5294118)
+offset_left = 5.0
+offset_top = -94.0
+offset_right = 101.0
+offset_bottom = -19.0
+texture = ExtResource("6_nj2ao")
+region_rect = Rect2(0, 0, 128, 96)
+patch_margin_left = 48
+patch_margin_top = 40
+patch_margin_right = 48
+patch_margin_bottom = 35
