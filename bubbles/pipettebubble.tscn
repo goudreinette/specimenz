@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dktk6we34mcqp"]
 
+[ext_resource type="Texture2D" uid="uid://c0bq221b0lfx7" path="res://bubbles/pipettebubble.png" id="1_5lu65"]
 [ext_resource type="Script" uid="uid://yrckqn3ljddj" path="res://bubbles/SpeachBubble.gd" id="1_ae871"]
 [ext_resource type="Texture2D" uid="uid://pff8xu4odxy6" path="res://bubbles/pipettebubbletail-crop.png" id="2_nw034"]
 [ext_resource type="Texture2D" uid="uid://bo4aby7h8rp2n" path="res://bubbles/pipettebubbletex.png" id="3_1j2hc"]
@@ -7,10 +8,46 @@
 
 [sub_resource type="Animation" id="Animation_ae871"]
 length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MarginContainer:offset_transform_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_5gasc"]
 resource_name = "in"
 step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MarginContainer/OpacityContainer:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MarginContainer:offset_transform_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.19999999),
+"transitions": PackedFloat32Array(0.17075506, 0.17075506),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(1, 1)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nw034"]
 _data = {
@@ -25,7 +62,8 @@ script = ExtResource("1_ae871")
 libraries/ = SubResource("AnimationLibrary_nw034")
 autoplay = &"in"
 
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1585370056]
+[node name="MarginContainerr" type="MarginContainer" parent="." unique_id=1585370056]
+visible = false
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
@@ -39,10 +77,10 @@ theme_override_constants/margin_top = 9
 theme_override_constants/margin_right = 28
 theme_override_constants/margin_bottom = 0
 
-[node name="OpacityContainer" type="MarginContainer" parent="MarginContainer" unique_id=1558345921]
+[node name="OpacityContainer" type="MarginContainer" parent="MarginContainerr" unique_id=1558345921]
 layout_mode = 2
 
-[node name="Poopybubbletail" type="TextureRect" parent="MarginContainer/OpacityContainer" unique_id=2117137563]
+[node name="Poopybubbletail" type="TextureRect" parent="MarginContainerr/OpacityContainer" unique_id=2117137563]
 modulate = Color(1, 1, 1, 0.5568628)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -51,7 +89,7 @@ offset_transform_enabled = true
 offset_transform_position = Vector2(37, 26)
 texture = ExtResource("2_nw034")
 
-[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer/OpacityContainer" unique_id=1894965505]
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainerr/OpacityContainer" unique_id=1894965505]
 modulate = Color(1, 1, 1, 0.52156866)
 layout_mode = 2
 texture = ExtResource("3_1j2hc")
@@ -61,7 +99,7 @@ patch_margin_top = 24
 patch_margin_right = 48
 patch_margin_bottom = 24
 
-[node name="MarginContainer" type="MarginContainer" parent="MarginContainer" unique_id=2000297366]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainerr" unique_id=2000297366]
 layout_mode = 2
 offset_transform_enabled = true
 theme_override_constants/margin_left = 25
@@ -69,7 +107,7 @@ theme_override_constants/margin_top = 21
 theme_override_constants/margin_right = 27
 theme_override_constants/margin_bottom = 19
 
-[node name="Label" type="Label" parent="MarginContainer/MarginContainer" unique_id=463327652]
+[node name="Label" type="Label" parent="MarginContainerr/MarginContainer" unique_id=463327652]
 layout_mode = 2
 offset_transform_enabled = true
 offset_transform_position = Vector2(0, 3)
@@ -80,3 +118,65 @@ theme_override_constants/shadow_outline_size = 4
 theme_override_fonts/font = ExtResource("4_1j2hc")
 theme_override_font_sizes/font_size = 40
 text = "hello"
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=266353423]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -235.0
+offset_top = -194.0
+offset_right = 89.0
+offset_bottom = -59.0
+grow_vertical = 0
+offset_transform_enabled = true
+theme_override_constants/margin_left = 39
+theme_override_constants/margin_top = 9
+theme_override_constants/margin_right = 61
+theme_override_constants/margin_bottom = 1
+
+[node name="OpacityContainer" type="MarginContainer" parent="MarginContainer" unique_id=1964260973]
+layout_mode = 2
+
+[node name="Poopybubbletail" type="TextureRect" parent="MarginContainer/OpacityContainer" unique_id=1932146750]
+visible = false
+modulate = Color(1, 1, 1, 0.5568628)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+offset_transform_enabled = true
+offset_transform_position = Vector2(37, 26)
+texture = ExtResource("2_nw034")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer/OpacityContainer" unique_id=258284393]
+modulate = Color(1, 1, 1, 0.52156866)
+layout_mode = 2
+texture = ExtResource("1_5lu65")
+region_rect = Rect2(0, -21.016663, 328, 169.16418)
+patch_margin_left = 128
+patch_margin_top = 68
+patch_margin_right = 96
+patch_margin_bottom = 81
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer" unique_id=974959593]
+layout_mode = 2
+offset_transform_enabled = true
+theme_override_constants/margin_left = 37
+theme_override_constants/margin_top = 21
+theme_override_constants/margin_right = 67
+theme_override_constants/margin_bottom = 40
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer" unique_id=1682889102]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 3)
+theme_override_colors/font_shadow_color = Color(0.32, 0.1792, 0.25429332, 1)
+theme_override_colors/font_outline_color = Color(0.32156864, 0.18039216, 0.25490198, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 4
+theme_override_fonts/font = ExtResource("4_1j2hc")
+theme_override_font_sizes/font_size = 40
+text = "helloeggggggggggggggggggggggg"
+justification_flags = 162

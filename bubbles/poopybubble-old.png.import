@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cow1jhsy6vjs4"
-path="res://.godot/imported/poopybubble.png-1354261c00af05aa4bd558f8fb284b88.ctex"
+uid="uid://bidf6eg2yh2w6"
+path="res://.godot/imported/poopybubble-old.png-1d0ff0ac96fda80dd1d9f61d29d6f08b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bubbles/poopybubble.png"
-dest_files=["res://.godot/imported/poopybubble.png-1354261c00af05aa4bd558f8fb284b88.ctex"]
+source_file="res://bubbles/poopybubble-old.png"
+dest_files=["res://.godot/imported/poopybubble-old.png-1d0ff0ac96fda80dd1d9f61d29d6f08b.ctex"]
 
 [params]
 

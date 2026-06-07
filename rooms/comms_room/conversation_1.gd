@@ -10,7 +10,7 @@ func pause(t):
 
 func _ready():
 	await pause(5)
-	pipette.say("Something")
+	pipette.say("Some \n thing\n thing\n thing\n thing")
 	await pause(5)
 	pipette.say("Blablblabllbalblblablalbalblabla")
 	await pause(5)

@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://du4e1yyx1hq22"]
 
 [ext_resource type="Script" uid="uid://yrckqn3ljddj" path="res://bubbles/SpeachBubble.gd" id="1_4s25s"]
-[ext_resource type="Texture2D" uid="uid://bidf6eg2yh2w6" path="res://bubbles/poopybubble.png" id="1_8kmmo"]
+[ext_resource type="Texture2D" uid="uid://bidf6eg2yh2w6" path="res://bubbles/poopybubble-old.png" id="1_8kmmo"]
 [ext_resource type="Texture2D" uid="uid://dim5pjp8csxxc" path="res://bubbles/poopybubbletail-crop.png" id="3_0hw5c"]
-[ext_resource type="Texture2D" uid="uid://diank45a1g3dq" path="res://bubbles/poopybubbletex-squish-new.png" id="3_nj2ao"]
 [ext_resource type="FontFile" uid="uid://de6y7ndjmxd6a" path="res://bubbles/Andy Bold.ttf" id="3_vmxin"]
+[ext_resource type="Texture2D" uid="uid://cow1jhsy6vjs4" path="res://bubbles/poopybubble.png" id="4_hurk1"]
 
 [sub_resource type="Animation" id="Animation_ae871"]
 length = 0.001
@@ -72,20 +72,23 @@ autoplay = &"in"
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = -171.0
-offset_top = -144.0
-offset_right = 4.0
-offset_bottom = -39.0
+offset_left = -2.0
+offset_top = -212.0
+offset_right = 240.0
+offset_bottom = -21.0
 grow_vertical = 0
-theme_override_constants/margin_left = 15
+offset_transform_position = Vector2(100, 0)
+theme_override_constants/margin_left = 0
 theme_override_constants/margin_top = 9
-theme_override_constants/margin_right = 28
+theme_override_constants/margin_right = 38
 theme_override_constants/margin_bottom = 0
 
 [node name="OpacityContainer" type="MarginContainer" parent="MarginContainer" unique_id=29117490]
 layout_mode = 2
+offset_transform_enabled = true
 
 [node name="Poopybubbletail" type="TextureRect" parent="MarginContainer/OpacityContainer" unique_id=1508901480]
+visible = false
 modulate = Color(1, 1, 1, 0.5568628)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -97,27 +100,30 @@ texture = ExtResource("3_0hw5c")
 [node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer/OpacityContainer" unique_id=1904940913]
 modulate = Color(1, 1, 1, 0.52156866)
 layout_mode = 2
-texture = ExtResource("3_nj2ao")
-region_rect = Rect2(0, 48, 128, 80)
-patch_margin_left = 48
-patch_margin_top = 24
-patch_margin_right = 48
-patch_margin_bottom = 24
+texture = ExtResource("4_hurk1")
+region_rect = Rect2(-14, -41.365536, 350, 207.68958)
+patch_margin_left = 56
+patch_margin_top = 84
+patch_margin_right = 147
+patch_margin_bottom = 98
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer" unique_id=1047537158]
 layout_mode = 2
 offset_transform_enabled = true
-theme_override_constants/margin_left = 25
+theme_override_constants/margin_left = 39
 theme_override_constants/margin_top = 21
-theme_override_constants/margin_right = 27
+theme_override_constants/margin_right = 57
 theme_override_constants/margin_bottom = 19
 
 [node name="Label" type="Label" parent="MarginContainer/MarginContainer" unique_id=984553103]
 layout_mode = 2
 offset_transform_enabled = true
-offset_transform_position = Vector2(0, 3)
-theme_override_colors/font_outline_color = Color(0.20182875, 0.09940275, 0.17749885, 1)
+offset_transform_position = Vector2(0, -7)
+theme_override_colors/font_shadow_color = Color(0.29411766, 0.18039216, 0.32156864, 1)
+theme_override_colors/font_outline_color = Color(0.29411766, 0.18039216, 0.32156864, 1)
 theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 3
 theme_override_constants/shadow_outline_size = 4
 theme_override_fonts/font = ExtResource("3_vmxin")
