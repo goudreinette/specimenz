@@ -8,18 +8,40 @@
     src: url('style/helvetica-pixelated.otf');
 }
 
+@font-face {
+    font-family: "pixelatedtnr";
+    src: url('style/pixelated-times-new-roman.ttf');
+}
+
+@font-face {
+    font-family: "tnrpixel";
+    src: url('style/times-new-roman-pixel.ttf');
+}
+
+
 body {
     margin: 0;
+    background: rgb(0, 0, 0);
 }
 
 p{
-    font-family: helveticapixelated;
+    font-family: times new roman;
+    color: white;
+    text-align: center;
 }
 
 h2{
-    font-family: pharmacy;
+    font-family: 'Times New Roman';
     font-size: 24px;
     letter-spacing: 1px;
+    text-align: center;
+}
+
+hr{
+    margin: 20px 5px;
+    color: white;
+    border-width: 2px;
+    border-style: solid;
 }
 
 
@@ -27,20 +49,23 @@ h2{
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
-    top: 100px;
-    width: 800px;
+    top:10px;
+    width: 1200px;
+    height: 900px;
+    color:white;
+    padding: 10px;
 }
 
 #banner{
-    border: 1px solid red;
-    position: relative;
-    width: 800px;
-    height: 120px;
+    width: 100%;
+    height: 80px;
     margin-bottom: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
+    border: blue 1px solid;
+    padding: 10px;
 }
 
 #telepathlogo{
@@ -50,26 +75,50 @@ h2{
 }
 
 .topbutton{
-    background: rgb(104, 68, 154);
+    background: rgb(111, 76, 186);
     width: 100px;
-    height: 50px;
+    height: 30px;
     margin: 10px;
     font-family: pharmacy;
     font-size: 24px;
-    color: white;
     letter-spacing:2px;
     text-align: center;
 }
 
+#sidemenu{
+    position: absolute;
+    width: 225px;
+    height: 800px;
+    
+
+#sidemenuoptions{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background: rgb(51, 36, 85);
+    border: 1px white solid;
+    box-shadow: 2px 2px;
+}
+}
 
 #maintext {
-    border: 1px solid blue;
-    position: relative;
+    position: absolute;
+    right: 0;
+    width: 960px;
 }
 
 .boxedparagraph{
-    border: 1px solid black;
+    border: 1px solid white;
     margin: 10px;
+    padding: 10px;
+
+}
+
+#bannerimage{
+    width: 480px;
+    height: 320px;
+    float:left;
+
 }
 
 
