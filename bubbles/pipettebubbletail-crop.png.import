@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkftvltskiptr"
-path="res://.godot/imported/kitchen3.png-30fe47daac70ac84ab0e96cf147fb257.ctex"
+uid="uid://pff8xu4odxy6"
+path="res://.godot/imported/pipettebubbletail-crop.png-c7c58708cd12e65b4aecdea18ccda44b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rooms/kitchen/kitchen3.png"
-dest_files=["res://.godot/imported/kitchen3.png-30fe47daac70ac84ab0e96cf147fb257.ctex"]
+source_file="res://bubbles/pipettebubbletail-crop.png"
+dest_files=["res://.godot/imported/pipettebubbletail-crop.png-c7c58708cd12e65b4aecdea18ccda44b.ctex"]
 
 [params]
 

@@ -1,11 +1,10 @@
 [gd_scene format=3 uid="uid://du4e1yyx1hq22"]
 
 [ext_resource type="Script" uid="uid://yrckqn3ljddj" path="res://bubbles/SpeachBubble.gd" id="1_4s25s"]
-[ext_resource type="Texture2D" uid="uid://b0u5o68a7f1af" path="res://bubbles/poopybubble.png" id="1_8kmmo"]
+[ext_resource type="Texture2D" uid="uid://bidf6eg2yh2w6" path="res://bubbles/poopybubble.png" id="1_8kmmo"]
 [ext_resource type="Texture2D" uid="uid://dim5pjp8csxxc" path="res://bubbles/poopybubbletail-crop.png" id="3_0hw5c"]
 [ext_resource type="Texture2D" uid="uid://diank45a1g3dq" path="res://bubbles/poopybubbletex-squish-new.png" id="3_nj2ao"]
 [ext_resource type="FontFile" uid="uid://de6y7ndjmxd6a" path="res://bubbles/Andy Bold.ttf" id="3_vmxin"]
-[ext_resource type="Texture2D" uid="uid://d3sca8db8q302" path="res://bubbles/poopybubbletex-squish.png" id="6_nj2ao"]
 
 [sub_resource type="Animation" id="Animation_ae871"]
 length = 0.001
@@ -124,60 +123,3 @@ theme_override_constants/shadow_outline_size = 4
 theme_override_fonts/font = ExtResource("3_vmxin")
 theme_override_font_sizes/font_size = 40
 text = "hello"
-
-[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=1108182838]
-visible = false
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 235.0
-offset_top = -118.0
-offset_right = 528.0
-offset_bottom = -22.0
-grow_horizontal = 0
-grow_vertical = 0
-theme_override_constants/margin_left = 15
-theme_override_constants/margin_top = 9
-theme_override_constants/margin_right = 28
-theme_override_constants/margin_bottom = 15
-
-[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer2" unique_id=577601792]
-layout_mode = 2
-texture = ExtResource("3_nj2ao")
-region_rect = Rect2(0, 48, 128, 80)
-patch_margin_left = 48
-patch_margin_top = 24
-patch_margin_right = 48
-patch_margin_bottom = 24
-
-[node name="Label" type="Label" parent="MarginContainer2" unique_id=916856521]
-layout_mode = 2
-offset_transform_enabled = true
-offset_transform_position = Vector2(0, 3)
-theme_override_colors/font_outline_color = Color(0.20182875, 0.09940275, 0.17749885, 1)
-theme_override_constants/line_spacing = 0
-theme_override_constants/outline_size = 3
-theme_override_constants/shadow_outline_size = 4
-theme_override_fonts/font = ExtResource("3_vmxin")
-theme_override_font_sizes/font_size = 40
-text = "dwdwdwtetete
-jjgjgjg
-hhffhfhhf
-ouououou
-yiyyiyiyiy"
-
-[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=255850087]
-visible = false
-modulate = Color(1, 1, 1, 0.5294118)
-offset_left = 5.0
-offset_top = -94.0
-offset_right = 101.0
-offset_bottom = -19.0
-texture = ExtResource("6_nj2ao")
-region_rect = Rect2(0, 0, 128, 96)
-patch_margin_left = 48
-patch_margin_top = 40
-patch_margin_right = 48
-patch_margin_bottom = 35
