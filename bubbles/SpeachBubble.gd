@@ -15,4 +15,4 @@ func _process(delta: float) -> void:
 
 
 func set_text(text: String):
-	$Label.text = text
+	$MarginContainer/MarginContainer/Label.text = text

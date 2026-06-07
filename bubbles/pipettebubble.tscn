@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://c6hx8w8n448vx" path="res://bubbles/pipettebubble.png" id="1_5lu65"]
 [ext_resource type="Script" uid="uid://yrckqn3ljddj" path="res://bubbles/SpeachBubble.gd" id="1_ae871"]
+[ext_resource type="Texture2D" uid="uid://dd8yvf4gnna3b" path="res://bubbles/poopybubbletex.png" id="3_nw034"]
+[ext_resource type="FontFile" uid="uid://de6y7ndjmxd6a" path="res://bubbles/Andy Bold.ttf" id="4_1j2hc"]
 
 [sub_resource type="Animation" id="Animation_ae871"]
 length = 0.001
@@ -53,10 +55,34 @@ metadata/_edit_group_ = true
 libraries/ = SubResource("AnimationLibrary_nw034")
 autoplay = &"in"
 
-[node name="Label" type="Label" parent="." unique_id=953745386]
-offset_left = 61.0
-offset_top = -66.0
-offset_right = 106.0
-offset_bottom = -43.0
-text = "Hello!"
-metadata/_edit_use_anchors_ = true
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1241822577]
+offset_left = 31.0
+offset_top = -122.0
+offset_right = 204.0
+offset_bottom = -20.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer" unique_id=1802869016]
+layout_mode = 2
+texture = ExtResource("3_nw034")
+region_rect = Rect2(0, 0, 128, 128)
+patch_margin_left = 48
+patch_margin_top = 48
+patch_margin_right = 48
+patch_margin_bottom = 54
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer" unique_id=878643120]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer" unique_id=824355096]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.20182875, 0.09940275, 0.17749885, 1)
+theme_override_constants/line_spacing = -5
+theme_override_constants/outline_size = 3
+theme_override_constants/shadow_outline_size = 4
+theme_override_fonts/font = ExtResource("4_1j2hc")
+theme_override_font_sizes/font_size = 32
+text = "dwdwdw"

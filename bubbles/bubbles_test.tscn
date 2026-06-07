@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b3tqfh1ry1fgf"]
+
+[ext_resource type="Script" uid="uid://jmqnsnrefhll" path="res://bubbles/bubbles_test.gd" id="1_opw3o"]
+[ext_resource type="Texture2D" uid="uid://chiemxqinhrep" path="res://bubbles/ninepatchrect-bubble-big.png" id="2_opw3o"]
+
+[node name="BubblesTest" type="CanvasLayer" unique_id=783023706]
+script = ExtResource("1_opw3o")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=943899934]
+offset_left = 233.0
+offset_top = 75.0
+offset_right = 582.0
+offset_bottom = 363.0
+texture = ExtResource("2_opw3o")
+region_rect = Rect2(0, 0, 149.8481, 150)
+patch_margin_left = 50
+patch_margin_top = 48
+patch_margin_right = 50
+patch_margin_bottom = 54

@@ -10,8 +10,14 @@ var start_pos : Vector2
 @export var SPEED = 30
 
 
-var talking: bool
+enum CharacterState {
+	Idle, Talking, Walking, Waving, Sighing, Huh
+}
+
+var state: CharacterState = CharacterState.Idle
+
 var current_walking_tween: Tween
+
 
 func _ready():
 	start_pos = self.get_position()
@@ -33,12 +39,12 @@ func _process(delta):
 	var walking: bool = distance > 0.0
 	var threshold = .125
 	
-	if talking:
+	if state == CharacterState.Talking:
 		$AnimatedSprite2D.play("talking")
 	elif walking:
 		var direction: Vector2 = self.position.direction_to(target_pos)
 		
-		if direction.x < threshold:
+		if abs(direction.x) < abs(threshold): # Not walking left/right
 			if direction.y > threshold:
 				$AnimatedSprite2D.play("front")
 			elif direction.y < -threshold:
@@ -59,23 +65,6 @@ func _process(delta):
 				$AnimatedSprite2D.play("left_backward")
 			else:
 				$AnimatedSprite2D.play("left")
-		
-	#else:
-		## Walking
-		#if distance > 0.0:
-			#if going_left:
-				#if going_up:
-					#$AnimatedSprite2D.play("left_backward")
-				#else:
-					#$AnimatedSprite2D.play("left_forward")
-			#else:
-				#if going_up:
-					#$AnimatedSprite2D.play("right_backward")
-				#else:
-					#$AnimatedSprite2D.play("right_forward")
-		## Idling
-		#else: 
-			#$AnimatedSprite2D.play("idling")
 
 	last_frame_pos = self.position
 
@@ -95,17 +84,22 @@ func walk_to_new_location():
 	print(self.name,  "'s TIMER WENT OFF, moving to ", new_pos)
 	print(self.name,  "'s next timer in ", next_duration)
 	$Timer.start(next_duration)
+	state = CharacterState.Walking 
 
 
 func _on_timer_timeout():
-	if not talking: 
+	if state != CharacterState.Talking: 
 		walk_to_new_location()
 
 func _on_talking_timer_timeout():
-	talking = false
+	state = CharacterState.Idle
 	current_walking_tween = null
 	_on_timer_timeout()	
+	
+	
 
+
+# Actions ------------------------------------------------------
 func say(text: String):
 	print("saying: ", text)
 	var new_bubble: SpeechBubble = text_bubble.instantiate()
@@ -114,12 +108,18 @@ func say(text: String):
 	if current_walking_tween:
 		current_walking_tween.kill()
 	$TalkingTimer.start(3)
-	talking = true
-	
+	state = CharacterState.Talking
 	get_parent().add_child(new_bubble)
-
-
 
 func sigh():
 	pass
+	
+func huh():
+	pass
+	
+func wave():
+	pass
+	
+	
+	
 	

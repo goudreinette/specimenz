@@ -73,7 +73,8 @@ script = ExtResource("1_xk0tj")
 script = ExtResource("9_y5fn7")
 
 [node name="Commsroom2" type="Sprite2D" parent="." unique_id=2138710503]
-position = Vector2(320, 240)
+position = Vector2(480.00003, 360)
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("3_5qiwb")
 
 [node name="Maeve" parent="." unique_id=297373198 instance=ExtResource("1_u7dpo")]
@@ -82,11 +83,11 @@ visible = false
 position = Vector2(214, 267)
 
 [node name="Pipette" parent="." unique_id=1721991310 instance=ExtResource("8_y15cf")]
-position = Vector2(180, 269)
+position = Vector2(311, 435)
 text_bubble = ExtResource("6_chss5")
 
 [node name="Poopy" parent="." unique_id=2000619831 instance=ExtResource("2_xk0tj")]
-position = Vector2(436, 266)
+position = Vector2(672, 428)
 text_bubble = ExtResource("10_chss5")
 
 [node name="Node2D" type="Node2D" parent="." unique_id=629876863]
