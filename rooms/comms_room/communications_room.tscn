@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://b8pd4r7fygio0" path="res://characters/Maeve.tscn" id="1_u7dpo"]
 [ext_resource type="Script" uid="uid://b4l0i7oshylsa" path="res://rooms/comms_room/commsroom.gd" id="1_xk0tj"]
 [ext_resource type="PackedScene" uid="uid://b4iokt7qej0oc" path="res://characters/Poopy.tscn" id="2_xk0tj"]
-[ext_resource type="Texture2D" uid="uid://c5qrbovm8uv0d" path="res://rooms/comms_room/commsroom2.png" id="3_5qiwb"]
+[ext_resource type="Texture2D" uid="uid://cgy7hymmrma1" path="res://rooms/comms_room/comms ortho.png" id="3_iwwi8"]
 [ext_resource type="Texture2D" uid="uid://dg1smunejb1e1" path="res://rooms/comms_room/door.png" id="5_hid37"]
 [ext_resource type="PackedScene" uid="uid://dktk6we34mcqp" path="res://bubbles/pipettebubble.tscn" id="6_chss5"]
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="6_xdqlv"]
@@ -72,10 +72,9 @@ script = ExtResource("1_xk0tj")
 [node name="Conversation 1" type="Node2D" parent="." unique_id=856582444]
 script = ExtResource("9_y5fn7")
 
-[node name="Commsroom2" type="Sprite2D" parent="." unique_id=2138710503]
-position = Vector2(480.00003, 360)
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("3_5qiwb")
+[node name="CommsOrtho" type="Sprite2D" parent="." unique_id=279581145]
+position = Vector2(480, 360)
+texture = ExtResource("3_iwwi8")
 
 [node name="Maeve" parent="." unique_id=297373198 instance=ExtResource("1_u7dpo")]
 process_mode = 4
