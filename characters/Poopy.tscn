@@ -367,7 +367,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("38_fqhb3")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"big sigh",
 "speed": 12.0
 }, {
@@ -922,7 +922,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("106_fpesn")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"waving",
 "speed": 12.0
 }]
@@ -938,9 +938,8 @@ texture = ExtResource("1_xep3p")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=750133325]
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_0jvrn")
-animation = &"idling"
+animation = &"waving"
 autoplay = "idling"
-frame_progress = 0.5433293
 
 [node name="Timer" type="Timer" parent="." unique_id=1934291810]
 autostart = true
@@ -948,5 +947,6 @@ autostart = true
 [node name="TalkingTimer" type="Timer" parent="." unique_id=1647831272]
 one_shot = true
 
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="TalkingTimer" to="." method="_on_talking_timer_timeout"]

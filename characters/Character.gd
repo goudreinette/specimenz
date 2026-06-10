@@ -41,6 +41,10 @@ func _process(delta):
 	
 	if state == CharacterState.Talking:
 		$AnimatedSprite2D.play("talking")
+	elif state == CharacterState.Waving:
+		$AnimatedSprite2D.play("waving")
+	elif state == CharacterState.Sighing:
+		$AnimatedSprite2D.play("big sigh")
 	elif walking:
 		var direction: Vector2 = self.position.direction_to(target_pos)
 		
@@ -65,13 +69,15 @@ func _process(delta):
 				$AnimatedSprite2D.play("left_backward")
 			else:
 				$AnimatedSprite2D.play("left")
+	else:
+		$AnimatedSprite2D.play("idling")
 
 	last_frame_pos = self.position
 
 
 func walk_to_new_location():
 	current_walking_tween =  get_tree().create_tween()
-	var new_pos =  start_pos +  Vector2(randf_range(-30, 30), randf_range(20, 80))
+	var new_pos =  start_pos +  Vector2(randf_range(-30, 30), randf_range(50, 150))
 	#var distance = self.position.distance_to(new_pos)
 	#var walk_duration = remap(distance, 0, 200, 0.0, 1.0)
 	var distance = (position).distance_to(new_pos)
@@ -112,14 +118,19 @@ func say(text: String):
 	get_parent().add_child(new_bubble)
 
 func sigh():
-	pass
+	state = CharacterState.Sighing
 	
 func huh():
-	pass
+	state = CharacterState.Huh
 	
 func wave():
-	pass
+	state = CharacterState.Waving
 	
 	
-	
-	
+func _on_animated_sprite_2d_animation_finished():
+	if state == CharacterState.Sighing:
+		state = CharacterState.Idle
+	if state == CharacterState.Huh:
+		state = CharacterState.Idle
+	if state == CharacterState.Waving:
+		state = CharacterState.Idle

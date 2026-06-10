@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkftvltskiptr"
-path="res://.godot/imported/kitchen3.png-30fe47daac70ac84ab0e96cf147fb257.ctex"
+uid="uid://b7v3ajhodespd"
+path="res://.godot/imported/brainletzHQ.png-4203a5b59dbd8447bd73d4a4b2147832.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rooms/kitchen/kitchen3.png"
-dest_files=["res://.godot/imported/kitchen3.png-30fe47daac70ac84ab0e96cf147fb257.ctex"]
+source_file="res://telepath website/style/brainletzHQ.png"
+dest_files=["res://.godot/imported/brainletzHQ.png-4203a5b59dbd8447bd73d4a4b2147832.ctex"]
 
 [params]
 
