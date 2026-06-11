@@ -77,7 +77,7 @@ func _process(delta):
 
 func walk_to_new_location():
 	current_walking_tween =  get_tree().create_tween()
-	var new_pos =  start_pos +  Vector2(randf_range(-30, 30), randf_range(50, 150))
+	var new_pos =  start_pos +  Vector2(randf_range(-30, 30), randf_range(50, 140))
 	#var distance = self.position.distance_to(new_pos)
 	#var walk_duration = remap(distance, 0, 200, 0.0, 1.0)
 	var distance = (position).distance_to(new_pos)
@@ -94,8 +94,11 @@ func walk_to_new_location():
 
 
 func _on_timer_timeout():
-	if state != CharacterState.Talking: 
+	if state == CharacterState.Idle: 
 		walk_to_new_location()
+	else:
+		var next_duration = randf_range(5, 10)
+		$Timer.start(next_duration)
 
 func _on_talking_timer_timeout():
 	state = CharacterState.Idle

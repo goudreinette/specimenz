@@ -10,10 +10,12 @@ func pause(t):
 
 func _ready():
 	await pause(4)
-	poopy.wave()
+	poopy.say("Some \nthing\nthing\nthing\nthing")
+	await pause(4)
+	poopy.huh()
 
 	await pause(10)
-	pipette.say("Some \n thing\n thing\n thing\n thing")
+	pipette.say("Some \nthing\nthing\nthing\nthing")
 	await pause(5)
 	pipette.say("Blablblabllbalblblablalbalblabla")
 	await pause(5)

@@ -148,7 +148,7 @@ offset_transform_position = Vector2(37, 26)
 texture = ExtResource("2_nw034")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer/OpacityContainer" unique_id=258284393]
-modulate = Color(1, 1, 1, 0.52156866)
+modulate = Color(1, 1, 1, 0.8039216)
 layout_mode = 2
 texture = ExtResource("1_5lu65")
 region_rect = Rect2(0, -21.016663, 328, 169.16418)
@@ -161,9 +161,9 @@ patch_margin_bottom = 81
 layout_mode = 2
 offset_transform_enabled = true
 theme_override_constants/margin_left = 37
-theme_override_constants/margin_top = 21
+theme_override_constants/margin_top = 40
 theme_override_constants/margin_right = 67
-theme_override_constants/margin_bottom = 40
+theme_override_constants/margin_bottom = 60
 
 [node name="Label" type="Label" parent="MarginContainer/MarginContainer" unique_id=1682889102]
 layout_mode = 2
@@ -178,5 +178,7 @@ theme_override_constants/outline_size = 8
 theme_override_constants/shadow_outline_size = 4
 theme_override_fonts/font = ExtResource("4_1j2hc")
 theme_override_font_sizes/font_size = 40
-text = "helloeggggggggggggggggggggggg"
+text = "helloeggggggggggggggggggggggg
+ddddddddd
+ddddd"
 justification_flags = 162
