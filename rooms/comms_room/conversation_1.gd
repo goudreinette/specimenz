@@ -1,19 +1,16 @@
-extends Node
+extends Conversation
 
-@onready var poopy: Character = $"../Poopy"
-@onready var pipette: Character = $"../Pipette"
-
-
-func pause(t):
-	return get_tree().create_timer(t).timeout 
+@onready var poopy: Character = $"../../Poopy"
+@onready var pipette: Character = $"../../Pipette"
 
 
-func _ready():
+
+
+func start():
 	await pause(4)
 	poopy.say("Some \nthing\nthing\nthing\nthing")
 	await pause(4)
 	poopy.huh()
-
 	await pause(10)
 	pipette.say("Some \nthing\nthing\nthing\nthing")
 	await pause(5)
@@ -65,5 +62,8 @@ func _ready():
 	await pause(5)
 	poopy.say("Bye")
 	await pause(5)
-
 	poopy.sigh()
+	
+	conversation_finished.emit()
+	
+	
