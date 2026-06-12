@@ -57,6 +57,9 @@ _data = {
 
 [node name="Node2D" type="Node2D" unique_id=1170994842]
 script = ExtResource("1_4s25s")
+margin_bottom_single_line = 20
+margin_top_multi_line = 60
+margin_bottom_multi_line = 80
 
 [node name="Poopybubble" type="Sprite2D" parent="." unique_id=178669016]
 visible = false
@@ -98,7 +101,7 @@ offset_transform_position = Vector2(37, 31)
 texture = ExtResource("3_0hw5c")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer/OpacityContainer" unique_id=1904940913]
-modulate = Color(1, 1, 1, 0.52156866)
+modulate = Color(1, 1, 1, 0.8039216)
 layout_mode = 2
 texture = ExtResource("4_hurk1")
 region_rect = Rect2(-14, -41.365536, 350, 207.68958)
