@@ -1,25 +1,48 @@
 [gd_scene format=3 uid="uid://c7aluwk78w6nv"]
 
-[ext_resource type="Texture2D" uid="uid://sakjmnoqmekw" path="res://rooms/living/living6.png" id="1_fy52l"]
+[ext_resource type="Texture2D" uid="uid://sakjmnoqmekw" path="res://rooms/living/Living6.png" id="1_fy52l"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_b6ynd"]
 
 [node name="Living1" type="Node2D" unique_id=698517045]
 
 [node name="Living1" type="Sprite2D" parent="." unique_id=1671814796]
-position = Vector2(320, 240)
+position = Vector2(480, 360)
 texture = ExtResource("1_fy52l")
 
-[node name="ToStairs" parent="." unique_id=709883293 instance=ExtResource("2_b6ynd")]
-offset_left = 121.0
-offset_top = 70.0
-offset_right = 341.0
-offset_bottom = 406.0
+[node name="ToStairs1" parent="." unique_id=709883293 instance=ExtResource("2_b6ynd")]
+offset_left = 128.0
+offset_right = 520.0
+offset_bottom = 616.0
 next_scene = "res://rooms/stairway/stairway1.tscn"
+cursor_style = 3
 
-[node name="ToLiving1" parent="." unique_id=1735292704 instance=ExtResource("2_b6ynd")]
+[node name="ToLiving10" parent="." unique_id=1735292704 instance=ExtResource("2_b6ynd")]
 offset_left = 1.0
-offset_top = 409.0
-offset_right = 642.0
-offset_bottom = 484.0
-next_scene = "res://rooms/living/living1.tscn"
-cursor_style = 1
+offset_top = 616.0
+offset_bottom = 720.0
+next_scene = "res://rooms/living/living10.tscn"
+cursor_style = 2
+
+[node name="ToLiving10-2" parent="." unique_id=2125296165 instance=ExtResource("2_b6ynd")]
+offset_left = 1.0
+offset_top = 64.0
+offset_right = 128.0
+offset_bottom = 616.0
+next_scene = "res://rooms/living/living10.tscn"
+cursor_style = 8
+
+[node name="ToLiving8" parent="." unique_id=463546492 instance=ExtResource("2_b6ynd")]
+offset_left = 552.0
+offset_top = 224.0
+offset_right = 832.0
+offset_bottom = 584.0
+next_scene = "res://rooms/living/living8.tscn"
+cursor_style = 5
+
+[node name="ToLiving7" parent="." unique_id=1549506203 instance=ExtResource("2_b6ynd")]
+offset_left = 832.0
+offset_top = 224.0
+offset_right = 960.0
+offset_bottom = 584.0
+next_scene = "res://rooms/living/living7.tscn"
+cursor_style = 11

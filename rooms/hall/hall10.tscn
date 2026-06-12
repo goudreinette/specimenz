@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://n1ukpq5ep2nk"]
+
+[ext_resource type="Texture2D" uid="uid://b26f2toldb7it" path="res://rooms/hall/Hall10.png" id="2_srb6n"]
+[ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_w7loh"]
+
+[node name="Hall10" type="Node2D" unique_id=1006463638]
+
+[node name="Hall10" type="Sprite2D" parent="." unique_id=1701706616]
+position = Vector2(480, 360)
+texture = ExtResource("2_srb6n")
+
+[node name="ToHall1" parent="." unique_id=2125296165 instance=ExtResource("2_w7loh")]
+offset_left = 184.0
+offset_top = 648.0
+offset_right = 792.0
+offset_bottom = 720.0
+next_scene = "res://rooms/hall/hall1.tscn"
+cursor_style = 2
+
+[node name="ToMenu1" parent="." unique_id=1935515462 instance=ExtResource("2_w7loh")]
+offset_left = 328.0
+offset_top = 80.0
+offset_right = 680.0
+offset_bottom = 648.0
+next_scene = "res://rooms/hall/hall7.tscn"
+cursor_style = 5

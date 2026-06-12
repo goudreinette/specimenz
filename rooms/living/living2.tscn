@@ -1,39 +1,41 @@
 [gd_scene format=3 uid="uid://cp7b68ewigl2s"]
 
-[ext_resource type="Texture2D" uid="uid://7wth82rwchp0" path="res://rooms/living/living2.png" id="1_ahuvh"]
+[ext_resource type="Texture2D" uid="uid://7wth82rwchp0" path="res://rooms/living/Living2.png" id="1_ahuvh"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_ca0wf"]
 
-[node name="Living1" type="Node2D" unique_id=698517045]
+[node name="Living2" type="Node2D" unique_id=698517045]
 
-[node name="Living1" type="Sprite2D" parent="." unique_id=1671814796]
-position = Vector2(320, 240)
+[node name="Living2" type="Sprite2D" parent="." unique_id=1671814796]
+position = Vector2(480, 360)
 texture = ExtResource("1_ahuvh")
 
-[node name="ToLiving6" parent="." unique_id=2125296165 instance=ExtResource("2_ca0wf")]
-offset_left = 16.0
-offset_top = 192.0
-offset_right = 149.0
-offset_bottom = 354.0
-next_scene = "res://rooms/living/living6.tscn"
-
-[node name="ToLiving7" parent="." unique_id=709883293 instance=ExtResource("2_ca0wf")]
-offset_left = 425.0
-offset_top = 203.0
-offset_right = 537.0
-offset_bottom = 333.0
+[node name="ToLiving7" parent="." unique_id=2125296165 instance=ExtResource("2_ca0wf")]
+offset_left = 192.0
+offset_top = 288.0
+offset_right = 408.0
+offset_bottom = 448.0
 next_scene = "res://rooms/living/living7.tscn"
+cursor_style = 5
 
-[node name="ToLiving1" parent="." unique_id=387180303 instance=ExtResource("2_ca0wf")]
+[node name="ToLiving3" parent="." unique_id=709883293 instance=ExtResource("2_ca0wf")]
+offset_left = 472.0
+offset_top = 200.0
+offset_right = 960.0
+offset_bottom = 472.0
+next_scene = "res://rooms/living/living3.tscn"
+cursor_style = 4
+
+[node name="ToLiving6" parent="." unique_id=387180303 instance=ExtResource("2_ca0wf")]
 offset_left = -1.0
-offset_top = 158.0
-offset_right = 83.0
-offset_bottom = 482.0
+offset_top = 256.0
+offset_right = 192.0
+offset_bottom = 464.0
+next_scene = "res://rooms/living/living6.tscn"
+cursor_style = 3
+
+[node name="ToLiving1" parent="." unique_id=578374236 instance=ExtResource("2_ca0wf")]
+offset_top = 624.0
+offset_right = 960.0
+offset_bottom = 720.0
 next_scene = "res://rooms/living/living1.tscn"
 cursor_style = 2
-
-[node name="ToLiving3" parent="." unique_id=578374236 instance=ExtResource("2_ca0wf")]
-offset_left = 557.0
-offset_top = 162.0
-offset_right = 641.0
-next_scene = "res://rooms/living/living3.tscn"
-cursor_style = 3
