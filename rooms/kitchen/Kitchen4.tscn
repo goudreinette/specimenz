@@ -6,14 +6,13 @@
 [node name="Kitchen4" type="Node2D" unique_id=801351203]
 
 [node name="Kitchen4" type="Sprite2D" parent="." unique_id=1415800866]
-position = Vector2(320, 241)
+position = Vector2(480, 360)
 texture = ExtResource("1_c4ofe")
 
 [node name="ToKitchen1" type="TextureButton" parent="." unique_id=1509412791]
-offset_left = 184.0
-offset_top = 341.0
-offset_right = 647.0
-offset_bottom = 479.0
+offset_top = 576.0
+offset_right = 960.0
+offset_bottom = 720.0
 script = ExtResource("2_pfnyu")
 next_scene = "res://rooms/kitchen/kitchen1.tscn"
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
@@ -25,4 +24,5 @@ offset_right = 342.0
 offset_bottom = 193.0
 script = ExtResource("2_pfnyu")
 next_scene = "res://rooms/kitchen/kitchen3.tscn"
+cursor_style = 6
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"

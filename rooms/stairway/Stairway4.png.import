@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blb8oq6pvs10j"
-path="res://.godot/imported/Upstairs2.png-dd5ea6dad50a0aaade807e2e09461237.ctex"
+uid="uid://vda4kn7cxcdi"
+path="res://.godot/imported/Stairway4.png-8fcb568f4f70ee4b57cc51dba39ae2ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rooms/upstairs/Upstairs2.png"
-dest_files=["res://.godot/imported/Upstairs2.png-dd5ea6dad50a0aaade807e2e09461237.ctex"]
+source_file="res://rooms/stairway/Stairway4.png"
+dest_files=["res://.godot/imported/Stairway4.png-8fcb568f4f70ee4b57cc51dba39ae2ce.ctex"]
 
 [params]
 

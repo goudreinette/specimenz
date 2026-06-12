@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blb8oq6pvs10j"
-path="res://.godot/imported/Upstairs2.png-dd5ea6dad50a0aaade807e2e09461237.ctex"
+uid="uid://cqsoh1ek4aeql"
+path="res://.godot/imported/Kitchen7.png-55004fbb4e604cfef65a16678cd791f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rooms/upstairs/Upstairs2.png"
-dest_files=["res://.godot/imported/Upstairs2.png-dd5ea6dad50a0aaade807e2e09461237.ctex"]
+source_file="res://rooms/kitchen/Kitchen7.png"
+dest_files=["res://.godot/imported/Kitchen7.png-55004fbb4e604cfef65a16678cd791f6.ctex"]
 
 [params]
 
