@@ -10,7 +10,7 @@ func start():
 	pipette.wave()
 	
 	await pause(5)
-	poopy.say("Hi Maeve, how \nwas school?")
+	poopy.say("Hi Maeve, how Hi Maeve,Hi Maeve,Hi Maeve,Hi Maeve,Hi Maeve,Hi Maeve,Hi Maeve,Hi Maeve,Hi Maeve,Hi Maeve,")
 	poopy.wave()
 	
 	await pause(5)

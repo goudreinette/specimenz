@@ -57,6 +57,7 @@ _data = {
 
 [node name="Node2D" type="Node2D" unique_id=733696023]
 script = ExtResource("1_ae871")
+offset_tranform_single_line = Vector2(0.9, 0.8)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=210274144]
 libraries/ = SubResource("AnimationLibrary_nw034")

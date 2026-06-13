@@ -60,6 +60,7 @@ script = ExtResource("1_4s25s")
 margin_bottom_single_line = 20
 margin_top_multi_line = 60
 margin_bottom_multi_line = 80
+offset_tranform_single_line = Vector2(1, 1)
 
 [node name="Poopybubble" type="Sprite2D" parent="." unique_id=178669016]
 visible = false

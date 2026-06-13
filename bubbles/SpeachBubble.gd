@@ -7,6 +7,8 @@ class_name SpeechBubble extends Node2D
 @export var margin_top_multi_line = 40
 @export var margin_bottom_multi_line = 60
 
+@export var offset_tranform_single_line =  Vector2(1.0, .9)
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -33,4 +35,4 @@ func set_text(text: String):
 	else:
 		$MarginContainer/MarginContainer.add_theme_constant_override("margin_top", margin_top_single_line)
 		$MarginContainer/MarginContainer.add_theme_constant_override("margin_bottom", margin_bottom_single_line)
-		$MarginContainer/OpacityContainer/NinePatchRect.offset_transform_scale = Vector2(.9, .9)
+		$MarginContainer/OpacityContainer/NinePatchRect.offset_transform_scale = offset_tranform_single_line
