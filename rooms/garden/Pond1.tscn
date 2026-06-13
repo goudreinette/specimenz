@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://caexebcv38w20"]
+
+[ext_resource type="Texture2D" uid="uid://c4ij60khd248f" path="res://rooms/garden/Pond1.png" id="1_lv6cd"]
+[ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_u134n"]
+
+[node name="Garden6" type="Node2D" unique_id=2086378232]
+
+[node name="Pond1" type="Sprite2D" parent="." unique_id=412749448]
+position = Vector2(480, 360)
+texture = ExtResource("1_lv6cd")
+
+[node name="ToGarden1" parent="." unique_id=1564320955 instance=ExtResource("2_u134n")]
+offset_top = 608.0
+offset_right = 960.0
+offset_bottom = 720.0
+next_scene = "res://rooms/garden/Garden1.tscn"
+cursor_style = 1

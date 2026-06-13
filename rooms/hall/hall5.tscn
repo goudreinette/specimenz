@@ -1,32 +1,26 @@
 [gd_scene format=3 uid="uid://okoknyry8n53"]
 
-[ext_resource type="Texture2D" uid="uid://bo6k1jlis3nc2" path="res://rooms/hall/hall5.png" id="1_1k2kv"]
+[ext_resource type="Texture2D" uid="uid://bo6k1jlis3nc2" path="res://rooms/hall/Hall5.png" id="1_1k2kv"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_0k1fn"]
 
-[node name="Hall1" type="Node2D" unique_id=1006463638]
+[node name="Hall5" type="Node2D" unique_id=1006463638]
 
 [node name="Hall5" type="Sprite2D" parent="." unique_id=2128465264]
-position = Vector2(321, 240)
+position = Vector2(480, 360)
 texture = ExtResource("1_1k2kv")
 
-[node name="ToHall6" parent="." unique_id=2125296165 instance=ExtResource("2_0k1fn")]
-offset_left = 364.0
-offset_top = 181.0
-offset_right = 450.0
-offset_bottom = 312.0
+[node name="ToLiving1" parent="." unique_id=2125296165 instance=ExtResource("2_0k1fn")]
+offset_left = 216.0
+offset_top = 88.0
+offset_right = 752.0
+offset_bottom = 592.0
+next_scene = "res://rooms/living/living1.tscn"
+cursor_style = 5
+
+[node name="ToHall6" parent="." unique_id=17887623 instance=ExtResource("2_0k1fn")]
+offset_left = 160.0
+offset_top = 592.0
+offset_right = 784.0
+offset_bottom = 720.0
 next_scene = "res://rooms/hall/hall6.tscn"
-
-[node name="ToHall4" parent="." unique_id=17887623 instance=ExtResource("2_0k1fn")]
-offset_left = 196.0
-offset_top = 376.0
-offset_right = 634.0
-offset_bottom = 486.0
-next_scene = "res://rooms/hall/hall4.tscn"
-cursor_style = 1
-
-[node name="ToNiche4" parent="." unique_id=176952966 instance=ExtResource("2_0k1fn")]
-offset_left = 187.0
-offset_top = 169.0
-offset_right = 307.0
-offset_bottom = 347.0
-next_scene = "res://rooms/niche/niche4.tscn"
+cursor_style = 2

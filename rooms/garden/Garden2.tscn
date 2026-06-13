@@ -1,25 +1,34 @@
 [gd_scene format=3 uid="uid://7v4riqwiokha"]
 
-[ext_resource type="Texture2D" uid="uid://bdfwd683vmt5b" path="res://rooms/garden/garden2.png" id="1_sycqs"]
+[ext_resource type="Texture2D" uid="uid://bdfwd683vmt5b" path="res://rooms/garden/Garden2.png" id="1_sycqs"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="3_5b02v"]
 
 [node name="Garden2" type="Node2D" unique_id=319363672]
 
 [node name="Garden2" type="Sprite2D" parent="." unique_id=1531599523]
-position = Vector2(320, 239)
+position = Vector2(480, 360)
 texture = ExtResource("1_sycqs")
 
 [node name="ToGarden1" parent="." unique_id=2125296165 instance=ExtResource("3_5b02v")]
 offset_left = 81.0
-offset_top = 394.0
-offset_right = 392.0
+offset_top = 576.0
+offset_right = 768.0
+offset_bottom = 720.0
 next_scene = "res://rooms/garden/Garden1.tscn"
-cursor_style = 1
+cursor_style = 2
 
 [node name="ToGarden3" parent="." unique_id=133955745 instance=ExtResource("3_5b02v")]
 offset_left = -4.0
-offset_top = 137.0
-offset_right = 151.0
-offset_bottom = 386.0
+offset_top = 256.0
+offset_right = 448.0
+offset_bottom = 576.0
 next_scene = "res://rooms/garden/Garden3.tscn"
-cursor_style = 2
+cursor_style = 3
+
+[node name="ToGarden5" parent="." unique_id=1550048370 instance=ExtResource("3_5b02v")]
+offset_left = 448.0
+offset_top = 384.0
+offset_right = 960.0
+offset_bottom = 576.0
+next_scene = "res://rooms/garden/Garden5.tscn"
+cursor_style = 4

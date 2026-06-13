@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://ch22oh358jh33"]
+
+[ext_resource type="Texture2D" uid="uid://gafvhob3ev6m" path="res://rooms/hall/Hall7.png" id="2_v1n6n"]
+[ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_xlwyv"]
+
+[node name="Hall7" type="Node2D" unique_id=1006463638]
+
+[node name="Hall7" type="Sprite2D" parent="." unique_id=201648956]
+position = Vector2(480, 360)
+texture = ExtResource("2_v1n6n")
+
+[node name="ToHall4" parent="." unique_id=2125296165 instance=ExtResource("2_xlwyv")]
+offset_left = 80.0
+offset_top = 592.0
+offset_right = 792.0
+offset_bottom = 720.0
+next_scene = "res://rooms/hall/hall4.tscn"
+cursor_style = 2
+
+[node name="ToHall8" parent="." unique_id=1935515462 instance=ExtResource("2_xlwyv")]
+offset_left = 392.0
+offset_top = 240.0
+offset_right = 616.0
+offset_bottom = 487.0
+next_scene = "res://rooms/hall/hall8.tscn"
+cursor_style = 4
+
+[node name="ToNiche3" parent="." unique_id=1676179927 instance=ExtResource("2_xlwyv")]
+offset_left = 616.0
+offset_top = 232.0
+offset_right = 784.0
+offset_bottom = 504.0
+next_scene = "res://rooms/niche/niche3.tscn"
+cursor_style = 11

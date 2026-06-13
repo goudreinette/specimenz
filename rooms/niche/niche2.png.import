@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dppxech8w7acp"
-path="res://.godot/imported/niche2.png-b94a93be05f6c3568fd5a9df5fcb6afc.ctex"
+path="res://.godot/imported/Niche2.png-6b3282793ead0c62c33399f85fc80b57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rooms/niche/niche2.png"
-dest_files=["res://.godot/imported/niche2.png-b94a93be05f6c3568fd5a9df5fcb6afc.ctex"]
+source_file="res://rooms/niche/Niche2.png"
+dest_files=["res://.godot/imported/Niche2.png-6b3282793ead0c62c33399f85fc80b57.ctex"]
 
 [params]
 
