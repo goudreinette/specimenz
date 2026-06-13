@@ -6,8 +6,77 @@ extends Conversation
 
 func start():
 	await pause(4)
-	poopy.say("This is conversation 3!")
+	pipette.say("Hi Poopy")
+	pipette.wave()
+	
+	await pause(5)
+	poopy.say("Hi Maeve")
+	poopy.wave()
+	
+	await pause(4)
+	pipette.say("Haha cool")
+	
+	await pause(5)
+	poopy.say("Cool")
+	
+	await pause(6)
+	pipette.say("My day was okay \n I guess")
+	
+	await pause(5)
+	poopy.say("Okay I guess")
+	
+	await pause(5)
+	pipette.say("Haha your funny")
+	
+	await pause(5)
+	poopy.say("Funny Maeve")
+	
+	await pause(5)
+	pipette.say("Funny Poopy")
+	
+	await pause(5)
+	poopy.say("Me Poopy")
+	
+	await pause(6)
+	pipette.say("Yes you are poopy!")
+	
+	await pause(5)
+	poopy.say("Me Maeve")
+	
 	await pause(2)
-	pipette.say("Yup!")
+	pipette.say("No")
+	pipette.huh()
+	
+	await pause(4)
+	pipette.say("You are poopy")
+	
+	await pause(5)
+	poopy.say("Poopy Maeve")
+	
+	await pause(4)
+	pipette.say("Hahahaha")
+	
+	await pause(5)
+	poopy.say("Funny")
+	
+	await pause(4)
+	pipette.say("Bye Poopy")
+	pipette.wave()
+	
+	await pause(5)
+	poopy.say("Bye Meave")
+	poopy.wave()
+	
+	await pause(4)
+	pipette.say("Hahaha")
+	
+	await pause(5)
+	pipette.say("Bye Stinky")
+	pipette.wave()
+	
+	await pause(5)
+	poopy.say("Stinky")
+	
+	
 	
 	conversation_finished.emit()

@@ -7,61 +7,87 @@ extends Conversation
 
 
 func start():
-	await pause(4)
-	poopy.say("Some \nthing\nthing\nthing\nthing")
-	await pause(4)
-	poopy.huh()
 	await pause(10)
-	pipette.say("Some \nthing\nthing\nthing\nthing")
-	await pause(5)
+	pipette.say("Something")
+	
+	await pause(4)
 	pipette.say("Blablblabllbalblblablalbalblabla")
-	await pause(5)
+	
+	await pause(1)
+	poopy.huh()
+	
+	await pause(4)
 	pipette.say("Hello poopy its me maeve")
-	await pause(6)
+	pipette.wave()
+	
+	await pause(5)
 	poopy.say("Hello")
+	poopy.wave()
+	
 	await pause(3)
 	pipette.say("Hello how are you")
-	await pause(6)
-	poopy.say("Hello")
+	
 	await pause(5)
+	poopy.say("Hello")
+	poopy.wave()
+	
+	await pause(4)
 	pipette.say("You are poopy")
+	
 	await pause(5)
 	poopy.say("Poopy")
-	await pause(5)
+	
+	await pause(3)
 	pipette.say("Yes")
+	
 	await pause(5)
 	poopy.say("Yes")
-	await pause(5)
+	
+	await pause(4)
 	pipette.say("I am Maeve")
+	
 	await pause(5)
 	poopy.say("Maeve")
+	
 	await pause(6)
-	pipette.say("Poopy maeve poopy maeve poopy maeve poopy meave")
-	await pause(5)
+	pipette.say("Poopy maeve poopy maeve\npoopy maeve poopy meave")
+	
+	await pause(3)
 	pipette.say("What is my name?")
+	
 	await pause(5)
 	poopy.say("Meave")
-	await pause(5)
+	
+	await pause(4)
 	pipette.say("You spelled it wrong, it's Maeve")
+	
 	await pause(5)
 	poopy.say("Wrong")
-	await pause(5)
+	
+	await pause(4)
 	pipette.say("Your stupid")
+	
 	await pause(8)
 	pipette.say("Sorry")
+	
 	await pause(5)
 	poopy.say("Sorry")
-	await pause(4)
+	
+	await pause(3)
 	pipette.say("It's okay")
+	
 	await pause(5)
 	poopy.say("Okay")
+	
 	await pause(4)
 	pipette.say("I have to go now")
-	await pause(3)
+	
+	await pause(2)
 	pipette.say("Bye Bye")
+	
 	await pause(5)
 	poopy.say("Bye")
-	await pause(5)
+	await pause(2)
 	poopy.sigh()
 	
 	conversation_finished.emit()

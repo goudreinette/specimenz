@@ -12,9 +12,14 @@
 [ext_resource type="Script" uid="uid://d1rqivw4cgkwu" path="res://rooms/comms_room/conversation_5.gd" id="6_kw8p6"]
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="6_xdqlv"]
 [ext_resource type="Texture2D" uid="uid://c4jaxy4u8jcto" path="res://rooms/comms_room/door_hover.png" id="6_y15cf"]
+[ext_resource type="Script" uid="uid://c3xyxe5pg5gm1" path="res://rooms/comms_room/conversation_6.gd" id="7_lx4bk"]
+[ext_resource type="Script" uid="uid://cd3srcw84lgm8" path="res://rooms/comms_room/conversation_7.gd" id="8_kw8p6"]
 [ext_resource type="PackedScene" uid="uid://hmneimhrqtdi" path="res://characters/Pipette.tscn" id="8_y15cf"]
 [ext_resource type="Script" uid="uid://cfym6bf61km8q" path="res://rooms/comms_room/conversation_1.gd" id="9_y5fn7"]
+[ext_resource type="Script" uid="uid://ws34cfqauxas" path="res://rooms/comms_room/conversation_8.gd" id="9_ydsuu"]
 [ext_resource type="PackedScene" uid="uid://du4e1yyx1hq22" path="res://bubbles/poopybubble.tscn" id="10_chss5"]
+[ext_resource type="Script" uid="uid://bjj1f2fgwyij8" path="res://rooms/comms_room/conversation_9.gd" id="10_m3c08"]
+[ext_resource type="Script" uid="uid://gomr2f3bcjia" path="res://rooms/comms_room/conversation_10.gd" id="11_dugfl"]
 
 [sub_resource type="Animation" id="Animation_y5fn7"]
 length = 0.001
@@ -90,6 +95,21 @@ script = ExtResource("5_lx4bk")
 [node name="Conversation 5" type="Node2D" parent="Conversations" unique_id=1853024757]
 script = ExtResource("6_kw8p6")
 
+[node name="Conversation 6" type="Node2D" parent="Conversations" unique_id=1575234956]
+script = ExtResource("7_lx4bk")
+
+[node name="Conversation 7" type="Node2D" parent="Conversations" unique_id=2095570052]
+script = ExtResource("8_kw8p6")
+
+[node name="Conversation 8" type="Node2D" parent="Conversations" unique_id=1231615673]
+script = ExtResource("9_ydsuu")
+
+[node name="Conversation 9" type="Node2D" parent="Conversations" unique_id=1366092172]
+script = ExtResource("10_m3c08")
+
+[node name="Conversation 10" type="Node2D" parent="Conversations" unique_id=710020896]
+script = ExtResource("11_dugfl")
+
 [node name="CommsOrtho" type="Sprite2D" parent="." unique_id=279581145]
 position = Vector2(480, 360)
 texture = ExtResource("3_iwwi8")
@@ -129,5 +149,10 @@ autoplay = &"fadein"
 [connection signal="conversation_finished" from="Conversations/Conversation 3" to="." method="_on_conversation_finished"]
 [connection signal="conversation_finished" from="Conversations/Conversation 4" to="." method="_on_conversation_finished"]
 [connection signal="conversation_finished" from="Conversations/Conversation 5" to="." method="_on_conversation_finished"]
+[connection signal="conversation_finished" from="Conversations/Conversation 6" to="." method="_on_conversation_finished"]
+[connection signal="conversation_finished" from="Conversations/Conversation 7" to="." method="_on_conversation_finished"]
+[connection signal="conversation_finished" from="Conversations/Conversation 8" to="." method="_on_conversation_finished"]
+[connection signal="conversation_finished" from="Conversations/Conversation 9" to="." method="_on_conversation_finished"]
+[connection signal="conversation_finished" from="Conversations/Conversation 10" to="." method="_on_conversation_finished"]
 [connection signal="pressed" from="Door" to="Door" method="_on_pressed"]
 [connection signal="animation_finished" from="Door/AnimationPlayer" to="Door" method="_on_animation_player_animation_finished"]
