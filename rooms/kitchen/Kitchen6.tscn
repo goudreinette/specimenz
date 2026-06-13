@@ -10,6 +10,7 @@ position = Vector2(480, 360)
 texture = ExtResource("1_codcx")
 
 [node name="ToKitchen1" type="TextureButton" parent="." unique_id=833255316]
+process_mode = 3
 offset_top = 616.0
 offset_right = 960.0
 offset_bottom = 720.0

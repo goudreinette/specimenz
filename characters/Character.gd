@@ -45,6 +45,8 @@ func _process(delta):
 		$AnimatedSprite2D.play("waving")
 	elif state == CharacterState.Sighing:
 		$AnimatedSprite2D.play("big sigh")
+	elif state == CharacterState.Huh:
+		$AnimatedSprite2D.play("huh")
 	elif walking:
 		var direction: Vector2 = self.position.direction_to(target_pos)
 		

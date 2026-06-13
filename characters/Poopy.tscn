@@ -493,7 +493,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("62_ts4ct")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"huh",
 "speed": 12.0
 }, {
@@ -938,7 +938,7 @@ texture = ExtResource("1_xep3p")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=750133325]
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_0jvrn")
-animation = &"waving"
+animation = &"huh"
 autoplay = "idling"
 
 [node name="Timer" type="Timer" parent="." unique_id=1934291810]
