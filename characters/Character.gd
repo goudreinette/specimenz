@@ -77,7 +77,7 @@ func _process(delta):
 
 func walk_to_new_location():
 	current_walking_tween =  get_tree().create_tween()
-	var new_pos =  start_pos +  Vector2(randf_range(-30, 30), randf_range(50, 140))
+	var new_pos =  start_pos +  Vector2(randf_range(-30, 30), randf_range(-30, 70))
 	#var distance = self.position.distance_to(new_pos)
 	#var walk_duration = remap(distance, 0, 200, 0.0, 1.0)
 	var distance = (position).distance_to(new_pos)

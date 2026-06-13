@@ -100,11 +100,11 @@ visible = false
 position = Vector2(214, 267)
 
 [node name="Pipette" parent="." unique_id=1721991310 instance=ExtResource("8_y15cf")]
-position = Vector2(311, 435)
+position = Vector2(311, 516)
 text_bubble = ExtResource("6_chss5")
 
 [node name="Poopy" parent="." unique_id=2000619831 instance=ExtResource("2_xk0tj")]
-position = Vector2(672, 428)
+position = Vector2(672, 509)
 text_bubble = ExtResource("10_chss5")
 
 [node name="Node2D" type="Node2D" parent="." unique_id=629876863]
