@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://b12rru4rdoh6b"]
+
+[ext_resource type="Texture2D" uid="uid://4uh1fxokva03" path="res://rooms/garden/Garden5.png" id="1_gigwa"]
+[ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_iswu7"]
+
+[node name="Garden5" type="Node2D" unique_id=2086378232]
+
+[node name="Garden5" type="Sprite2D" parent="." unique_id=121529937]
+position = Vector2(480, 360)
+texture = ExtResource("1_gigwa")
+
+[node name="ToGarden2" parent="." unique_id=2125296165 instance=ExtResource("2_iswu7")]
+offset_top = 576.0
+offset_right = 704.0
+offset_bottom = 720.0
+next_scene = "res://rooms/garden/Garden2.tscn"
+cursor_style = 2
+
+[node name="ToSandbox1" parent="." unique_id=857755566 instance=ExtResource("2_iswu7")]
+offset_left = 152.0
+offset_top = 224.0
+offset_right = 760.0
+offset_bottom = 576.0
+next_scene = "res://rooms/garden/Sandbox1.tscn"

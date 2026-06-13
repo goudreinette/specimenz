@@ -9,16 +9,6 @@
 position = Vector2(480, 360)
 texture = ExtResource("1_hqoh8")
 
-[node name="ToKitchen5" type="TextureButton" parent="." unique_id=720586491]
-offset_left = 472.0
-offset_top = 288.0
-offset_right = 592.0
-offset_bottom = 456.0
-script = ExtResource("2_g02rm")
-next_scene = "res://rooms/kitchen/Kitchen5.tscn"
-cursor_style = 5
-metadata/_custom_type_script = "uid://dlod6gqa71kk6"
-
 [node name="ToKitchen6" type="TextureButton" parent="." unique_id=1943029114]
 offset_left = 704.0
 offset_top = 288.0
@@ -57,7 +47,6 @@ next_scene = "res://rooms/living/living7.tscn"
 cursor_style = 2
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
-[connection signal="pressed" from="ToKitchen5" to="ToKitchen5" method="_on_pressed"]
 [connection signal="pressed" from="ToKitchen6" to="ToKitchen6" method="_on_pressed"]
 [connection signal="pressed" from="ToKitchen3" to="ToKitchen3" method="_on_pressed"]
 [connection signal="pressed" from="ToKitchen7" to="ToKitchen7" method="_on_pressed"]

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bgkoob2qx58w8"]
+
+[ext_resource type="Texture2D" uid="uid://w62vf5ax4gf" path="res://rooms/garden/Tree1.png" id="1_bldni"]
+[ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_qae7e"]
+
+[node name="Tree1" type="Node2D" unique_id=2086378232]
+
+[node name="Tree1" type="Sprite2D" parent="." unique_id=544682699]
+position = Vector2(480, 360)
+texture = ExtResource("1_bldni")
+
+[node name="ToGarden4" parent="." unique_id=1564320955 instance=ExtResource("2_qae7e")]
+offset_top = 576.0
+offset_right = 960.0
+offset_bottom = 720.0
+next_scene = "res://rooms/garden/Garden4.tscn"
+cursor_style = 2
