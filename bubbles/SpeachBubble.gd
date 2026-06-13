@@ -29,7 +29,8 @@ func set_text(text: String):
 	if lines.size() > 1:
 		$MarginContainer/MarginContainer.add_theme_constant_override("margin_top", margin_top_multi_line)
 		$MarginContainer/MarginContainer.add_theme_constant_override("margin_bottom", margin_bottom_multi_line)
+		$MarginContainer/OpacityContainer/NinePatchRect.offset_transform_scale = Vector2(1.0, 1.0)
 	else:
 		$MarginContainer/MarginContainer.add_theme_constant_override("margin_top", margin_top_single_line)
 		$MarginContainer/MarginContainer.add_theme_constant_override("margin_bottom", margin_bottom_single_line)
-	
+		$MarginContainer/OpacityContainer/NinePatchRect.offset_transform_scale = Vector2(.9, .9)
