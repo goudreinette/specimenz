@@ -18,8 +18,6 @@ var state: CharacterState = CharacterState.Idle
 var current_walking_tween: Tween
 
 
-# Sounds
-
 
 func _ready():
 	start_pos = self.get_position()
@@ -113,6 +111,9 @@ func _on_talking_timer_timeout():
 
 
 # Actions ------------------------------------------------------
+
+@export var last_sound_i = 0
+
 func say(text: String):
 	print("saying: ", text)
 	var new_bubble: SpeechBubble = text_bubble.instantiate()
@@ -123,7 +124,15 @@ func say(text: String):
 	$TalkingTimer.start(3)
 	state = CharacterState.Talking
 	get_parent().add_child(new_bubble)
-
+	
+	# Sounds
+	var length = text.split(" ", true).size()
+	var sounds = $TalkingSounds.get_children()
+	last_sound_i = (last_sound_i + 1) % sounds.size()
+	var playback_length = remap(length, 0, 20, 0, 5)
+	sounds[last_sound_i].play(5 - playback_length)
+	#$TalkingSounds/PipetteTalk15Sec.play(5 - )
+	
 func sigh():
 	state = CharacterState.Sighing
 	

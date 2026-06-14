@@ -111,7 +111,8 @@ script = ExtResource("10_m3c08")
 script = ExtResource("11_dugfl")
 
 [node name="CommsOrtho" type="Sprite2D" parent="." unique_id=279581145]
-position = Vector2(480, 360)
+position = Vector2(480, 360.5)
+scale = Vector2(1, 1.0013889)
 texture = ExtResource("3_iwwi8")
 
 [node name="Maeve" parent="." unique_id=297373198 instance=ExtResource("1_u7dpo")]

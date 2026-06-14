@@ -214,6 +214,9 @@
 [ext_resource type="Texture2D" uid="uid://c8rlnnvj4lxvx" path="res://characters/pipette animations/looking around/0034.png" id="144_2ujaj"]
 [ext_resource type="Texture2D" uid="uid://cm231tvh2wdkt" path="res://characters/pipette animations/looking around/0035.png" id="145_gjwyu"]
 [ext_resource type="Texture2D" uid="uid://c3hsihvvmkdqo" path="res://characters/pipette animations/looking around/0036.png" id="146_6jgwk"]
+[ext_resource type="AudioStream" uid="uid://ckm8sq5c84tqn" path="res://soundeffects/talking/pipette talk 1 5sec.wav" id="215_5j6lm"]
+[ext_resource type="AudioStream" uid="uid://c0ooy3cmqyhqp" path="res://soundeffects/talking/pipette talk 2 5sec.wav" id="216_whwyt"]
+[ext_resource type="AudioStream" uid="uid://i8jxmocgwjip" path="res://soundeffects/talking/pipette talk 3 5sec.wav" id="217_w342t"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bsyeo"]
 animations = [{
@@ -946,6 +949,17 @@ autostart = true
 
 [node name="TalkingTimer" type="Timer" parent="." unique_id=784362058]
 one_shot = true
+
+[node name="TalkingSounds" type="Node2D" parent="." unique_id=1483335579]
+
+[node name="PipetteTalk15Sec" type="AudioStreamPlayer" parent="TalkingSounds" unique_id=1563352924]
+stream = ExtResource("215_5j6lm")
+
+[node name="PipetteTalk25Sec" type="AudioStreamPlayer" parent="TalkingSounds" unique_id=1843127141]
+stream = ExtResource("216_whwyt")
+
+[node name="PipetteTalk35Sec" type="AudioStreamPlayer" parent="TalkingSounds" unique_id=19506510]
+stream = ExtResource("217_w342t")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

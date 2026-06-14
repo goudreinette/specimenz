@@ -214,6 +214,9 @@
 [ext_resource type="Texture2D" uid="uid://d0pr1xki1f74" path="res://characters/poopy animations/waving/0022.png" id="104_jf4tu"]
 [ext_resource type="Texture2D" uid="uid://c3l64bbgabk7w" path="res://characters/poopy animations/waving/0023.png" id="105_g4l43"]
 [ext_resource type="Texture2D" uid="uid://ba4ylnxxiiyue" path="res://characters/poopy animations/waving/0024.png" id="106_fpesn"]
+[ext_resource type="AudioStream" uid="uid://kumgmh2ca4sj" path="res://soundeffects/talking/poopy talk 1 5sec.wav" id="215_svrqu"]
+[ext_resource type="AudioStream" uid="uid://lamxerl4myjg" path="res://soundeffects/talking/poopy talk 2 5sec.wav" id="216_7oym7"]
+[ext_resource type="AudioStream" uid="uid://dmlr3d2py1fl3" path="res://soundeffects/talking/poopy talk 3 5sec.wav" id="217_wl3cm"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0jvrn"]
 animations = [{
@@ -946,6 +949,17 @@ autostart = true
 
 [node name="TalkingTimer" type="Timer" parent="." unique_id=1647831272]
 one_shot = true
+
+[node name="TalkingSounds" type="Node2D" parent="." unique_id=1469956896]
+
+[node name="PoopyTalk15Sec" type="AudioStreamPlayer" parent="TalkingSounds" unique_id=447519571]
+stream = ExtResource("215_svrqu")
+
+[node name="PoopyTalk25Sec" type="AudioStreamPlayer" parent="TalkingSounds" unique_id=882537806]
+stream = ExtResource("216_7oym7")
+
+[node name="PoopyTalk35Sec" type="AudioStreamPlayer" parent="TalkingSounds" unique_id=568753924]
+stream = ExtResource("217_wl3cm")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
