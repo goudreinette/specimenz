@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cqsoh1ek4aeql" path="res://rooms/kitchen/Kitchen7.png" id="1_tpirk"]
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_ccpks"]
+[ext_resource type="AudioStream" uid="uid://hjud0oy3lsaa" path="res://soundeffects/soup bubbling.wav" id="3_ccpks"]
 
 [node name="Kitchen5" type="Node2D" unique_id=92419258]
 
@@ -27,6 +28,11 @@ script = ExtResource("2_ccpks")
 next_scene = "res://rooms/kitchen/Kitchen4.tscn"
 cursor_style = 4
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
+
+[node name="SoupBubbling" type="AudioStreamPlayer" parent="." unique_id=1414757680]
+stream = ExtResource("3_ccpks")
+volume_db = -12.0
+autoplay = true
 
 [connection signal="mouse_entered" from="ToKitchen1" to="ToKitchen1" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="ToKitchen1" to="ToKitchen1" method="_on_mouse_exited"]

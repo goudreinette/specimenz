@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bkftvltskiptr" path="res://rooms/kitchen/kitchen3.png" id="1_8yhap"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="3_qgqp0"]
+[ext_resource type="AudioStream" uid="uid://hjud0oy3lsaa" path="res://soundeffects/soup bubbling.wav" id="3_rkl58"]
 
 [node name="Kitchen3" type="Node2D" unique_id=90627951]
 
@@ -22,7 +23,7 @@ offset_left = 608.0
 offset_top = 528.0
 offset_right = 960.0
 offset_bottom = 720.0
-next_scene = "res://rooms/kitchen/kitchen1.tscn"
+next_scene = "res://rooms/kitchen/kitchen4.tscn"
 cursor_style = 11
 
 [node name="ToCabinet1" parent="." unique_id=1242408739 instance=ExtResource("3_qgqp0")]
@@ -48,3 +49,8 @@ offset_right = 912.0
 offset_bottom = 528.0
 next_scene = "res://rooms/cabinet/cabinet3.tscn"
 cursor_style = 4
+
+[node name="SoupBubbling" type="AudioStreamPlayer" parent="." unique_id=1117226216]
+stream = ExtResource("3_rkl58")
+volume_db = -12.0
+autoplay = true
