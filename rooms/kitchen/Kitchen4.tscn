@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://yuevs4rjbxsj"]
 
-[ext_resource type="Texture2D" uid="uid://b50n64dlbqt8x" path="res://rooms/kitchen/Kitchen4.png" id="1_c4ofe"]
+[ext_resource type="Texture2D" uid="uid://b50n64dlbqt8x" path="res://rooms/kitchen/kitchen4.png" id="1_c4ofe"]
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_pfnyu"]
 
 [node name="Kitchen4" type="Node2D" unique_id=801351203]
@@ -15,14 +15,22 @@ offset_right = 960.0
 offset_bottom = 720.0
 script = ExtResource("2_pfnyu")
 next_scene = "res://rooms/kitchen/kitchen1.tscn"
+cursor_style = 2
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [node name="ToKitchen3" type="TextureButton" parent="." unique_id=730555274]
 offset_left = -3.0
 offset_top = -6.0
-offset_right = 342.0
-offset_bottom = 193.0
+offset_right = 287.0
+offset_bottom = 328.0
 script = ExtResource("2_pfnyu")
-next_scene = "res://rooms/kitchen/kitchen3.tscn"
-cursor_style = 6
+next_scene = "res://rooms/kitchen/Kitchen3.tscn"
+cursor_style = 3
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
+
+[connection signal="mouse_entered" from="ToKitchen1" to="ToKitchen1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToKitchen1" to="ToKitchen1" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToKitchen1" to="ToKitchen1" method="_on_pressed"]
+[connection signal="mouse_entered" from="ToKitchen3" to="ToKitchen3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToKitchen3" to="ToKitchen3" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToKitchen3" to="ToKitchen3" method="_on_pressed"]

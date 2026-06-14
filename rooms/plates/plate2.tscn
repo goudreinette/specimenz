@@ -6,12 +6,14 @@
 [node name="Plate2" type="Node2D" unique_id=466601352]
 
 [node name="Plate2" type="Sprite2D" parent="." unique_id=1796686655]
-position = Vector2(320, 240)
+position = Vector2(480.00003, 360)
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("1_exoec")
 
-[node name="ToKitchen2" parent="." unique_id=2125296165 instance=ExtResource("2_oqwk5")]
-offset_left = 127.0
-offset_top = 349.0
-offset_right = 512.0
-next_scene = "res://rooms/kitchen/kitchen2.tscn"
-cursor_style = 1
+[node name="ToKitchen6" parent="." unique_id=2125296165 instance=ExtResource("2_oqwk5")]
+offset_left = -2.0
+offset_top = 572.0
+offset_right = 964.0
+offset_bottom = 722.0
+next_scene = "res://rooms/kitchen/kitchen6.tscn"
+cursor_style = 2

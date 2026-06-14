@@ -34,16 +34,18 @@ offset_top = 344.0
 offset_right = 680.0
 offset_bottom = 464.0
 script = ExtResource("2_2e8qx")
-next_scene = "res://rooms/plate/plate1.tscn"
+next_scene = "res://rooms/plates/plate1.tscn"
+cursor_style = 4
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [node name="ToPlate2" type="TextureButton" parent="." unique_id=1480850360]
 offset_left = 504.0
-offset_top = 256.0
-offset_right = 624.0
+offset_top = 235.0
+offset_right = 668.0
 offset_bottom = 344.0
 script = ExtResource("2_2e8qx")
-next_scene = "res://rooms/plate/plate2.tscn"
+next_scene = "res://rooms/plates/plate2.tscn"
+cursor_style = 4
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [node name="ToPlate3" type="TextureButton" parent="." unique_id=1369817761]
@@ -52,14 +54,35 @@ offset_top = 344.0
 offset_right = 384.0
 offset_bottom = 456.0
 script = ExtResource("2_2e8qx")
-next_scene = "res://rooms/plate/plate3.tscn"
+next_scene = "res://rooms/plates/plate3.tscn"
+cursor_style = 3
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [node name="ToPlate4" type="TextureButton" parent="." unique_id=2134586609]
 offset_left = 352.0
-offset_top = 272.0
+offset_top = 231.0
 offset_right = 488.0
 offset_bottom = 344.0
 script = ExtResource("2_2e8qx")
-next_scene = "res://rooms/plate/plate3.tscn"
+next_scene = "res://rooms/plates/plate4.tscn"
+cursor_style = 3
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
+
+[connection signal="mouse_entered" from="ToKitchen1" to="ToKitchen1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToKitchen1" to="ToKitchen1" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToKitchen1" to="ToKitchen1" method="_on_pressed"]
+[connection signal="mouse_entered" from="ToKitchen5" to="ToKitchen5" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToKitchen5" to="ToKitchen5" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToKitchen5" to="ToKitchen5" method="_on_pressed"]
+[connection signal="mouse_entered" from="ToPlate1" to="ToPlate1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToPlate1" to="ToPlate1" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToPlate1" to="ToPlate1" method="_on_pressed"]
+[connection signal="mouse_entered" from="ToPlate2" to="ToPlate2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToPlate2" to="ToPlate2" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToPlate2" to="ToPlate2" method="_on_pressed"]
+[connection signal="mouse_entered" from="ToPlate3" to="ToPlate3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToPlate3" to="ToPlate3" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToPlate3" to="ToPlate3" method="_on_pressed"]
+[connection signal="mouse_entered" from="ToPlate4" to="ToPlate4" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToPlate4" to="ToPlate4" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToPlate4" to="ToPlate4" method="_on_pressed"]
