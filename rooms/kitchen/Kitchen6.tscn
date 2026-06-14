@@ -16,6 +16,7 @@ offset_right = 960.0
 offset_bottom = 720.0
 script = ExtResource("2_2e8qx")
 next_scene = "res://rooms/kitchen/kitchen1.tscn"
+cursor_style = 2
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [node name="ToKitchen5" type="TextureButton" parent="." unique_id=1142517931]
@@ -24,6 +25,7 @@ offset_right = 192.0
 offset_bottom = 616.0
 script = ExtResource("2_2e8qx")
 next_scene = "res://rooms/kitchen/kitchen5.tscn"
+cursor_style = 8
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [node name="ToPlate1" type="TextureButton" parent="." unique_id=1079560007]
