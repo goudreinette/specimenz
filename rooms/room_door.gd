@@ -18,7 +18,7 @@ var cursor_leftcurvebackward = load("res://cursors/move.l.curve.b.png")
 var cursor_leftcurveforward = load("res://cursors/move.l.curve.f.png")
 var cursor_left = load("res://cursors/move.left.png")
 var cursor_rightcurvebackward = load("res://cursors/move.r.curve.b.png")
-var cursor_rightcurveforward = load("res://cursors/move.r.curve.f.png")
+var cursor_rightcurveforward = load("res:/,/cursors/move.r.curve.f.png")
 var cursor_right = load("res://cursors/move.right.png")
 
 

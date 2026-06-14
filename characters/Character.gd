@@ -15,8 +15,10 @@ enum CharacterState {
 }
 
 var state: CharacterState = CharacterState.Idle
-
 var current_walking_tween: Tween
+
+
+# Sounds
 
 
 func _ready():

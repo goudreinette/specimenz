@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dbnc383pt2uhp"]
 
-[ext_resource type="Texture2D" uid="uid://c4m7y7y00riue" path="res://rooms/kitchen/Kitchen1.png" id="1_hqoh8"]
+[ext_resource type="Texture2D" uid="uid://c4m7y7y00riue" path="res://rooms/kitchen/kitchen1.png" id="1_hqoh8"]
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_g02rm"]
 
 [node name="Kitchen1" type="Node2D" unique_id=1141314609]
@@ -10,6 +10,7 @@ position = Vector2(480, 360)
 texture = ExtResource("1_hqoh8")
 
 [node name="ToKitchen6" type="TextureButton" parent="." unique_id=1943029114]
+process_mode = 3
 offset_left = 704.0
 offset_top = 288.0
 offset_right = 960.0
@@ -47,7 +48,15 @@ next_scene = "res://rooms/living/living7.tscn"
 cursor_style = 2
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
+[connection signal="mouse_entered" from="ToKitchen6" to="ToKitchen6" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToKitchen6" to="ToKitchen6" method="_on_mouse_exited"]
 [connection signal="pressed" from="ToKitchen6" to="ToKitchen6" method="_on_pressed"]
+[connection signal="mouse_entered" from="ToKitchen3" to="ToKitchen3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToKitchen3" to="ToKitchen3" method="_on_mouse_exited"]
 [connection signal="pressed" from="ToKitchen3" to="ToKitchen3" method="_on_pressed"]
+[connection signal="mouse_entered" from="ToKitchen7" to="ToKitchen7" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToKitchen7" to="ToKitchen7" method="_on_mouse_exited"]
 [connection signal="pressed" from="ToKitchen7" to="ToKitchen7" method="_on_pressed"]
+[connection signal="mouse_entered" from="ToLiving7" to="ToLiving7" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToLiving7" to="ToLiving7" method="_on_mouse_exited"]
 [connection signal="pressed" from="ToLiving7" to="ToLiving7" method="_on_pressed"]
