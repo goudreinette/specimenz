@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://lamxerl4myjg"
+path="res://.godot/imported/poopy talk 2 5sec.wav-08107dca78576f77d7e7626cfe31ca74.sample"
+
+[deps]
+
+source_file="res://soundeffects/talking/poopy talk 2 5sec.wav"
+dest_files=["res://.godot/imported/poopy talk 2 5sec.wav-08107dca78576f77d7e7626cfe31ca74.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
