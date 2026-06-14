@@ -23,6 +23,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Dialogic="*uid://ds2q0uclmolvu"
+Globals="*uid://3l3k6hsj4uje"
 
 [dialogic]
 

@@ -7,6 +7,7 @@ enum CursorStyle {
 
 @export var next_scene: String
 @export var cursor_style: CursorStyle
+@export var go_to_previous: bool
 
 var cursor_active = load("res://cursors/active.png")
 var cursor_default = load("res://cursors/default.png")
@@ -26,9 +27,15 @@ var cursor_right = load("res://cursors/move.right.png")
 
 
 func _on_pressed():
-	print("pressed! entering ", next_scene)
-	#get_tree().change_scene_to_packed(next_scene)
-	get_tree().change_scene_to_file(next_scene)
+	if go_to_previous and Globals.previous_scene_path:
+		print("pressed! entering ", Globals.previous_scene_path)
+		#get_tree().change_scene_to_packed(next_scene)
+		get_tree().change_scene_to_file(Globals.previous_scene_path)
+	else: 
+		Globals.previous_scene_path = get_tree().current_scene.scene_file_path
+		print("pressed! entering ", next_scene)
+		#get_tree().change_scene_to_packed(next_scene)
+		get_tree().change_scene_to_file(next_scene)
 	#$AnimationPlayer.play("fadeout")
 	
 

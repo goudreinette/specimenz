@@ -16,3 +16,4 @@ offset_right = 832.0
 offset_bottom = 720.0
 next_scene = "res://rooms/hall/hall3.tscn"
 cursor_style = 2
+go_to_previous = true
