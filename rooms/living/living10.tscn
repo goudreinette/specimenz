@@ -19,7 +19,7 @@ cursor_style = 8
 
 [node name="ToLiving4" parent="." unique_id=2125296165 instance=ExtResource("2_fqe0c")]
 offset_top = 576.0
-offset_right = 512.0
+offset_right = 480.0
 offset_bottom = 720.0
 next_scene = "res://rooms/living/living4.tscn"
 cursor_style = 2

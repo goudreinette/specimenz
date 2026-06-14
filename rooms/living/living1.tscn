@@ -11,12 +11,13 @@ texture = ExtResource("1_wweqg")
 
 [node name="ToLiving4" parent="." unique_id=2125296165 instance=ExtResource("2_wweqg")]
 offset_top = 128.0
-offset_right = 136.0
-offset_bottom = 640.0
+offset_right = 128.0
+offset_bottom = 720.0
 next_scene = "res://rooms/living/living4.tscn"
 cursor_style = 7
 
 [node name="ToHall6" parent="." unique_id=1680456105 instance=ExtResource("2_wweqg")]
+offset_left = 128.0
 offset_top = 640.0
 offset_right = 800.0
 offset_bottom = 720.0

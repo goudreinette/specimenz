@@ -17,17 +17,17 @@ offset_bottom = 576.0
 next_scene = "res://rooms/kitchen/kitchen1.tscn"
 cursor_style = 5
 
-[node name="ToLiving2" parent="." unique_id=1869938908 instance=ExtResource("2_6em6v")]
+[node name="ToLiving13" parent="." unique_id=1869938908 instance=ExtResource("2_6em6v")]
 offset_left = 128.0
 offset_top = 576.0
 offset_right = 960.0
 offset_bottom = 720.0
-next_scene = "res://rooms/living/living2.tscn"
+next_scene = "res://rooms/living/living13.tscn"
 cursor_style = 2
 
-[node name="ToLiving8" parent="." unique_id=496710561 instance=ExtResource("2_6em6v")]
+[node name="ToLiving14" parent="." unique_id=496710561 instance=ExtResource("2_6em6v")]
 offset_top = 64.0
 offset_right = 128.0
 offset_bottom = 720.0
-next_scene = "res://rooms/living/living8.tscn"
+next_scene = "res://rooms/living/living14.tscn"
 cursor_style = 8

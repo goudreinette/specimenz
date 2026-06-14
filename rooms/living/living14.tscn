@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dmebeocaxgwro"]
+
+[ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_j7hit"]
+[ext_resource type="Texture2D" uid="uid://bmdy0t3puwxnv" path="res://rooms/living/Living14.png" id="2_pq1co"]
+
+[node name="Living14" type="Node2D" unique_id=698517045]
+
+[node name="Living14" type="Sprite2D" parent="." unique_id=1025478750]
+position = Vector2(480, 360)
+texture = ExtResource("2_pq1co")
+
+[node name="ToLiving7" parent="." unique_id=974848618 instance=ExtResource("2_j7hit")]
+offset_left = 3.0
+offset_top = 576.0
+offset_right = 960.0
+offset_bottom = 720.0
+next_scene = "res://rooms/living/living7.tscn"
+cursor_style = 2
+go_to_previous = true
+
+[node name="ToLiving6" parent="." unique_id=2125296165 instance=ExtResource("2_j7hit")]
+offset_left = 512.0
+offset_top = 112.0
+offset_right = 768.0
+offset_bottom = 512.0
+next_scene = "res://rooms/living/living6.tscn"
+cursor_style = 4
+
+[node name="ToLiving10" parent="." unique_id=1383182296 instance=ExtResource("2_j7hit")]
+offset_left = 248.0
+offset_top = 296.0
+offset_right = 512.0
+offset_bottom = 472.0
+next_scene = "res://rooms/living/living10.tscn"
+cursor_style = 5
+
+[node name="ToLiving8" parent="." unique_id=874831753 instance=ExtResource("2_j7hit")]
+offset_left = 832.0
+offset_top = 88.0
+offset_right = 960.0
+offset_bottom = 576.0
+next_scene = "res://rooms/living/living8.tscn"
+cursor_style = 10

@@ -9,17 +9,11 @@
 position = Vector2(480, 360)
 texture = ExtResource("1_fr0n2")
 
-[node name="ToLiving6" parent="." unique_id=974848618 instance=ExtResource("2_wsdte")]
+[node name="ToBack" parent="." unique_id=974848618 instance=ExtResource("2_wsdte")]
 offset_left = 3.0
 offset_top = 576.0
-offset_right = 832.0
+offset_right = 960.0
 offset_bottom = 720.0
 next_scene = "res://rooms/living/living6.tscn"
 cursor_style = 2
-
-[node name="ToLiving7" parent="." unique_id=2125296165 instance=ExtResource("2_wsdte")]
-offset_left = 832.0
-offset_right = 960.0
-offset_bottom = 720.0
-next_scene = "res://rooms/living/living7.tscn"
-cursor_style = 11
+go_to_previous = true

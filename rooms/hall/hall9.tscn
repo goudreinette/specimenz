@@ -31,4 +31,4 @@ offset_top = 232.0
 offset_right = 776.0
 offset_bottom = 504.0
 next_scene = "res://rooms/niche/niche1.tscn"
-cursor_style = 11
+cursor_style = 10

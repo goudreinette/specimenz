@@ -13,19 +13,11 @@ texture = ExtResource("1_8yhap")
 [node name="ToBack" parent="." unique_id=2125296165 instance=ExtResource("3_qgqp0")]
 offset_left = -2.0
 offset_top = 592.0
-offset_right = 608.0
+offset_right = 960.0
 offset_bottom = 720.0
 next_scene = "res://rooms/kitchen/kitchen1.tscn"
 cursor_style = 2
 go_to_previous = true
-
-[node name="ToKitchen4" parent="." unique_id=1615818143 instance=ExtResource("3_qgqp0")]
-offset_left = 608.0
-offset_top = 528.0
-offset_right = 960.0
-offset_bottom = 720.0
-next_scene = "res://rooms/kitchen/kitchen4.tscn"
-cursor_style = 11
 
 [node name="ToCabinet1" parent="." unique_id=1242408739 instance=ExtResource("3_qgqp0")]
 offset_left = 30.0

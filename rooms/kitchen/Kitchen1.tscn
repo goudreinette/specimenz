@@ -49,13 +49,13 @@ next_scene = "res://rooms/kitchen/Kitchen5.tscn"
 cursor_style = 5
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
-[node name="ToLiving7" type="TextureButton" parent="." unique_id=1160799182]
+[node name="ToKitchen9" type="TextureButton" parent="." unique_id=1160799182]
 offset_left = 104.0
 offset_top = 576.0
 offset_right = 960.0
 offset_bottom = 720.0
 script = ExtResource("2_g02rm")
-next_scene = "res://rooms/living/living7.tscn"
+next_scene = "res://rooms/kitchen/kitchen9.tscn"
 cursor_style = 2
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
@@ -71,6 +71,6 @@ metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 [connection signal="mouse_entered" from="ToKitchen5" to="ToKitchen5" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="ToKitchen5" to="ToKitchen5" method="_on_mouse_exited"]
 [connection signal="pressed" from="ToKitchen5" to="ToKitchen5" method="_on_pressed"]
-[connection signal="mouse_entered" from="ToLiving7" to="ToLiving7" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="ToLiving7" to="ToLiving7" method="_on_mouse_exited"]
-[connection signal="pressed" from="ToLiving7" to="ToLiving7" method="_on_pressed"]
+[connection signal="mouse_entered" from="ToKitchen9" to="ToKitchen9" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToKitchen9" to="ToKitchen9" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToKitchen9" to="ToKitchen9" method="_on_pressed"]

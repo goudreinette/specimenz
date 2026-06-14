@@ -10,12 +10,12 @@
 position = Vector2(480, 360)
 texture = ExtResource("1_igeud")
 
-[node name="ToBack" type="TextureButton" parent="." unique_id=833255316]
+[node name="ToKitchen5" type="TextureButton" parent="." unique_id=833255316]
 offset_top = 576.0
 offset_right = 960.0
 offset_bottom = 720.0
 script = ExtResource("2_l07a5")
-next_scene = "res://rooms/garden/garden.tscn"
+next_scene = "res://rooms/kitchen/kitchen5.tscn"
 cursor_style = 2
 go_to_previous = true
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
@@ -64,9 +64,9 @@ stream = ExtResource("3_v6kt3")
 volume_db = -12.0
 autoplay = true
 
-[connection signal="mouse_entered" from="ToBack" to="ToBack" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="ToBack" to="ToBack" method="_on_mouse_exited"]
-[connection signal="pressed" from="ToBack" to="ToBack" method="_on_pressed"]
+[connection signal="mouse_entered" from="ToKitchen5" to="ToKitchen5" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToKitchen5" to="ToKitchen5" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToKitchen5" to="ToKitchen5" method="_on_pressed"]
 [connection signal="mouse_entered" from="ToKitchen4" to="ToKitchen4" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="ToKitchen4" to="ToKitchen4" method="_on_mouse_exited"]
 [connection signal="pressed" from="ToKitchen4" to="ToKitchen4" method="_on_pressed"]

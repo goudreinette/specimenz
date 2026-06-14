@@ -10,11 +10,11 @@ position = Vector2(480, 360)
 texture = ExtResource("1_frlnx")
 
 [node name="ToNumpad1" parent="." unique_id=6989880 instance=ExtResource("2_ap38n")]
-offset_left = 640.0
+offset_left = 656.0
 offset_top = 344.0
 offset_right = 896.0
 offset_bottom = 600.0
-next_scene = "res://rooms/living/.tscn"
+next_scene = "res://rooms/living/numpad1.tscn"
 
 [node name="ToLiving4" parent="." unique_id=1888253055 instance=ExtResource("2_ap38n")]
 offset_left = 192.0

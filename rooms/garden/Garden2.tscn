@@ -9,12 +9,12 @@
 position = Vector2(480, 360)
 texture = ExtResource("1_sycqs")
 
-[node name="ToGarden1" parent="." unique_id=2125296165 instance=ExtResource("3_5b02v")]
+[node name="ToGarden9" parent="." unique_id=2125296165 instance=ExtResource("3_5b02v")]
 offset_left = 81.0
 offset_top = 576.0
 offset_right = 768.0
 offset_bottom = 720.0
-next_scene = "res://rooms/garden/Garden1.tscn"
+next_scene = "res://rooms/garden/Garden9.tscn"
 cursor_style = 2
 
 [node name="ToGarden3" parent="." unique_id=133955745 instance=ExtResource("3_5b02v")]
@@ -31,4 +31,4 @@ offset_top = 384.0
 offset_right = 960.0
 offset_bottom = 576.0
 next_scene = "res://rooms/garden/Garden5.tscn"
-cursor_style = 4
+cursor_style = 5

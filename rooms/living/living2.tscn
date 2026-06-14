@@ -33,9 +33,9 @@ offset_bottom = 464.0
 next_scene = "res://rooms/living/living6.tscn"
 cursor_style = 3
 
-[node name="ToLiving1" parent="." unique_id=578374236 instance=ExtResource("2_ca0wf")]
+[node name="ToLiving12" parent="." unique_id=578374236 instance=ExtResource("2_ca0wf")]
 offset_top = 624.0
 offset_right = 960.0
 offset_bottom = 720.0
-next_scene = "res://rooms/living/living1.tscn"
+next_scene = "res://rooms/living/living12.tscn"
 cursor_style = 2

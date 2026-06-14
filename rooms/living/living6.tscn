@@ -16,14 +16,15 @@ offset_bottom = 616.0
 next_scene = "res://rooms/stairway/stairway1.tscn"
 cursor_style = 3
 
-[node name="ToLiving10" parent="." unique_id=1735292704 instance=ExtResource("2_b6ynd")]
+[node name="ToLiving11" parent="." unique_id=1735292704 instance=ExtResource("2_b6ynd")]
 offset_left = 1.0
 offset_top = 616.0
+offset_right = 968.0
 offset_bottom = 720.0
-next_scene = "res://rooms/living/living10.tscn"
+next_scene = "res://rooms/living/living11.tscn"
 cursor_style = 2
 
-[node name="ToLiving10-2" parent="." unique_id=2125296165 instance=ExtResource("2_b6ynd")]
+[node name="ToLiving10" parent="." unique_id=2125296165 instance=ExtResource("2_b6ynd")]
 offset_left = 1.0
 offset_top = 64.0
 offset_right = 128.0
