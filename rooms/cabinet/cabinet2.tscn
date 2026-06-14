@@ -1,17 +1,53 @@
 [gd_scene format=3 uid="uid://c3yw5u6wcgruk"]
 
-[ext_resource type="Texture2D" uid="uid://b8ltheqeyfwr0" path="res://rooms/cabinet/cabinet2.png" id="1_xuypr"]
+[ext_resource type="Texture2D" uid="uid://n8m8o2y0ug0t" path="res://rooms/cabinet/cabinet2.png" id="1_xuypr"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_3ue2d"]
+[ext_resource type="AudioStream" uid="uid://hjud0oy3lsaa" path="res://soundeffects/soup bubbling.wav" id="3_3ue2d"]
 
 [node name="Cabinet2" type="Node2D" unique_id=466601352]
 
 [node name="Cabinet2" type="Sprite2D" parent="." unique_id=1796686655]
-position = Vector2(320, 240)
+position = Vector2(480, 360)
 texture = ExtResource("1_xuypr")
 
-[node name="ToKitchen2" parent="." unique_id=2125296165 instance=ExtResource("2_3ue2d")]
-offset_left = 127.0
-offset_top = 349.0
-offset_right = 512.0
+[node name="ToKitchen1" parent="." unique_id=2125296165 instance=ExtResource("2_3ue2d")]
+offset_left = -2.0
+offset_top = 592.0
+offset_right = 608.0
+offset_bottom = 720.0
+next_scene = "res://rooms/kitchen/kitchen1.tscn"
+cursor_style = 2
+
+[node name="ToKitchen4" parent="." unique_id=64610328 instance=ExtResource("2_3ue2d")]
+offset_left = 608.0
+offset_top = 528.0
+offset_right = 960.0
+offset_bottom = 720.0
+next_scene = "res://rooms/kitchen/kitchen4.tscn"
+cursor_style = 11
+
+[node name="ToCabinet1" parent="." unique_id=56992846 instance=ExtResource("2_3ue2d")]
+offset_left = 30.0
+offset_top = 160.0
+offset_right = 336.0
+offset_bottom = 552.0
+next_scene = "res://rooms/cabinet/cabinet1.tscn"
+
+[node name="ToKitchen3" parent="." unique_id=1742481258 instance=ExtResource("2_3ue2d")]
+offset_left = 432.0
+offset_top = 200.0
+offset_right = 656.0
+offset_bottom = 528.0
 next_scene = "res://rooms/kitchen/kitchen3.tscn"
-cursor_style = 1
+
+[node name="ToCabinet3" parent="." unique_id=774672469 instance=ExtResource("2_3ue2d")]
+offset_left = 656.0
+offset_top = 200.0
+offset_right = 912.0
+offset_bottom = 528.0
+next_scene = "res://rooms/cabinet/cabinet3.tscn"
+
+[node name="SoupBubbling" type="AudioStreamPlayer" parent="." unique_id=465426047]
+stream = ExtResource("3_3ue2d")
+volume_db = -12.0
+autoplay = true

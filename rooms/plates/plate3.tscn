@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://b2nv042cweils"]
 
-[ext_resource type="Texture2D" uid="uid://c5d5y77sgqqi2" path="res://rooms/plates/plate3.png" id="1_2hmnp"]
+[ext_resource type="Texture2D" uid="uid://hkjeuy5klrh1" path="res://rooms/plates/plate3.png" id="1_2hmnp"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_dpcib"]
 
 [node name="Plate3" type="Node2D" unique_id=466601352]
 
 [node name="Plate3" type="Sprite2D" parent="." unique_id=1796686655]
-position = Vector2(480.00003, 360)
+position = Vector2(720, 540)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("1_2hmnp")
 

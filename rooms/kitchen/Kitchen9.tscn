@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://cg41xwxb2otnu"]
+
+[ext_resource type="Texture2D" uid="uid://b5pgj0q5kc1qj" path="res://rooms/kitchen/Kitchen9.png" id="1_cgh14"]
+[ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_21aio"]
+[ext_resource type="AudioStream" uid="uid://hjud0oy3lsaa" path="res://soundeffects/soup bubbling.wav" id="3_4pwky"]
+
+[node name="Kitchen9" type="Node2D" unique_id=92419258]
+
+[node name="Kitchen9" type="Sprite2D" parent="." unique_id=1388285539]
+position = Vector2(480, 360)
+texture = ExtResource("1_cgh14")
+
+[node name="ToKitchen1" type="TextureButton" parent="." unique_id=833255316]
+offset_top = 576.0
+offset_right = 960.0
+offset_bottom = 720.0
+script = ExtResource("2_21aio")
+next_scene = "res://rooms/kitchen/Kitchen1.tscn"
+cursor_style = 2
+metadata/_custom_type_script = "uid://dlod6gqa71kk6"
+
+[node name="ToLiving13" type="TextureButton" parent="." unique_id=1138999918]
+offset_left = 256.0
+offset_top = 128.0
+offset_right = 704.0
+offset_bottom = 576.0
+script = ExtResource("2_21aio")
+next_scene = "res://rooms/living/living13.tscn"
+cursor_style = 5
+metadata/_custom_type_script = "uid://dlod6gqa71kk6"
+
+[node name="SoupBubbling" type="AudioStreamPlayer" parent="." unique_id=1414757680]
+stream = ExtResource("3_4pwky")
+volume_db = -12.0
+autoplay = true
+
+[connection signal="mouse_entered" from="ToKitchen1" to="ToKitchen1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToKitchen1" to="ToKitchen1" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToKitchen1" to="ToKitchen1" method="_on_pressed"]
+[connection signal="mouse_entered" from="ToLiving13" to="ToLiving13" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToLiving13" to="ToLiving13" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToLiving13" to="ToLiving13" method="_on_pressed"]

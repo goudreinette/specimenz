@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://vct4jaqvi2we"]
+
+[ext_resource type="Texture2D" uid="uid://ybixa3cah2rj" path="res://rooms/kitchen/Kitchen8.png" id="1_igeud"]
+[ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_l07a5"]
+[ext_resource type="AudioStream" uid="uid://hjud0oy3lsaa" path="res://soundeffects/soup bubbling.wav" id="3_v6kt3"]
+
+[node name="Kitchen8" type="Node2D" unique_id=92419258]
+
+[node name="Kitchen8" type="Sprite2D" parent="." unique_id=1001137105]
+position = Vector2(480, 360)
+texture = ExtResource("1_igeud")
+
+[node name="ToBack" type="TextureButton" parent="." unique_id=833255316]
+offset_top = 576.0
+offset_right = 960.0
+offset_bottom = 720.0
+script = ExtResource("2_l07a5")
+next_scene = "res://rooms/garden/garden.tscn"
+cursor_style = 2
+go_to_previous = true
+metadata/_custom_type_script = "uid://dlod6gqa71kk6"
+
+[node name="ToKitchen4" type="TextureButton" parent="." unique_id=1138999918]
+offset_left = 768.0
+offset_top = 360.0
+offset_right = 960.0
+offset_bottom = 576.0
+script = ExtResource("2_l07a5")
+next_scene = "res://rooms/kitchen/Kitchen4.tscn"
+cursor_style = 11
+metadata/_custom_type_script = "uid://dlod6gqa71kk6"
+
+[node name="ToKitchen3" type="TextureButton" parent="." unique_id=1094099292]
+offset_left = 656.0
+offset_top = 168.0
+offset_right = 848.0
+offset_bottom = 344.0
+script = ExtResource("2_l07a5")
+next_scene = "res://rooms/kitchen/Kitchen3.tscn"
+cursor_style = 5
+metadata/_custom_type_script = "uid://dlod6gqa71kk6"
+
+[node name="ToKitchen6" type="TextureButton" parent="." unique_id=600767143]
+offset_top = 352.0
+offset_right = 360.0
+offset_bottom = 576.0
+script = ExtResource("2_l07a5")
+next_scene = "res://rooms/kitchen/Kitchen6.tscn"
+cursor_style = 3
+metadata/_custom_type_script = "uid://dlod6gqa71kk6"
+
+[node name="ToKitchen9" type="TextureButton" parent="." unique_id=1162707761]
+offset_left = 480.0
+offset_top = 288.0
+offset_right = 624.0
+offset_bottom = 464.0
+script = ExtResource("2_l07a5")
+next_scene = "res://rooms/kitchen/Kitchen9.tscn"
+cursor_style = 5
+metadata/_custom_type_script = "uid://dlod6gqa71kk6"
+
+[node name="SoupBubbling" type="AudioStreamPlayer" parent="." unique_id=1414757680]
+stream = ExtResource("3_v6kt3")
+volume_db = -12.0
+autoplay = true
+
+[connection signal="mouse_entered" from="ToBack" to="ToBack" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToBack" to="ToBack" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToBack" to="ToBack" method="_on_pressed"]
+[connection signal="mouse_entered" from="ToKitchen4" to="ToKitchen4" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToKitchen4" to="ToKitchen4" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToKitchen4" to="ToKitchen4" method="_on_pressed"]
+[connection signal="mouse_entered" from="ToKitchen3" to="ToKitchen3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToKitchen3" to="ToKitchen3" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToKitchen3" to="ToKitchen3" method="_on_pressed"]
+[connection signal="mouse_entered" from="ToKitchen6" to="ToKitchen6" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToKitchen6" to="ToKitchen6" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToKitchen6" to="ToKitchen6" method="_on_pressed"]
+[connection signal="mouse_entered" from="ToKitchen9" to="ToKitchen9" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ToKitchen9" to="ToKitchen9" method="_on_mouse_exited"]
+[connection signal="pressed" from="ToKitchen9" to="ToKitchen9" method="_on_pressed"]
