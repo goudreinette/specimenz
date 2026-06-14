@@ -964,3 +964,6 @@ stream = ExtResource("217_wl3cm")
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="TalkingTimer" to="." method="_on_talking_timer_timeout"]
+[connection signal="finished" from="TalkingSounds/PoopyTalk15Sec" to="." method="_on_talk_sounds_finished"]
+[connection signal="finished" from="TalkingSounds/PoopyTalk25Sec" to="." method="_on_talk_sounds_finished"]
+[connection signal="finished" from="TalkingSounds/PoopyTalk35Sec" to="." method="_on_talk_sounds_finished"]

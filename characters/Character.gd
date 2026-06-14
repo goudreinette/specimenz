@@ -150,3 +150,7 @@ func _on_animated_sprite_2d_animation_finished():
 		state = CharacterState.Idle
 	if state == CharacterState.Waving:
 		state = CharacterState.Idle
+
+
+func _on_talk_sounds_finished() -> void:
+	state = CharacterState.Idle
