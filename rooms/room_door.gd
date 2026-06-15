@@ -32,7 +32,7 @@ func _on_pressed():
 	if loading_transition:
 		loading = true
 		Input.set_custom_mouse_cursor(cursor_hourglass)
-		await get_tree().create_timer(1).timeout 
+		await get_tree().create_timer(randf_range(.1, .5)).timeout 
 		loading = false
 	if go_to_previous and Globals.previous_scene_path:
 		print("pressed! entering ", Globals.previous_scene_path)

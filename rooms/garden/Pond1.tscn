@@ -10,8 +10,9 @@ position = Vector2(480, 360)
 texture = ExtResource("1_lv6cd")
 
 [node name="ToGarden1" parent="." unique_id=1564320955 instance=ExtResource("2_u134n")]
-offset_top = 608.0
+offset_top = 601.0
 offset_right = 960.0
 offset_bottom = 720.0
 next_scene = "res://rooms/garden/Garden1.tscn"
-cursor_style = 1
+cursor_style = 2
+go_to_previous = true

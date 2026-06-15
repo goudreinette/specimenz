@@ -23,3 +23,4 @@ offset_top = 224.0
 offset_right = 760.0
 offset_bottom = 576.0
 next_scene = "res://rooms/garden/Sandbox1.tscn"
+cursor_style = 5
