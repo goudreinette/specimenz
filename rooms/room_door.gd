@@ -25,7 +25,7 @@ var cursor_right = load("res://cursors/move.right.png")
 var cursor_hourglass = load("res://cursors/hourglass.png")
 
 
-@export var loading: bool = false
+var loading: bool = false
 
 
 func _on_pressed():
