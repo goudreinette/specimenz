@@ -8,6 +8,7 @@ enum CursorStyle {
 @export var next_scene: String
 @export var cursor_style: CursorStyle
 @export var go_to_previous: bool
+@export var loading_transition: bool
 
 var cursor_active = load("res://cursors/active.png")
 var cursor_default = load("res://cursors/default.png")
@@ -21,22 +22,25 @@ var cursor_left = load("res://cursors/move.left.png")
 var cursor_rightcurvebackward = load("res://cursors/move.r.curve.b.png")
 var cursor_rightcurveforward = load("res://cursors/move.r.curve.f.png")
 var cursor_right = load("res://cursors/move.right.png")
+var cursor_hourglass = load("res://cursors/hourglass.png")
 
 
-
+@export var loading: bool = false
 
 
 func _on_pressed():
+	if loading_transition:
+		loading = true
+		Input.set_custom_mouse_cursor(cursor_hourglass)
+		await get_tree().create_timer(1).timeout 
+		loading = false
 	if go_to_previous and Globals.previous_scene_path:
 		print("pressed! entering ", Globals.previous_scene_path)
-		#get_tree().change_scene_to_packed(next_scene)
 		get_tree().change_scene_to_file(Globals.previous_scene_path)
 	else: 
 		Globals.previous_scene_path = get_tree().current_scene.scene_file_path
 		print("pressed! entering ", next_scene)
-		#get_tree().change_scene_to_packed(next_scene)
 		get_tree().change_scene_to_file(next_scene)
-	#$AnimationPlayer.play("fadeout")
 	
 
 
@@ -47,6 +51,9 @@ func _on_pressed():
 
 func _on_mouse_entered():
 	print("mouse entered ", next_scene)
+	if loading:
+		Input.set_custom_mouse_cursor(cursor_hourglass)
+		return
 	if cursor_style == CursorStyle.Active:
 		Input.set_custom_mouse_cursor(cursor_active)
 	if cursor_style == CursorStyle.Default:

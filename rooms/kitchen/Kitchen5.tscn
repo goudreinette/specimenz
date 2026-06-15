@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cp53pi1fpoip6"]
 
-[ext_resource type="Texture2D" uid="uid://cu2cceht17rhb" path="res://rooms/kitchen/Kitchen5.png" id="1_naej6"]
+[ext_resource type="Texture2D" uid="uid://cu2cceht17rhb" path="res://rooms/kitchen/kitchen5.png" id="1_naej6"]
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_0pqd0"]
 
 [node name="Kitchen5" type="Node2D" unique_id=92419258]
@@ -10,13 +10,14 @@ position = Vector2(480, 360)
 texture = ExtResource("1_naej6")
 
 [node name="ToGarden1" type="TextureButton" parent="." unique_id=833255316]
-offset_left = 280.0
-offset_top = 64.0
-offset_right = 728.0
-offset_bottom = 626.0
+offset_left = 234.0
+offset_top = 21.348206
+offset_right = 764.0
+offset_bottom = 606.0
 script = ExtResource("2_0pqd0")
 next_scene = "res://rooms/garden/garden1.tscn"
 cursor_style = 5
+loading_transition = true
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [node name="ToKitchen8" type="TextureButton" parent="." unique_id=1914310994]
