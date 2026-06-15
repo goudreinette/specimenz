@@ -17,7 +17,6 @@ offset_bottom = 720.0
 script = ExtResource("2_2e8qx")
 next_scene = "res://rooms/kitchen/kitchen1.tscn"
 cursor_style = 2
-go_to_previous = true
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [node name="ToPlate1" type="TextureButton" parent="." unique_id=1079560007]
