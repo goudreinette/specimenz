@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://bg1u5s6e5ecf" path="res://rooms/upstairs/Upstairs3.png" id="1_htpl6"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_0cynm"]
-[ext_resource type="FontFile" uid="uid://de6y7ndjmxd6a" path="res://bubbles/Andy Bold.ttf" id="3_0cynm"]
 [ext_resource type="PackedScene" uid="uid://ldfawvntgk34" path="res://errormessages/error_message_trigger.tscn" id="3_0cynm"]
 
 [node name="Upstairs3" type="Node2D" unique_id=466601352]
@@ -29,7 +28,6 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_constants/line_spacing = 0
 theme_override_constants/shadow_offset_x = 3
 theme_override_constants/shadow_offset_y = 2
-theme_override_fonts/font = ExtResource("3_0cynm")
 theme_override_font_sizes/font_size = 34
 text = "Maeve"
 horizontal_alignment = 1
