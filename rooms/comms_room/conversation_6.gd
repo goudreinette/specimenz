@@ -5,12 +5,12 @@ extends Conversation
 
 
 func start():
-	await pause(5)
+	await pause(1)
 	pipette.say("Hi Poopy")
 	pipette.wave()
 	
 	await pause(5)
-	poopy.say("Hi Maeve, how Hi Maeve,Hi Maeve,Hi Maeve,Hi Maeve,Hi Maeve,Hi Maeve,Hi Maeve,Hi Maeve,Hi Maeve,Hi Maeve,")
+	poopy.say("Hi Maeve, how was your day?")
 	poopy.wave()
 	
 	await pause(5)
@@ -292,5 +292,7 @@ func start():
 	
 	await pause(5)
 	poopy.say("Okay, let's wipe it away")
+	
+	await pause(15)
 	
 	conversation_finished.emit()

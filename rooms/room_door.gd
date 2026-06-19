@@ -2,7 +2,7 @@ class_name RoomDoor extends TextureButton
 
 
 enum CursorStyle {
-	Active, Default, Backward, ForwardCurveLeft, ForwardCurveRight, Forward, LeftCurveBackward, LeftCurveForward, Left, RightCurveBackward, RightCurveForward, Right, Hourglass, Out 
+	Active, Default, Backward, ForwardCurveLeft, ForwardCurveRight, Forward, LeftCurveBackward, LeftCurveForward, Left, RightCurveBackward, RightCurveForward, Right, Hourglass, Out,
 }
 
 @export var next_scene: String
@@ -22,7 +22,7 @@ var cursor_left = load("res://cursors/move.left.png")
 var cursor_rightcurvebackward = load("res://cursors/move.r.curve.b.png")
 var cursor_rightcurveforward = load("res://cursors/move.r.curve.f.png")
 var cursor_right = load("res://cursors/move.right.png")
-var cursor_hourglass = load("res://cursors/hourglass.png")
+var cursor_hourglass = load("res://cursors/wait1.png")
 var cursor_out = load("res://cursors/move.out2.png")
 
 

@@ -2,7 +2,7 @@ extends Node
 
 
 @onready var conversations: Array[Node] = $"Conversations".get_children()
-var conversation_i = 5
+var conversation_i = 0
 
 
 func _ready():

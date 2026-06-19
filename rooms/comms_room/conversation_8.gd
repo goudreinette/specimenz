@@ -5,7 +5,7 @@ extends Conversation
 
 
 func start():
-	await pause(5)
+	await pause(1)
 	pipette.say("Hi Poopy")
 	pipette.wave()
 	
@@ -128,5 +128,7 @@ func start():
 	
 	await pause(4)
 	pipette.say("I mean yes")
+	
+	await pause(15)
 	
 	conversation_finished.emit()
