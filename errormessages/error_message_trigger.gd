@@ -11,6 +11,10 @@ var cursor_out = load("res://cursors/move.out2.png")
 @export var headerText: String = "UH OH!"
 @export_multiline var messageText: String = ".... error message here ...."
 @export var buttonText: String = "OK"
+@export var cursor: String = "res://cursors/move.forward.png"
+
+
+signal closed
 
 
 func _on_pressed():
@@ -31,9 +35,11 @@ func _on_pressed():
 	
 func on_window_closed():
 	window_open = false
+	closed.emit()
+	
 	
 func _on_mouse_entered():
-	Input.set_custom_mouse_cursor(cursor_out)
+	Input.set_custom_mouse_cursor(load(cursor))
 
 
 func _on_mouse_exited():

@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://cs45h1yyts84i"]
 
+[ext_resource type="Script" uid="uid://dj3p4bmcr17fw" path="res://rooms/living/window_2.gd" id="1_d7xrx"]
 [ext_resource type="Texture2D" uid="uid://cmmwhwau8rsni" path="res://rooms/living/Window2.png" id="1_noqpn"]
 [ext_resource type="PackedScene" uid="uid://ldfawvntgk34" path="res://errormessages/error_message_trigger.tscn" id="2_h5on2"]
 
 [node name="Window2" type="Node2D" unique_id=698517045]
+script = ExtResource("1_d7xrx")
 
 [node name="Window2" type="Sprite2D" parent="." unique_id=1613127320]
 position = Vector2(480, 360)
@@ -14,3 +16,6 @@ offset_left = 168.0
 offset_top = 216.0
 offset_right = 784.0
 offset_bottom = 496.0
+cursor = "res://cursors/move.out2.png"
+
+[connection signal="closed" from="ErrorMessageTrigger" to="." method="_on_error_message_closed"]
