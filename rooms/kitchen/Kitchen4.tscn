@@ -1,11 +1,12 @@
 [gd_scene format=3 uid="uid://yuevs4rjbxsj"]
 
-[ext_resource type="Texture2D" uid="uid://b50n64dlbqt8x" path="res://rooms/kitchen/Kitchen4.png" id="1_c4ofe"]
+[ext_resource type="Texture2D" uid="uid://b50n64dlbqt8x" path="res://rooms/kitchen/kitchen4.png" id="1_c4ofe"]
+[ext_resource type="Script" uid="uid://be33635lq1k0n" path="res://rooms/kitchen/kitchen_soupbubblesound_loud.gd" id="1_d3n5g"]
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_pfnyu"]
-[ext_resource type="AudioStream" uid="uid://hjud0oy3lsaa" path="res://soundeffects/soup bubbling.wav" id="3_pfnyu"]
 [ext_resource type="PackedScene" uid="uid://ldfawvntgk34" path="res://errormessages/error_message_trigger.tscn" id="4_ay4d6"]
 
 [node name="Kitchen4" type="Node2D" unique_id=801351203]
+script = ExtResource("1_d3n5g")
 
 [node name="Kitchen4" type="Sprite2D" parent="." unique_id=1415800866]
 position = Vector2(480, 360)
@@ -20,10 +21,6 @@ next_scene = "res://rooms/kitchen/kitchen1.tscn"
 cursor_style = 2
 go_to_previous = true
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
-
-[node name="SoupBubbling" type="AudioStreamPlayer" parent="." unique_id=181001176]
-stream = ExtResource("3_pfnyu")
-autoplay = true
 
 [node name="ErrorMessageTrigger" parent="." unique_id=103945561 instance=ExtResource("4_ay4d6")]
 offset_left = 568.0

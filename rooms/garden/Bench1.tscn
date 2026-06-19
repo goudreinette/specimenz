@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://babhxmtk4faxl"]
 
+[ext_resource type="Script" uid="uid://ys44uco2bgrg" path="res://rooms/garden/garden_watersound_soft.gd" id="1_rhrmw"]
 [ext_resource type="Texture2D" uid="uid://24538soq6vws" path="res://rooms/garden/Bench1.png" id="1_vgile"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_rhrmw"]
 
 [node name="Bench1" type="Node2D" unique_id=34694161]
+script = ExtResource("1_rhrmw")
 
 [node name="Bench1" type="Sprite2D" parent="." unique_id=469287778]
 position = Vector2(480, 360)

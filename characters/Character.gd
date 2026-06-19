@@ -153,4 +153,7 @@ func _on_animated_sprite_2d_animation_finished():
 
 
 func _on_talk_sounds_finished() -> void:
+	if state == CharacterState.Waving:
+		return
+		
 	state = CharacterState.Idle
