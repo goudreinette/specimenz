@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://w62vf5ax4gf" path="res://rooms/garden/Tree1.png" id="1_bldni"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_qae7e"]
+[ext_resource type="PackedScene" uid="uid://ldfawvntgk34" path="res://errormessages/error_message_trigger.tscn" id="3_qae7e"]
 
 [node name="Tree1" type="Node2D" unique_id=2086378232]
 
@@ -15,3 +16,14 @@ offset_right = 960.0
 offset_bottom = 720.0
 next_scene = "res://rooms/garden/Garden4.tscn"
 cursor_style = 2
+
+[node name="ErrorMessageTrigger" parent="." unique_id=103945561 instance=ExtResource("3_qae7e")]
+offset_left = 336.0
+offset_top = 312.0
+offset_right = 640.0
+offset_bottom = 496.0
+headerText = "Uh-Oh!"
+messageText = "You can't play without a friend!
+
+Try again later."
+buttonText = "O.k."

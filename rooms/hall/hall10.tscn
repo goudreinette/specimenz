@@ -31,3 +31,5 @@ cursor_style = 5
 messageText = "You do not have permission to access the outside world... 
 
 Please try again later."
+headerText = "Uh-Oh!"
+buttonText = "O.k."
