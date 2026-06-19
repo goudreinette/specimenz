@@ -8,7 +8,7 @@ enum CursorStyle {
 @export var next_scene: String
 @export var cursor_style: CursorStyle
 @export var go_to_previous: bool
-@export var loading_transition: bool
+@export var loading_transition: bool = true
 
 var cursor_active = load("res://cursors/active.png")
 var cursor_default = load("res://cursors/default.png")
@@ -33,7 +33,7 @@ func _on_pressed():
 	if loading_transition:
 		loading = true
 		Input.set_custom_mouse_cursor(cursor_hourglass)
-		await get_tree().create_timer(randf_range(.1, .5)).timeout 
+		await get_tree().create_timer(randf_range(.1, .2)).timeout 
 		loading = false
 	if go_to_previous and Globals.previous_scene_path:
 		print("pressed! entering ", Globals.previous_scene_path)
