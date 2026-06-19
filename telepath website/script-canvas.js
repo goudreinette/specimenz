@@ -87,8 +87,7 @@ setInterval(() => {
             line.currentY = line.currentY + Math.sin(toRadians(line.angle + randomRange(-angleVariation, angleVariation))) * stepSize + randomRange(-stepSize, stepSize)
             line.currentX = line.currentX + Math.cos(toRadians(line.angle + randomRange(-angleVariation, angleVariation))) * stepSize + randomRange(-stepSize, stepSize) 
             
-            line.points += `${line.currentX},${line.currentY} `
-å
+
 
             const divideChance = line.stepsSinceTouchedLetter < 2 ? .9 : .99
             
@@ -107,12 +106,15 @@ setInterval(() => {
 
             for (const char of chars) {
                 const rect = char.getBoundingClientRect()
-                var inBox = line.currentX > rect.x && line.currentY > rect.y && line.currentX < rect.x + rect.width && line.currentY < rect.y + rect.height;
+                const charX = rect.x + window.scrollX
+                const charY = rect.y + window.scrollY
+
+                var inBox = line.currentX > charX && line.currentY > charY && line.currentX < charX + rect.width && line.currentY < charY + rect.height;
                 // var b = line.currentY - rect.top;
                 // const distFromPoint = Math.sqrt( a*a + b*b );
                 if (inBox) {
                     // console.log(char, ' close')
-                    startDecaying(char, `hsl(${line.hue}, 100%, 21%)`)
+                    startDecaying(char, `hsl(${line.hue}, 100%, 70%)`)
                     line.stepsSinceTouchedLetter = 0
                 }
             }
@@ -143,14 +145,14 @@ setInterval(() => {
 // STARTING POINT  ------------------------------------------------------
 const firstchar = document.querySelector('.contact') //chars[0]
 const firstCharRect = firstchar.getBoundingClientRect()
-console.log(firstCharRect.x, firstCharRect.y)
+console.log(firstCharRect)
+const startX = firstCharRect.x + scrollX
+const startY = firstCharRect.y + scrollY + 500
 
-// addPolyline(firstCharRect.x,firstCharRect.y + 200, 180, 50)
-// addPolyline(firstCharRect.x,firstCharRect.y + 200, 270, 50)
-// addPolyline(firstCharRect.x,firstCharRect.y + 200, 0, 50)
+console.log(startX, startY)
 
 for (let i = 0; i < 9; i++) {
-    addPhysarumBranch(firstCharRect.x,firstCharRect.y + 200, i * (360/ 9), 50);
+    addPhysarumBranch(startX, startY, i * (360/ 9), 50);
 }
 
 
