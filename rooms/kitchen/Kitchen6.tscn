@@ -40,20 +40,20 @@ cursor_style = 5
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [node name="ToPlate3" type="TextureButton" parent="." unique_id=1369817761]
-offset_left = 248.0
-offset_top = 360.0
-offset_right = 384.0
-offset_bottom = 456.0
+offset_left = 352.0
+offset_top = 280.0
+offset_right = 480.0
+offset_bottom = 344.0
 script = ExtResource("2_2e8qx")
 next_scene = "res://rooms/plates/plate3.tscn"
 cursor_style = 5
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [node name="ToPlate4" type="TextureButton" parent="." unique_id=2134586609]
-offset_left = 352.0
-offset_top = 288.0
-offset_right = 488.0
-offset_bottom = 344.0
+offset_left = 256.0
+offset_top = 360.0
+offset_right = 384.0
+offset_bottom = 440.0
 script = ExtResource("2_2e8qx")
 next_scene = "res://rooms/plates/plate4.tscn"
 cursor_style = 5
