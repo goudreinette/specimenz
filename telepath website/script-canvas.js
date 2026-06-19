@@ -109,7 +109,14 @@ setInterval(() => {
                 const charX = rect.x + window.scrollX
                 const charY = rect.y + window.scrollY
 
-                var inBox = line.currentX > charX && line.currentY > charY && line.currentX < charX + rect.width && line.currentY < charY + rect.height;
+                const margin = 4
+
+                var inBox = line.currentX + margin > charX 
+                    && line.currentY + margin > charY 
+                    && line.currentX - margin < charX + rect.width
+                    && line.currentY - margin < charY + rect.height;
+
+                    
                 // var b = line.currentY - rect.top;
                 // const distFromPoint = Math.sqrt( a*a + b*b );
                 if (inBox) {
