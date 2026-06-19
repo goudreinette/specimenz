@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://detsx4pin5ps3" path="res://rooms/upstairs/upstairs1.png" id="1_lctcb"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_63btt"]
+[ext_resource type="FontFile" uid="uid://de6y7ndjmxd6a" path="res://bubbles/Andy Bold.ttf" id="3_odyam"]
 
 [node name="Upstairs1" type="Node2D" unique_id=466601352]
 
@@ -39,3 +40,20 @@ offset_right = 960.0
 offset_bottom = 720.0
 next_scene = "res://rooms/stairway/stairway5.tscn"
 cursor_style = 2
+
+[node name="Maeve name" type="Label" parent="." unique_id=543010059]
+offset_left = 734.0
+offset_top = 361.0
+offset_right = 833.0
+offset_bottom = 407.0
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 3)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("3_odyam")
+theme_override_font_sizes/font_size = 16
+text = "Maeve"
+horizontal_alignment = 1
+justification_flags = 162
