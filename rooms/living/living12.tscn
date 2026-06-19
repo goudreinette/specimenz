@@ -16,7 +16,6 @@ offset_right = 960.0
 offset_bottom = 720.0
 next_scene = "res://rooms/living/living1.tscn"
 cursor_style = 2
-go_to_previous = true
 
 [node name="ToLiving2" parent="." unique_id=2125296165 instance=ExtResource("2_2b1yi")]
 offset_top = 192.0

@@ -21,42 +21,42 @@ metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [node name="ToPlate1" type="TextureButton" parent="." unique_id=1079560007]
 offset_left = 536.0
-offset_top = 344.0
+offset_top = 360.0
 offset_right = 680.0
 offset_bottom = 464.0
 script = ExtResource("2_2e8qx")
 next_scene = "res://rooms/plates/plate1.tscn"
-cursor_style = 4
+cursor_style = 5
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [node name="ToPlate2" type="TextureButton" parent="." unique_id=1480850360]
 offset_left = 504.0
-offset_top = 235.0
-offset_right = 668.0
-offset_bottom = 344.0
+offset_top = 256.0
+offset_right = 640.0
+offset_bottom = 336.0
 script = ExtResource("2_2e8qx")
 next_scene = "res://rooms/plates/plate2.tscn"
-cursor_style = 4
+cursor_style = 5
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [node name="ToPlate3" type="TextureButton" parent="." unique_id=1369817761]
 offset_left = 248.0
-offset_top = 344.0
+offset_top = 360.0
 offset_right = 384.0
 offset_bottom = 456.0
 script = ExtResource("2_2e8qx")
 next_scene = "res://rooms/plates/plate3.tscn"
-cursor_style = 3
+cursor_style = 5
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [node name="ToPlate4" type="TextureButton" parent="." unique_id=2134586609]
 offset_left = 352.0
-offset_top = 231.0
+offset_top = 288.0
 offset_right = 488.0
 offset_bottom = 344.0
 script = ExtResource("2_2e8qx")
 next_scene = "res://rooms/plates/plate4.tscn"
-cursor_style = 3
+cursor_style = 5
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [connection signal="mouse_entered" from="ToBack" to="ToBack" method="_on_mouse_entered"]
