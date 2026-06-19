@@ -229,11 +229,16 @@ hr{
 
 @keyframes eat-letter {
     0% {
-        color: black;
+        color: white;
         opacity: 100%;
     }   
 
     5% {
+        color: var(--color);
+        opacity: 100%;
+    }
+
+    50% {
         color: var(--color);
         opacity: 100%;
     }
