@@ -29,6 +29,11 @@
 }
 
 
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     background: url('style/ether.jpg');
     padding:0;
@@ -97,18 +102,21 @@ hr{
 
 
 #container {
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    top:120px;
-    width: 1000px;
-    height: 1500px;
+    position: relative;
+    /*! transform: translateX(-50%); */
+    /*! left: 50%; */
+    /* top:120px; */
+    width: 1020px;
+    /* height: 1500px; */
     color:white;
     padding: 10px;
+    /* border: 1px solid red; */
+    margin: auto;
+    padding-top: 130px;
 }
 
 #banner{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: 80px;
     margin-bottom: 10px;
@@ -123,7 +131,7 @@ hr{
 #banner2{
     background-color: black;
     position: relative;
-    width: 100%;
+    width: calc(100% - 10px);
     height: 130px;
     border: 1px solid white;
     
@@ -133,7 +141,7 @@ hr{
     width: 180px;
     height: 100px;
     position: absolute;
-    right:0;
+    right:20px;
     top:0;
     padding:10px; 
     margin-right: 10px;
@@ -158,7 +166,7 @@ hr{
 }
 
 #sidemenu{
-    position: absolute;
+    /* position: absolute; */
     width: 225px;
     height: 1000px;
     font-family: 'helveticapixelated';
@@ -176,7 +184,7 @@ hr{
 
 
 #maintext {
-    position: absolute;
+    /* position: absolute; */
     right: 0;
     width: 784px;
 }
@@ -223,6 +231,7 @@ hr{
 
 /* Fading */
 .char.fading {
+    /* --color: hsl(, 100%, 70%) */
     animation: eat-letter var(--duration) forwards;
 }
 
@@ -233,7 +242,7 @@ hr{
         opacity: 100%;
     }   
 
-    5% {
+    1% {
         color: var(--color);
         opacity: 100%;
     }
@@ -252,18 +261,26 @@ hr{
 
 
 /* Physarum */
-svg#physarum {
+/* svg#physarum {
     position: absolute;
     width: 100%;
     height: 100%;
     border: var(--color) solid 1px;
     z-index: 3;
-}
+} */
 
 canvas {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     image-rendering: pixelated;
     z-index: 3;
-    position: relative;
+    position: absolute;
+    top: 0;
+
+}
+
+
+
+#main {
+    display: flex;
 }

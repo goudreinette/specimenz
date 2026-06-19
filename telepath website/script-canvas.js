@@ -27,11 +27,44 @@ function startDecaying(char, color) {
 
 
 // PHYSARUM CANVAS --------------------------------------------------------------
+const $count = document.querySelector('.count')
 const physarumCanvas = document.querySelector('canvas')
 const context = physarumCanvas.getContext("2d")
 const ctx = context
-let polylines = []
+
+
+addEventListener('load', function () {
+    ctx.canvas.width  = document.body.scrollWidth;
+    ctx.canvas.height = document.body.scrollHeight;
+
+    console.log('scrollWidth / Height', document.body.scrollWidth, document.body.scrollHeight)
+
+
+    // STARTING POINT  ------------------------------------------------------
+    const firstchar = document.querySelector('.contact') //chars[0]
+    const firstCharRect = firstchar.getBoundingClientRect()
+    console.log(firstCharRect)
+    const startX = firstCharRect.x + scrollX + 100
+    const startY = firstCharRect.y + scrollY + 50 // + 500 start offset
+
+    console.log(startX, startY)
+
+    for (let i = 0; i < 9; i++) {
+        addPhysarumBranch(startX, startY, i * (360/ 9), 50);
+    }
+
+
+})
+
+//
+// physarumCanvas.setAttribute('height', )   
+
+
 const stepSize = .3
+const angleVariation = 40
+
+
+let polylines = []
 
 function addPhysarumBranch(startX, startY, angle, hue) {
     polylines.push({
@@ -50,11 +83,8 @@ function addPhysarumBranch(startX, startY, angle, hue) {
 }
 
 
-const $count = document.querySelector('.count')
 
-ctx.canvas.width  = window.innerWidth;
-ctx.canvas.height = window.innerHeight;
-const angleVariation = 40
+
 
 
 
@@ -98,7 +128,7 @@ setInterval(() => {
 
             if (Math.random() > divideChance && activeLinesCount < 20) {
                 for (let i = 0; i < 9; i++) {
-                    addPhysarumBranch(line.currentX,line.currentY, line.angle + i * (360/ 9), clamp(50, line.hue + randomRange(-20, 20), 90));
+                    addPhysarumBranch(line.currentX,line.currentY, line.angle + i * (360/ 9), clamp(line.hue + randomRange(-10, 5), 50, 90));
                 }
                 line.stepsSinceTouchedLetter = 0
             }
@@ -111,10 +141,10 @@ setInterval(() => {
 
                 const margin = 4
 
-                var inBox = line.currentX + margin > charX 
-                    && line.currentY + margin > charY 
-                    && line.currentX - margin < charX + rect.width
-                    && line.currentY - margin < charY + rect.height;
+                var inBox = line.currentX > charX - margin
+                    && line.currentY > charY - margin
+                    && line.currentX < charX + rect.width + margin
+                    && line.currentY < charY + rect.height + margin;
 
                     
                 // var b = line.currentY - rect.top;
@@ -149,19 +179,6 @@ setInterval(() => {
 
 
 
-// STARTING POINT  ------------------------------------------------------
-const firstchar = document.querySelector('.contact') //chars[0]
-const firstCharRect = firstchar.getBoundingClientRect()
-console.log(firstCharRect)
-const startX = firstCharRect.x + scrollX
-const startY = firstCharRect.y + scrollY + 500
-
-console.log(startX, startY)
-
-for (let i = 0; i < 9; i++) {
-    addPhysarumBranch(startX, startY, i * (360/ 9), 50);
-}
-
 
 
 
@@ -174,8 +191,8 @@ function randomRange(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function clamp(min, max) {
-  return Math.min(Math.max(this, min), max);
+function clamp(val, min, max) {
+  return Math.min(Math.max(val, min), max);
 };
 
 function toRadians (angle) {
@@ -200,3 +217,10 @@ function colorMixer(rgbA, rgbB, amountToMix){
     var b = colorChannelMixer(rgbA[2],rgbB[2],amountToMix);
     return "rgb("+r+","+g+","+b+")";
 }
+
+
+
+// RELOAD EVERY HOUR
+setInterval(() => {
+    location.reload()
+}, 1000 * 60 * 60)

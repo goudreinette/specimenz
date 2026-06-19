@@ -6,6 +6,7 @@ enum CursorStyle {
 }
 
 @export var next_scene: String
+@export var next_scene_packed: PackedScene
 @export var cursor_style: CursorStyle
 @export var go_to_previous: bool
 @export var loading_transition: bool = true
@@ -25,7 +26,6 @@ var cursor_rightcurveforward = load("res://cursors/move.r.curve.f.png")
 var cursor_right = load("res://cursors/move.right.png")
 var cursor_hourglass = load("res://cursors/wait1.png")
 var cursor_out = load("res://cursors/move.out2.png")
-
 
 var loading: bool = false
 
