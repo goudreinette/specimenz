@@ -62,7 +62,8 @@ addEventListener('load', function () {
 
 const stepSize = .3
 const angleVariation = 40
-
+const maxActiveLines = 30
+const minActiveLines = 4
 
 let polylines = []
 
@@ -102,7 +103,7 @@ setInterval(() => {
         }
     }
 
-    // console.log(activeLinesCount, polylines.length)
+    console.log('lines:', polylines.length, 'active:', activeLinesCount)
 
     for (const line of polylines) {
         if (line.active) {
@@ -119,17 +120,23 @@ setInterval(() => {
             
 
 
-            const divideChance = line.stepsSinceTouchedLetter < 2 ? .9 : .99
+            const divideChance = line.stepsSinceTouchedLetter < 25 ? .75 : .99
             
             context.fillStyle = `hsl(${line.hue}, 70%, 51%)`; // 'red' //
             context.fillRect(line.currentX, line.currentY, 1, 1)
 
             // console.log(line.currentX, line.currentY)
 
-            if (Math.random() > divideChance && activeLinesCount < 20) {
-                for (let i = 0; i < 9; i++) {
-                    addPhysarumBranch(line.currentX,line.currentY, line.angle + i * (360/ 9), clamp(line.hue + randomRange(-10, 5), 50, 90));
+            if (Math.random() > divideChance && activeLinesCount < maxActiveLines) {
+                const _count = 9
+                for (let i = 0; i < _count; i++) {
+                    if (activeLinesCount < maxActiveLines) {
+                        addPhysarumBranch(line.currentX,line.currentY, line.angle + i * (360 / _count), clamp(line.hue + randomRange(-10, 5), 50, 90));
+                        activeLinesCount += 1
+                    }
                 }
+
+                // activeLinesCount += _count
                 line.stepsSinceTouchedLetter = 0
             }
 
@@ -161,7 +168,7 @@ setInterval(() => {
         // Chance of dying //|
         if (Math.random() > .99 && line.stepsSinceTouchedLetter > 400) {
             // Don't be the only leftover active line
-            if (activeLinesCount > 1) {
+            if (activeLinesCount > minActiveLines) {
                 line.active = false
                 activeLinesCount--
             }
