@@ -1,8 +1,6 @@
 class_name ErrorMessageWindow extends Node2D
 
-@export var headerText: String = "UH OH!"
-@export var messageText: String = ".... error message here ...."
-@export var buttonText: String = "OK"
+
 
 # Cursors
 var cursor_active = load("res://cursors/active.png")
@@ -12,6 +10,18 @@ var cursor_default = load("res://cursors/default.png")
 signal closed
 
 
+# Setters for text
+func set_header_text(s: String):
+	$ErrorWindow/HeaderLabel.text = s
+	
+func set_message_text(s: String):
+	$ErrorWindow/MessageLabel.text = s
+
+func set_button_text(s: String):
+	$ErrorWindow/TextureButton/ButtonLabel.text = s
+
+
+# Cursor hover events
 func _on_texture_button_mouse_entered(source):
 	Input.set_custom_mouse_cursor(cursor_active)
 

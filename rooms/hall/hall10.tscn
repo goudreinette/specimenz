@@ -2,8 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b26f2toldb7it" path="res://rooms/hall/Hall10.png" id="2_srb6n"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_w7loh"]
-[ext_resource type="Script" uid="uid://dpqb8tvs2lsc8" path="res://errormessages/error_message_trigger.gd" id="3_w7loh"]
-[ext_resource type="PackedScene" uid="uid://dod7f6p4yw3vc" path="res://errormessages/error_message_window.tscn" id="4_v5821"]
+[ext_resource type="PackedScene" uid="uid://ldfawvntgk34" path="res://errormessages/error_message_trigger.tscn" id="3_w7loh"]
 
 [node name="Hall10" type="Node2D" unique_id=1006463638]
 
@@ -28,17 +27,4 @@ offset_bottom = 648.0
 next_scene = "res://rooms/hall/hall7.tscn"
 cursor_style = 5
 
-[node name="ErrorMessageTrigger" type="TextureButton" parent="." unique_id=1917405977]
-offset_left = 328.0
-offset_top = 80.0
-offset_right = 662.0
-offset_bottom = 666.0
-script = ExtResource("3_w7loh")
-
-[node name="ErrorMessageWindow" parent="." unique_id=24445143 instance=ExtResource("4_v5821")]
-process_mode = 4
-visible = false
-
-[connection signal="mouse_entered" from="ErrorMessageTrigger" to="ErrorMessageTrigger" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="ErrorMessageTrigger" to="ErrorMessageTrigger" method="_on_mouse_exited"]
-[connection signal="pressed" from="ErrorMessageTrigger" to="ErrorMessageTrigger" method="_on_pressed"]
+[node name="ErrorMessageTrigger" parent="." unique_id=103945561 instance=ExtResource("3_w7loh")]

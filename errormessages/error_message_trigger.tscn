@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ldfawvntgk34"]
+
+[ext_resource type="Script" uid="uid://dpqb8tvs2lsc8" path="res://errormessages/error_message_trigger.gd" id="1_opapx"]
+
+[node name="ErrorMessageTrigger" type="TextureButton" unique_id=103945561]
+offset_left = 328.0
+offset_top = 80.0
+offset_right = 662.0
+offset_bottom = 666.0
+script = ExtResource("1_opapx")
+messageText = "blablaba"
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]
