@@ -160,16 +160,10 @@ setInterval(() => {
 
         // Chance of dying //|
         if (Math.random() > .99 && line.stepsSinceTouchedLetter > 400) {
-            let activeLinesCount = 0
-            for (const l of polylines) {
-                if (l.active) {
-                    activeLinesCount++
-                }
-            }
-
             // Don't be the only leftover active line
             if (activeLinesCount > 1) {
                 line.active = false
+                activeLinesCount--
             }
         }
 
