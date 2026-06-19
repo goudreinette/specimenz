@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b60jye6oq4hex"]
 
-[ext_resource type="Texture2D" uid="uid://cir8ni6p2gbbo" path="res://rooms/plates/plate2.png" id="1_exoec"]
+[ext_resource type="Texture2D" uid="uid://cir8ni6p2gbbo" path="res://rooms/plates/Plate2.png" id="1_exoec"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_oqwk5"]
 
 [node name="Plate2" type="Node2D" unique_id=466601352]
@@ -16,3 +16,27 @@ offset_right = 962.0
 offset_bottom = 722.0
 next_scene = "res://rooms/kitchen/kitchen6.tscn"
 cursor_style = 2
+
+[node name="ToPlate1" parent="." unique_id=1383309058 instance=ExtResource("2_oqwk5")]
+offset_left = 16.0
+offset_top = 168.0
+offset_right = 184.0
+offset_bottom = 368.0
+next_scene = "res://rooms/plates/plate1.tscn"
+cursor_style = 5
+
+[node name="ToPlate4" parent="." unique_id=1286773387 instance=ExtResource("2_oqwk5")]
+offset_left = 320.0
+offset_top = 168.0
+offset_right = 472.0
+offset_bottom = 280.0
+next_scene = "res://rooms/plates/plate4.tscn"
+cursor_style = 5
+
+[node name="ToPlate3" parent="." unique_id=8916076 instance=ExtResource("2_oqwk5")]
+offset_left = 528.0
+offset_top = 248.0
+offset_right = 704.0
+offset_bottom = 328.0
+next_scene = "res://rooms/plates/plate3.tscn"
+cursor_style = 5
