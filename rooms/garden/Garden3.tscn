@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b0g7cci7lelio"]
 
-[ext_resource type="Texture2D" uid="uid://ctrlgisjtxqq8" path="res://rooms/garden/Garden3.png" id="1_kduq3"]
+[ext_resource type="Texture2D" uid="uid://ctrlgisjtxqq8" path="res://rooms/garden/garden3.png" id="1_kduq3"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_o0xpj"]
 
 [node name="Garden3" type="Node2D" unique_id=908659994]
