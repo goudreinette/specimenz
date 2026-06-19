@@ -15,7 +15,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Specimenz"
-run/main_scene="uid://bpcfg7llhhdk1"
+run/main_scene="uid://d32jm3llxwgnb"
 config/features=PackedStringArray("4.7", "Forward Plus")
 boot_splash/show_image=false
 config/icon="res://icon.svg"
@@ -83,6 +83,7 @@ variables={}
 
 window/size/viewport_width=960
 window/size/viewport_height=720
+window/size/mode=3
 window/size/initial_position_type=3
 window/size/resizable=false
 window/size/always_on_top=true
