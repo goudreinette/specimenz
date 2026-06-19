@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs1qq7nr0qqw0"
-path="res://.godot/imported/Bench2.png-1b13d57328d59070828b9ffbd3f8fced.ctex"
+path="res://.godot/imported/bench2.png-9c6220148161b237ac5c2d333e877494.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rooms/garden/Bench2.png"
-dest_files=["res://.godot/imported/Bench2.png-1b13d57328d59070828b9ffbd3f8fced.ctex"]
+source_file="res://rooms/garden/bench2.png"
+dest_files=["res://.godot/imported/bench2.png-9c6220148161b237ac5c2d333e877494.ctex"]
 
 [params]
 

@@ -5,7 +5,7 @@ enum CursorStyle {
 	Active, Default, Backward, ForwardCurveLeft, ForwardCurveRight, Forward, LeftCurveBackward, LeftCurveForward, Left, RightCurveBackward, RightCurveForward, Right, Hourglass, Out,
 }
 
-@export var next_scene: String
+@export_file("*.tscn") var next_scene: String
 @export var next_scene_packed: PackedScene
 @export var cursor_style: CursorStyle
 @export var go_to_previous: bool

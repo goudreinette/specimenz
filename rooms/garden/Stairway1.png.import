@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://co4fiskfhj0om"
-path="res://.godot/imported/Stairway1.png-93cb08d2fd77fa81d34b1940caa3ea6e.ctex"
+path="res://.godot/imported/stairway1.png-a6143920b7df4b4996eaf4b6408d4c63.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rooms/garden/Stairway1.png"
-dest_files=["res://.godot/imported/Stairway1.png-93cb08d2fd77fa81d34b1940caa3ea6e.ctex"]
+source_file="res://rooms/garden/stairway1.png"
+dest_files=["res://.godot/imported/stairway1.png-a6143920b7df4b4996eaf4b6408d4c63.ctex"]
 
 [params]
 

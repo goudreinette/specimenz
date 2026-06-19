@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4dtbboq80y75"
-path="res://.godot/imported/Numpad1.png-7e3c3e00ecb820c2b26924f22c60859a.ctex"
+path="res://.godot/imported/numpad1.png-f50689c4968c06a37c84a79778af1877.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rooms/living/Numpad1.png"
-dest_files=["res://.godot/imported/Numpad1.png-7e3c3e00ecb820c2b26924f22c60859a.ctex"]
+source_file="res://rooms/living/numpad1.png"
+dest_files=["res://.godot/imported/numpad1.png-f50689c4968c06a37c84a79778af1877.ctex"]
 
 [params]
 

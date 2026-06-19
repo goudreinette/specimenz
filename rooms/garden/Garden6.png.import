@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7xkpn8rc2lw5"
-path="res://.godot/imported/Garden6.png-f6e5146c4abd2d052719c7b67898234f.ctex"
+path="res://.godot/imported/garden6.png-ca96ce71052cc5b6036166fdb64c72b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rooms/garden/Garden6.png"
-dest_files=["res://.godot/imported/Garden6.png-f6e5146c4abd2d052719c7b67898234f.ctex"]
+source_file="res://rooms/garden/garden6.png"
+dest_files=["res://.godot/imported/garden6.png-ca96ce71052cc5b6036166fdb64c72b3.ctex"]
 
 [params]
 
