@@ -16,11 +16,11 @@ offset_left = 168.0
 offset_top = 216.0
 offset_right = 784.0
 offset_bottom = 496.0
-cursor = "res://cursors/move.out2.png"
-
-[connection signal="closed" from="ErrorMessageTrigger" to="." method="_on_error_message_closed"]
 headerText = "Uh-Oh!"
 messageText = "You do not have permission to access the outside world.
 
 Please try again later."
 buttonText = "O.k."
+cursor = "res://cursors/move.out2.png"
+
+[connection signal="closed" from="ErrorMessageTrigger" to="." method="_on_error_message_closed"]
