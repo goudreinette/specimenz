@@ -20,7 +20,7 @@ cursor_style = 2
 [node name="ErrorMessageTrigger" parent="." unique_id=103945561 instance=ExtResource("3_gfahm")]
 offset_left = 296.0
 offset_top = 96.0
-offset_bottom = 696.0
+offset_bottom = 603.0
 headerText = "Uh-Oh!"
 messageText = "The Communications Room is out of order right now. Sorry!
 

@@ -39,7 +39,7 @@ justification_flags = 162
 offset_left = 320.0
 offset_top = 96.0
 offset_right = 680.0
-offset_bottom = 664.0
+offset_bottom = 601.0
 headerText = "Uh-Oh!"
 messageText = "Unauthorized user.
 "

@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_pfnyu"]
 [ext_resource type="Texture2D" uid="uid://bjltiky635vdf" path="res://rooms/kitchen/kitchen4_animation/0001.png" id="2_uet38"]
 [ext_resource type="Texture2D" uid="uid://b667e8pqvbcw4" path="res://rooms/kitchen/kitchen4_animation/0002.png" id="3_fngnd"]
-[ext_resource type="PackedScene" uid="uid://ldfawvntgk34" path="res://errormessages/error_message_trigger.tscn" id="4_ay4d6"]
 [ext_resource type="Texture2D" uid="uid://bvefpnejgo1w0" path="res://rooms/kitchen/kitchen4_animation/0003.png" id="4_yyv06"]
 [ext_resource type="Texture2D" uid="uid://dfcxtk670adba" path="res://rooms/kitchen/kitchen4_animation/0004.png" id="5_uq4qf"]
 [ext_resource type="Texture2D" uid="uid://bljgk8vst748a" path="res://rooms/kitchen/kitchen4_animation/0005.png" id="6_x6sjk"]
@@ -115,7 +114,7 @@ script = ExtResource("1_d3n5g")
 position = Vector2(480, 360)
 sprite_frames = SubResource("SpriteFrames_2yn1b")
 autoplay = "default"
-frame_progress = 0.5971892
+frame_progress = 0.5445307
 
 [node name="ToBack" type="TextureButton" parent="." unique_id=1509412791]
 offset_top = 576.0
@@ -126,18 +125,6 @@ next_scene = "res://rooms/kitchen/kitchen1.tscn"
 cursor_style = 2
 go_to_previous = true
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
-
-[node name="ErrorMessageTrigger" parent="." unique_id=103945561 instance=ExtResource("4_ay4d6")]
-process_mode = 4
-offset_left = 568.0
-offset_top = 328.0
-offset_right = 904.0
-offset_bottom = 632.0
-headerText = "Uh-Oh!"
-messageText = "You can't play without a friend!
-
-Try again later."
-buttonText = "O.k."
 
 [connection signal="mouse_entered" from="ToBack" to="ToBack" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="ToBack" to="ToBack" method="_on_mouse_exited"]
