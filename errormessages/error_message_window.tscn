@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://cnnsgs037vcnf" path="res://errormessages/button pressed.png" id="3_tgdrd"]
 [ext_resource type="FontFile" uid="uid://de6y7ndjmxd6a" path="res://bubbles/Andy Bold.ttf" id="4_xbhsb"]
 [ext_resource type="Texture2D" uid="uid://dqpamanwhgjx0" path="res://errormessages/button hover.png" id="6_dnsts"]
+[ext_resource type="AudioStream" uid="uid://cx4vj6pn6buc6" path="res://soundeffects/errormessage.wav" id="7_37b48"]
+[ext_resource type="AudioStream" uid="uid://b6ljon32i7yjn" path="res://soundeffects/errormessage-close.wav" id="8_qj5mf"]
 
 [sub_resource type="Animation" id="Animation_qj5mf"]
 length = 0.001
@@ -82,6 +84,14 @@ script = ExtResource("1_g55ro")
 position = Vector2(480, 360)
 texture = ExtResource("1_wwm4f")
 
+[node name="CursorDefaultRect" type="Control" parent="ErrorWindow" unique_id=1135840906]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -242.0
+offset_top = -210.0
+offset_right = 241.0
+offset_bottom = 216.0
+
 [node name="HeaderLabel" type="Label" parent="ErrorWindow" unique_id=1689248134]
 offset_left = -183.0
 offset_top = -192.0
@@ -157,7 +167,16 @@ justification_flags = 162
 libraries/ = SubResource("AnimationLibrary_qj5mf")
 autoplay = &"in"
 
+[node name="ErrorMessage" type="AudioStreamPlayer" parent="." unique_id=1592337493]
+stream = ExtResource("7_37b48")
+autoplay = true
+
+[node name="ErrorMessageClose" type="AudioStreamPlayer" parent="." unique_id=606058452]
+stream = ExtResource("8_qj5mf")
+
+[connection signal="mouse_exited" from="ErrorWindow/CursorDefaultRect" to="." method="_on_cursor_default_rect_mouse_exited"]
 [connection signal="mouse_entered" from="ErrorWindow/TextureButton" to="." method="_on_texture_button_mouse_entered" flags=18]
 [connection signal="mouse_exited" from="ErrorWindow/TextureButton" to="." method="_on_texture_button_mouse_exited"]
 [connection signal="pressed" from="ErrorWindow/TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="finished" from="ErrorMessageClose" to="." method="_on_error_message_close_sound_finished"]

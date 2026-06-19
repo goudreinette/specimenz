@@ -17,6 +17,7 @@ func _on_pressed():
 		my_error.closed.connect(on_window_closed)
 		add_sibling(my_error)
 		window_open = true
+		Input.set_custom_mouse_cursor(cursor_default)
 	
 func on_window_closed():
 	window_open = false
