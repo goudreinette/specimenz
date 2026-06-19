@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://caexebcv38w20"]
+[gd_scene format=3 uid="uid://baexvf7p3w6o4"]
 
 [ext_resource type="Script" uid="uid://ddox4wyn347tu" path="res://rooms/garden/pond_1.gd" id="1_7hcsv"]
 [ext_resource type="Texture2D" uid="uid://c4ij60khd248f" path="res://rooms/garden/Pond1.png" id="1_lv6cd"]

@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://yd1kcrmeij7l"]
+[gd_scene format=3 uid="uid://bq8fxe5hdxdxm"]
 
 [ext_resource type="Texture2D" uid="uid://dh1urwqrgmgub" path="res://rooms/garden/Garden8.png" id="1_3ry2p"]
 [ext_resource type="Script" uid="uid://ys44uco2bgrg" path="res://rooms/garden/garden_watersound_soft.gd" id="1_6lpmk"]

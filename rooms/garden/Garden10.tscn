@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://ccxypphnccqn1"]
+[gd_scene format=3 uid="uid://l0614kyc2t31"]
 
 [ext_resource type="Script" uid="uid://ckvep7m4t02iv" path="res://rooms/garden/garden_watersound_off.gd" id="1_4rixg"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_4rixg"]

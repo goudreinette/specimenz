@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://prxybx7ipcui"]
+[gd_scene format=3 uid="uid://ih17divajaah"]
 
 [ext_resource type="Texture2D" uid="uid://b10i8cddyfjrt" path="res://rooms/garden/Sandbox1.png" id="1_nnl38"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_tb8jl"]

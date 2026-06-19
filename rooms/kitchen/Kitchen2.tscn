@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://eijl4hsdracv"]
+[gd_scene format=3 uid="uid://51vq1y5vlte2"]
 
 [ext_resource type="Texture2D" uid="uid://ceemo3rua4mul" path="res://rooms/kitchen/kitchen2.png" id="1_ptq82"]
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_dovqf"]
