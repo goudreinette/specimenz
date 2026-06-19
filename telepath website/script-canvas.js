@@ -76,7 +76,7 @@ setInterval(() => {
     }
 
     // console.log(activeLinesCount, polylines.length)
-    $count.innerText = `${activeLinesCount}, ${polylines.length}`
+    // $count.innerText = `${activeLinesCount}, ${polylines.length}`
 
     for (const line of polylines) {
         if (line.active) {

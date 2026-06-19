@@ -21,6 +21,23 @@
 
 body {
     background: url(style/ether.jpg);
+    padding:0;
+    margin:0;
+}
+
+#explorer{
+    position: sticky;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    border-image: url("style/explorer frame.png");
+    border-image-width: 135px 280px 45px 613px;
+    border-image-slice: 135 280 45 613;
+    border-image-outset: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
 }
 
 p{
@@ -51,11 +68,12 @@ hr{
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
-    top:10px;
-    width: 1200px;
+    top:120px;
+    width: 1000px;
     height: 900px;
     color:white;
     padding: 10px;
+    border: 1px solid red;
 }
 
 #banner{
@@ -152,6 +170,14 @@ hr{
 #brainletzlogo{
     margin: 0 auto;
     width: 320px;
+}
+
+#testbox{
+    position: absolute;
+    width: 800px;
+    height: 200px;
+    background: red;
+    
 }
 
 
