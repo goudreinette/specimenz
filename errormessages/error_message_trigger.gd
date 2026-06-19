@@ -3,6 +3,7 @@ class_name ErrorMessageTrigger extends TextureButton
 # Cursors
 var cursor_forward = load("res://cursors/move.forward.png")
 var cursor_default = load("res://cursors/default.png")
+var cursor_out = load("res://cursors/move.out2.png")
 
 @export var window_open: bool = false
 
@@ -32,7 +33,7 @@ func on_window_closed():
 	window_open = false
 	
 func _on_mouse_entered():
-	Input.set_custom_mouse_cursor(cursor_forward)
+	Input.set_custom_mouse_cursor(cursor_out)
 
 
 func _on_mouse_exited():
