@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c4h88p3n11f23"]
+
+[ext_resource type="AudioStream" uid="uid://hjud0oy3lsaa" path="res://soundeffects/soup bubbling.wav" id="1_to80n"]
+[ext_resource type="Script" uid="uid://bllwrxyqgo1e" path="res://soundeffects/background_sound_effects.gd" id="1_x2hit"]
+[ext_resource type="AudioStream" uid="uid://vrsseqior5de" path="res://soundeffects/garden water.wav" id="2_epxjx"]
+
+[node name="BackgroundSoundEffects" type="Node2D" unique_id=1051347928]
+script = ExtResource("1_x2hit")
+
+[node name="SoupBubbling" type="AudioStreamPlayer" parent="." unique_id=1840213727]
+stream = ExtResource("1_to80n")
+
+[node name="GardenWater" type="AudioStreamPlayer" parent="." unique_id=1245005699]
+stream = ExtResource("2_epxjx")

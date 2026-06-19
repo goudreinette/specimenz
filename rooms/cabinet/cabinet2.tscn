@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://n8m8o2y0ug0t" path="res://rooms/cabinet/cabinet2.png" id="1_xuypr"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_3ue2d"]
-[ext_resource type="AudioStream" uid="uid://hjud0oy3lsaa" path="res://soundeffects/soup bubbling.wav" id="3_3ue2d"]
+[ext_resource type="AudioStream" uid="uid://cicgkkikmwvvq" path="res://soundeffects/cabinet creak.wav" id="3_3ue2d"]
 
 [node name="Cabinet2" type="Node2D" unique_id=466601352]
 
@@ -47,7 +47,8 @@ offset_right = 912.0
 offset_bottom = 528.0
 next_scene = "res://rooms/cabinet/cabinet3.tscn"
 
-[node name="SoupBubbling" type="AudioStreamPlayer" parent="." unique_id=465426047]
+[node name="CabinetCreak" type="AudioStreamPlayer" parent="." unique_id=1853314240]
 stream = ExtResource("3_3ue2d")
 volume_db = -12.0
+pitch_scale = 0.7
 autoplay = true

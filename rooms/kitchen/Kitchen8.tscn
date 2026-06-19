@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://vct4jaqvi2we"]
 
 [ext_resource type="Texture2D" uid="uid://ybixa3cah2rj" path="res://rooms/kitchen/Kitchen8.png" id="1_igeud"]
+[ext_resource type="Script" uid="uid://3b65m70j3x6p" path="res://rooms/kitchen/kitchen_soupbubblesound_soft.gd" id="1_l07a5"]
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_l07a5"]
-[ext_resource type="AudioStream" uid="uid://hjud0oy3lsaa" path="res://soundeffects/soup bubbling.wav" id="3_v6kt3"]
 
 [node name="Kitchen8" type="Node2D" unique_id=92419258]
+script = ExtResource("1_l07a5")
 
 [node name="Kitchen8" type="Sprite2D" parent="." unique_id=1001137105]
 position = Vector2(480, 360)
@@ -58,11 +59,6 @@ script = ExtResource("2_l07a5")
 next_scene = "res://rooms/kitchen/Kitchen9.tscn"
 cursor_style = 5
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
-
-[node name="SoupBubbling" type="AudioStreamPlayer" parent="." unique_id=1414757680]
-stream = ExtResource("3_v6kt3")
-volume_db = -12.0
-autoplay = true
 
 [connection signal="mouse_entered" from="ToKitchen5" to="ToKitchen5" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="ToKitchen5" to="ToKitchen5" method="_on_mouse_exited"]
