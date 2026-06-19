@@ -1,16 +1,121 @@
 [gd_scene format=3 uid="uid://cyill481d3pv"]
 
-[ext_resource type="Texture2D" uid="uid://b50n64dlbqt8x" path="res://rooms/kitchen/kitchen4.png" id="1_c4ofe"]
 [ext_resource type="Script" uid="uid://be33635lq1k0n" path="res://rooms/kitchen/kitchen_soupbubblesound_loud.gd" id="1_d3n5g"]
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_pfnyu"]
+[ext_resource type="Texture2D" uid="uid://bjltiky635vdf" path="res://rooms/kitchen/kitchen4_animation/0001.png" id="2_uet38"]
+[ext_resource type="Texture2D" uid="uid://b667e8pqvbcw4" path="res://rooms/kitchen/kitchen4_animation/0002.png" id="3_fngnd"]
 [ext_resource type="PackedScene" uid="uid://ldfawvntgk34" path="res://errormessages/error_message_trigger.tscn" id="4_ay4d6"]
+[ext_resource type="Texture2D" uid="uid://bvefpnejgo1w0" path="res://rooms/kitchen/kitchen4_animation/0003.png" id="4_yyv06"]
+[ext_resource type="Texture2D" uid="uid://dfcxtk670adba" path="res://rooms/kitchen/kitchen4_animation/0004.png" id="5_uq4qf"]
+[ext_resource type="Texture2D" uid="uid://bljgk8vst748a" path="res://rooms/kitchen/kitchen4_animation/0005.png" id="6_x6sjk"]
+[ext_resource type="Texture2D" uid="uid://cuusy5pqox83e" path="res://rooms/kitchen/kitchen4_animation/0006.png" id="7_hp4ib"]
+[ext_resource type="Texture2D" uid="uid://baugr77rfrli" path="res://rooms/kitchen/kitchen4_animation/0007.png" id="8_on53k"]
+[ext_resource type="Texture2D" uid="uid://cvvmutwctqwh6" path="res://rooms/kitchen/kitchen4_animation/0008.png" id="9_jmhfi"]
+[ext_resource type="Texture2D" uid="uid://duwlta5ttea1f" path="res://rooms/kitchen/kitchen4_animation/0009.png" id="10_6tco2"]
+[ext_resource type="Texture2D" uid="uid://qwek0ggmw5hg" path="res://rooms/kitchen/kitchen4_animation/0010.png" id="11_gwtse"]
+[ext_resource type="Texture2D" uid="uid://ne5a67yyrgf" path="res://rooms/kitchen/kitchen4_animation/0011.png" id="12_6jfcw"]
+[ext_resource type="Texture2D" uid="uid://vs5vrscmxw3q" path="res://rooms/kitchen/kitchen4_animation/0012.png" id="13_rxsdo"]
+[ext_resource type="Texture2D" uid="uid://c2lds2blrjddf" path="res://rooms/kitchen/kitchen4_animation/0013.png" id="14_ieepd"]
+[ext_resource type="Texture2D" uid="uid://dlkf1hdw0l5es" path="res://rooms/kitchen/kitchen4_animation/0014.png" id="15_b28fp"]
+[ext_resource type="Texture2D" uid="uid://dsuynwsjrvxpi" path="res://rooms/kitchen/kitchen4_animation/0015.png" id="16_568qo"]
+[ext_resource type="Texture2D" uid="uid://5ef4jhw0ii5s" path="res://rooms/kitchen/kitchen4_animation/0016.png" id="17_b8rah"]
+[ext_resource type="Texture2D" uid="uid://cs8ubj6oqmq5h" path="res://rooms/kitchen/kitchen4_animation/0017.png" id="18_88ysx"]
+[ext_resource type="Texture2D" uid="uid://bdljee2rko10n" path="res://rooms/kitchen/kitchen4_animation/0018.png" id="19_2x5ie"]
+[ext_resource type="Texture2D" uid="uid://dvkpcs3wepplf" path="res://rooms/kitchen/kitchen4_animation/0019.png" id="20_ld5qd"]
+[ext_resource type="Texture2D" uid="uid://lv56c7jb2jh4" path="res://rooms/kitchen/kitchen4_animation/0020.png" id="21_i37q2"]
+[ext_resource type="Texture2D" uid="uid://0coflip5aqxd" path="res://rooms/kitchen/kitchen4_animation/0021.png" id="22_073vd"]
+[ext_resource type="Texture2D" uid="uid://cs0qwwprxwy64" path="res://rooms/kitchen/kitchen4_animation/0022.png" id="23_fvnl8"]
+[ext_resource type="Texture2D" uid="uid://bxtur1kp53axh" path="res://rooms/kitchen/kitchen4_animation/0023.png" id="24_sw43t"]
+[ext_resource type="Texture2D" uid="uid://0n63yb1q78is" path="res://rooms/kitchen/kitchen4_animation/0024.png" id="25_pgc4v"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2yn1b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_uet38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fngnd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_yyv06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_uq4qf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_x6sjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_hp4ib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_on53k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jmhfi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_6tco2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_gwtse")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6jfcw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_rxsdo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ieepd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_b28fp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_568qo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_b8rah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_88ysx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_2x5ie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ld5qd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_i37q2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_073vd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_fvnl8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_sw43t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_pgc4v")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 12.0
+}]
 
 [node name="Kitchen4" type="Node2D" unique_id=801351203]
 script = ExtResource("1_d3n5g")
 
-[node name="Kitchen4" type="Sprite2D" parent="." unique_id=1415800866]
+[node name="Kitchen4" type="AnimatedSprite2D" parent="." unique_id=2028434701]
 position = Vector2(480, 360)
-texture = ExtResource("1_c4ofe")
+sprite_frames = SubResource("SpriteFrames_2yn1b")
+autoplay = "default"
+frame_progress = 0.5971892
 
 [node name="ToBack" type="TextureButton" parent="." unique_id=1509412791]
 offset_top = 576.0
@@ -23,6 +128,7 @@ go_to_previous = true
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [node name="ErrorMessageTrigger" parent="." unique_id=103945561 instance=ExtResource("4_ay4d6")]
+process_mode = 4
 offset_left = 568.0
 offset_top = 328.0
 offset_right = 904.0

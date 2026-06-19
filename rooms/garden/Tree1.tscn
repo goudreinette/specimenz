@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d0dg1thacp370"]
 
-[ext_resource type="Texture2D" uid="uid://w62vf5ax4gf" path="res://rooms/garden/Tree1.png" id="1_bldni"]
+[ext_resource type="Texture2D" uid="uid://w62vf5ax4gf" path="res://rooms/garden/tree1.png" id="1_bldni"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_qae7e"]
 [ext_resource type="PackedScene" uid="uid://ldfawvntgk34" path="res://errormessages/error_message_trigger.tscn" id="3_qae7e"]
 
