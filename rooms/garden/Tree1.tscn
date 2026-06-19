@@ -23,7 +23,7 @@ offset_top = 312.0
 offset_right = 640.0
 offset_bottom = 496.0
 headerText = "Uh-Oh!"
-messageText = "You can't play without a friend!
+messageText = "Aunt Willow isn't available right now.
 
 Try again later."
 buttonText = "O.k."
