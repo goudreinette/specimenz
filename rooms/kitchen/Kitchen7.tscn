@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://csrndd8vv5g74"]
 
 [ext_resource type="Script" uid="uid://3b65m70j3x6p" path="res://rooms/kitchen/kitchen_soupbubblesound_soft.gd" id="1_ccpks"]
-[ext_resource type="Texture2D" uid="uid://cqsoh1ek4aeql" path="res://rooms/kitchen/Kitchen7.png" id="1_tpirk"]
+[ext_resource type="Texture2D" uid="uid://cqsoh1ek4aeql" path="res://rooms/kitchen/kitchen7.png" id="1_tpirk"]
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_ccpks"]
 
 [node name="Kitchen5" type="Node2D" unique_id=92419258]
@@ -16,7 +16,7 @@ offset_top = 576.0
 offset_right = 960.0
 offset_bottom = 720.0
 script = ExtResource("2_ccpks")
-next_scene = "res://rooms/kitchen/Kitchen1.tscn"
+next_scene = "res://rooms/kitchen/kitchen1.tscn"
 cursor_style = 2
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
@@ -26,7 +26,7 @@ offset_top = 176.0
 offset_right = 960.0
 offset_bottom = 576.0
 script = ExtResource("2_ccpks")
-next_scene = "res://rooms/kitchen/Kitchen4.tscn"
+next_scene = "res://rooms/kitchen/kitchen4.tscn"
 cursor_style = 4
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 

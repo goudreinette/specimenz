@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ih17divajaah"]
 
-[ext_resource type="Texture2D" uid="uid://b10i8cddyfjrt" path="res://rooms/garden/Sandbox1.png" id="1_nnl38"]
+[ext_resource type="Texture2D" uid="uid://b10i8cddyfjrt" path="res://rooms/garden/sandbox1.png" id="1_nnl38"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_tb8jl"]
 [ext_resource type="PackedScene" uid="uid://ldfawvntgk34" path="res://errormessages/error_message_trigger.tscn" id="3_tb8jl"]
 
@@ -14,7 +14,7 @@ texture = ExtResource("1_nnl38")
 offset_top = 616.0
 offset_right = 960.0
 offset_bottom = 720.0
-next_scene = "res://rooms/garden/Garden2.tscn"
+next_scene = "res://rooms/garden/garden2.tscn"
 cursor_style = 2
 
 [node name="ErrorMessageTrigger" parent="." unique_id=103945561 instance=ExtResource("3_tb8jl")]

@@ -14,7 +14,7 @@ offset_left = 128.0
 offset_top = 640.0
 offset_right = 704.0
 offset_bottom = 720.0
-next_scene = "res://rooms/garden/Garden10.tscn"
+next_scene = "res://rooms/garden/garden10.tscn"
 cursor_style = 2
 
 [node name="ToGarden2" parent="." unique_id=2125296165 instance=ExtResource("3_miodi")]
@@ -22,7 +22,7 @@ offset_left = 408.0
 offset_top = 360.0
 offset_right = 728.0
 offset_bottom = 576.0
-next_scene = "res://rooms/garden/Garden2.tscn"
+next_scene = "res://rooms/garden/garden2.tscn"
 cursor_style = 5
 
 [node name="ToGarden6" parent="." unique_id=853893265 instance=ExtResource("3_miodi")]

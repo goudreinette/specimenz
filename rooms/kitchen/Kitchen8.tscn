@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://lgvb82i0yooc"]
 
-[ext_resource type="Texture2D" uid="uid://ybixa3cah2rj" path="res://rooms/kitchen/Kitchen8.png" id="1_igeud"]
+[ext_resource type="Texture2D" uid="uid://ybixa3cah2rj" path="res://rooms/kitchen/kitchen8.png" id="1_igeud"]
 [ext_resource type="Script" uid="uid://3b65m70j3x6p" path="res://rooms/kitchen/kitchen_soupbubblesound_soft.gd" id="1_l07a5"]
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_l07a5"]
 
@@ -27,7 +27,7 @@ offset_top = 360.0
 offset_right = 960.0
 offset_bottom = 576.0
 script = ExtResource("2_l07a5")
-next_scene = "res://rooms/kitchen/Kitchen4.tscn"
+next_scene = "res://rooms/kitchen/kitchen4.tscn"
 cursor_style = 11
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
@@ -37,7 +37,7 @@ offset_top = 168.0
 offset_right = 848.0
 offset_bottom = 344.0
 script = ExtResource("2_l07a5")
-next_scene = "res://rooms/kitchen/Kitchen3.tscn"
+next_scene = "res://rooms/kitchen/kitchen3.tscn"
 cursor_style = 5
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
@@ -46,7 +46,7 @@ offset_top = 352.0
 offset_right = 360.0
 offset_bottom = 576.0
 script = ExtResource("2_l07a5")
-next_scene = "res://rooms/kitchen/Kitchen6.tscn"
+next_scene = "res://rooms/kitchen/kitchen6.tscn"
 cursor_style = 3
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
@@ -56,7 +56,7 @@ offset_top = 288.0
 offset_right = 624.0
 offset_bottom = 464.0
 script = ExtResource("2_l07a5")
-next_scene = "res://rooms/kitchen/Kitchen9.tscn"
+next_scene = "res://rooms/kitchen/kitchen9.tscn"
 cursor_style = 5
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 

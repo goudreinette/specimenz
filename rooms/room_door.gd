@@ -6,7 +6,7 @@ enum CursorStyle {
 }
 
 @export_file("*.tscn") var next_scene: String
-@export var next_scene_packed: PackedScene
+#@export var next_scene_packed: PackedScene
 @export var cursor_style: CursorStyle
 @export var go_to_previous: bool
 @export var loading_transition: bool = true
@@ -31,9 +31,6 @@ var loading: bool = false
 
 
 func _on_pressed():
-	#if sound: 
-		#
-		#
 	if loading_transition:
 		loading = true
 		Input.set_custom_mouse_cursor(cursor_hourglass)

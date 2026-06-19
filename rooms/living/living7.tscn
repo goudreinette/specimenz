@@ -14,7 +14,7 @@ offset_left = 392.0
 offset_top = 200.0
 offset_right = 712.0
 offset_bottom = 576.0
-next_scene = "res://rooms/kitchen/Kitchen1.tscn"
+next_scene = "res://rooms/kitchen/kitchen1.tscn"
 cursor_style = 5
 
 [node name="ToLiving13" parent="." unique_id=1869938908 instance=ExtResource("2_6em6v")]

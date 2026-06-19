@@ -13,14 +13,14 @@ texture = ExtResource("1_63ufx")
 offset_top = 320.0
 offset_right = 448.0
 offset_bottom = 576.0
-next_scene = "res://rooms/garden/Bench1.tscn"
+next_scene = "res://rooms/garden/bench1.tscn"
 cursor_style = 3
 
 [node name="ToTree1" parent="." unique_id=1616834601 instance=ExtResource("2_63ufx")]
 offset_left = 448.0
 offset_right = 960.0
 offset_bottom = 512.0
-next_scene = "res://rooms/garden/Tree1.tscn"
+next_scene = "res://rooms/garden/tree1.tscn"
 cursor_style = 5
 
 [node name="ToGarden7" parent="." unique_id=2125296165 instance=ExtResource("2_63ufx")]
@@ -28,5 +28,5 @@ offset_left = 640.0
 offset_top = 512.0
 offset_right = 960.0
 offset_bottom = 720.0
-next_scene = "res://rooms/garden/Garden7.tscn"
+next_scene = "res://rooms/garden/garden7.tscn"
 cursor_style = 10

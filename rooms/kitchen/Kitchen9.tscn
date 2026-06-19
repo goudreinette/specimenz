@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b53s5ta78vt5n"]
 
 [ext_resource type="Script" uid="uid://ckvep7m4t02iv" path="res://rooms/garden/garden_watersound_off.gd" id="1_21aio"]
-[ext_resource type="Texture2D" uid="uid://b5pgj0q5kc1qj" path="res://rooms/kitchen/Kitchen9.png" id="1_cgh14"]
+[ext_resource type="Texture2D" uid="uid://b5pgj0q5kc1qj" path="res://rooms/kitchen/kitchen9.png" id="1_cgh14"]
 [ext_resource type="Script" uid="uid://dlod6gqa71kk6" path="res://rooms/room_door.gd" id="2_21aio"]
 
 [node name="Kitchen9" type="Node2D" unique_id=92419258]
@@ -16,7 +16,7 @@ offset_top = 576.0
 offset_right = 960.0
 offset_bottom = 720.0
 script = ExtResource("2_21aio")
-next_scene = "res://rooms/kitchen/Kitchen1.tscn"
+next_scene = "res://rooms/kitchen/kitchen1.tscn"
 cursor_style = 2
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 

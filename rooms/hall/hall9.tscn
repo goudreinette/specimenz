@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ddd3xgpwdxgaa"]
 
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_6isrf"]
-[ext_resource type="Texture2D" uid="uid://c5hie07r17kgv" path="res://rooms/hall/Hall9.png" id="2_nimog"]
+[ext_resource type="Texture2D" uid="uid://c5hie07r17kgv" path="res://rooms/hall/hall9.png" id="2_nimog"]
 
 [node name="Hall9" type="Node2D" unique_id=1006463638]
 

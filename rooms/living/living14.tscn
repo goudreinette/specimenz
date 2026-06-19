@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dmebeocaxgwro"]
 
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_j7hit"]
-[ext_resource type="Texture2D" uid="uid://bmdy0t3puwxnv" path="res://rooms/living/Living14.png" id="2_pq1co"]
+[ext_resource type="Texture2D" uid="uid://bmdy0t3puwxnv" path="res://rooms/living/living14.png" id="2_pq1co"]
 
 [node name="Living14" type="Node2D" unique_id=698517045]
 

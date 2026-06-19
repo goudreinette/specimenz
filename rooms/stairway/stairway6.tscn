@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ciq6ddv2rw73t"]
 
-[ext_resource type="Texture2D" uid="uid://cb1xjjelr7xef" path="res://rooms/stairway/Stairway6.png" id="1_wxvom"]
+[ext_resource type="Texture2D" uid="uid://cb1xjjelr7xef" path="res://rooms/stairway/stairway6.png" id="1_wxvom"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_khd4x"]
 
 [node name="Stairway6" type="Node2D" unique_id=466601352]

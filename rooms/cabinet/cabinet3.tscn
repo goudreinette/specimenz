@@ -21,7 +21,7 @@ offset_left = -2.0
 offset_top = 592.0
 offset_right = 608.0
 offset_bottom = 720.0
-next_scene = "res://rooms/kitchen/Kitchen1.tscn"
+next_scene = "res://rooms/kitchen/kitchen1.tscn"
 cursor_style = 2
 
 [node name="ToKitchen4" parent="." unique_id=792178416 instance=ExtResource("2_shfgt")]
@@ -29,7 +29,7 @@ offset_left = 608.0
 offset_top = 528.0
 offset_right = 960.0
 offset_bottom = 720.0
-next_scene = "res://rooms/kitchen/Kitchen4.tscn"
+next_scene = "res://rooms/kitchen/kitchen4.tscn"
 cursor_style = 11
 
 [node name="ToCabinet1" parent="." unique_id=1040832238 instance=ExtResource("2_shfgt")]
@@ -51,4 +51,4 @@ offset_left = 656.0
 offset_top = 200.0
 offset_right = 912.0
 offset_bottom = 528.0
-next_scene = "res://rooms/kitchen/Kitchen3.tscn"
+next_scene = "res://rooms/kitchen/kitchen3.tscn"

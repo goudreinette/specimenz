@@ -14,7 +14,7 @@ texture = ExtResource("1_bldni")
 offset_top = 576.0
 offset_right = 960.0
 offset_bottom = 720.0
-next_scene = "res://rooms/garden/Garden4.tscn"
+next_scene = "res://rooms/garden/garden4.tscn"
 cursor_style = 2
 
 [node name="ErrorMessageTrigger" parent="." unique_id=103945561 instance=ExtResource("3_qae7e")]

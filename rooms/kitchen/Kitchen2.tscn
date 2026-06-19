@@ -14,7 +14,7 @@ offset_top = 624.0
 offset_right = 960.0
 offset_bottom = 720.0
 script = ExtResource("2_dovqf")
-next_scene = "res://rooms/kitchen/Kitchen1.tscn"
+next_scene = "res://rooms/kitchen/kitchen1.tscn"
 metadata/_custom_type_script = "uid://dlod6gqa71kk6"
 
 [connection signal="mouse_entered" from="ToKitchen1" to="ToKitchen1" method="_on_mouse_entered"]

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://7wkfihcawg4t"]
 
-[ext_resource type="Texture2D" uid="uid://4uh1fxokva03" path="res://rooms/garden/Garden5.png" id="1_gigwa"]
+[ext_resource type="Texture2D" uid="uid://4uh1fxokva03" path="res://rooms/garden/garden5.png" id="1_gigwa"]
 [ext_resource type="PackedScene" uid="uid://ctft83f6tmd6b" path="res://rooms/room_door.tscn" id="2_iswu7"]
 
 [node name="Garden5" type="Node2D" unique_id=2086378232]
@@ -13,7 +13,7 @@ texture = ExtResource("1_gigwa")
 offset_top = 576.0
 offset_right = 704.0
 offset_bottom = 720.0
-next_scene = "res://rooms/garden/Garden2.tscn"
+next_scene = "res://rooms/garden/garden2.tscn"
 cursor_style = 2
 go_to_previous = true
 
@@ -22,5 +22,5 @@ offset_left = 152.0
 offset_top = 224.0
 offset_right = 760.0
 offset_bottom = 576.0
-next_scene = "res://rooms/garden/Sandbox1.tscn"
+next_scene = "res://rooms/garden/sandbox1.tscn"
 cursor_style = 5
