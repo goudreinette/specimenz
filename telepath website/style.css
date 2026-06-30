@@ -284,3 +284,14 @@ canvas {
 #main {
     display: flex;
 }
+
+
+
+
+#explorer {
+    z-index: 4;
+}
+
+canvas {
+    z-index: 2;
+}

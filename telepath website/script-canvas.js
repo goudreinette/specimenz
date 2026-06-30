@@ -85,12 +85,16 @@ function addPhysarumBranch(startX, startY, angle, hue) {
 
 
 
-
+// Time
+let startTime = Date.now()
+let step = 0
 
 
 
 // UPDATE, ANIMATE PHYSARUM ------------------------------------------------------
 setInterval(() => {
+    step++
+
     // Clear screen?
     // ctx.fillStyle = 'rgba(255,255,255,.001)'
     // ctx.fillRect(0,0, ctx.canvas.width,ctx.canvas.height)
@@ -103,7 +107,8 @@ setInterval(() => {
         }
     }
 
-    console.log('lines:', polylines.length, 'active:', activeLinesCount)
+    let currentTime = Date.now()
+    console.log('step:', step, 'time:', (currentTime - startTime) / 1000,'lines:', polylines.length, 'active:', activeLinesCount)
 
     for (const line of polylines) {
         if (line.active) {
@@ -176,12 +181,16 @@ setInterval(() => {
 
         polylines = polylines.filter(p => p.active)
     }
-}, 30) // 30fps
+}, 1000 / 5) // 30fps
 
 
 
 
 
+// RELOAD EVERY HOUR
+setInterval(() => {
+    location.reload()
+}, 1000 * 60 * 60)
 
 
 
@@ -220,8 +229,3 @@ function colorMixer(rgbA, rgbB, amountToMix){
 }
 
 
-
-// RELOAD EVERY HOUR
-setInterval(() => {
-    location.reload()
-}, 1000 * 60 * 60)
